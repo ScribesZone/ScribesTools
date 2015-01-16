@@ -1,9 +1,13 @@
 USE OCL
 =======
 
-"`USE`_ is a system for the specification and validation of Information Systems based on a subset of the Unified Modeling Language (UML) and the Object Constraint Language (OCL)."
+"`USE`_ is a system for the specification and validation of Information Systems
+based on a subset of the Unified Modeling Language (UML) and the
+Object Constraint Language (OCL)."
 
-This open source environment has been developed at the University of Bremen and is available as a `source forge project`_. All the resources available in this directory have been developed by USE OCL project members under `GPL v2 licence`_
+This open source environment has been developed at the University of Bremen and
+is available as a `source forge project`_. All the resources available here
+have been developed by USE OCL project members under `GPL v2 licence`_
 
 Installation of USE OCL
 -----------------------
@@ -34,15 +38,14 @@ This launch the USE OCL interpreter in the same window.
 
 .. image:: media/USEOCL-shell.jpg
 
-.. NOTE:: On Windows, if you want to use cygwin, then type ``use.bat -nogui``
-otherwise you may encounter problem with the use script.
+.. NOTE::   On Windows, if you want to use cygwin, then type ``use.bat -nogui``
+            otherwise you may encounter problem with the use script.
 
 If you want you can also have a look at the graphical interface (in this case
 just type ``use``).
 
 .. image:: media/USEOCL-gui.jpg
 
- fsd sdfsdf
 
 Documentation
 -------------
