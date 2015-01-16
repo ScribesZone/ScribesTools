@@ -1,0 +1,6 @@
+PATH
+   c:\Program Files (x86)\Graphviz2.38\bin;c:\Program Files\c:\Program Files\use-3.0.6\bin;c:\Python27\Scripts;c:\Python27\;c:\Program Files\sqlite3\;c:\Programmes\Graphviz\bin;C:\S\OpenOffice4.0.1\Program\;c:\Programmes\
+
+PATHEXT
+   .PY
+
