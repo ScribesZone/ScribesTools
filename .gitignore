@@ -1,6 +1,8 @@
 docs/*/_build
 docs/_build
+docs/*/install
 libs/*
+
 
 # Python / Jython
 
