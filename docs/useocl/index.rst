@@ -12,7 +12,8 @@ have been developed by USE OCL project members under `GPL v2 licence`_
 Installation of USE OCL
 -----------------------
 
-To install USE OCL on your machine download and extract the file |use-3.0.6.zip|.
+To install USE OCL on your machine download and extract the file
+``use-3.0.6.zip`` |use.zip|.
 
 For more convenience add the *bin* sub-directory to your system PATH.
 For instance the PATH could look like:
@@ -27,7 +28,7 @@ For instance the PATH could look like:
     To install this file:
 
     * go to "*Main menu > Language > Define your language... > Import ...*\ "
-    * select the file |USE_Notepad_plusplus_User_Defined_Language.xml|.
+    * select the file ``USE_Notepad_plusplus_User_Defined_Language.xml`` |use-notepad.xml|.
     * You may have to restart notepad++.
 
 Launching USE OCL
@@ -50,18 +51,48 @@ just type ``use``).
 Documentation
 -------------
 
-The documentation of the USE OCL system is available in the *docs*
-directory of this archive.
+.. ifconfig:: local
 
-.. |use-3.0.6.zip| replace::
-   ``use-3.0.6.zip`` (
-   `local <../../tools/useocl/install/use-3.0.6.zip>`__,
-   `web <http://sourceforge.net/projects/useocl/files/USE/3.0.0/>`__)
+    The documentation of the USE OCL system is available in the
+    ``docs`` directory of this archive:
 
-.. |USE_Notepad_plusplus_User_Defined_Language.xml| replace::
-   ``USE_Notepad_plusplus_User_Defined_Language.xml`` (
-   `local <../../tools/useocl/install/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`__,,,,,
-   `web <http://sourceforge.net/projects/useocl/files/Misc/>`__)
+    * a quick tour |use-quick-tour|
+    * the reference documentation |use-documentation|.
+    * demo |use-demo| as a screen cast.
+
+
+
+
+
+
+
+
+
+
+
+
+.. |use.zip| replace::
+    (:download:`local<install/use-3.0.6.zip>`,
+    `web <http://sourceforge.net/projects/useocl/files/USE/3.0.0/>`__)
+
+.. |use-notepad.xml| replace::
+    (:download:`local<install/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
+    `web <http://sourceforge.net/projects/useocl/files/Misc/>`__)
+
+.. |use-quick-tour| replace::
+    (:download:`local<docs/use-quick-tour.pdf>`,
+    `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>__`)
+
+.. |use-documentation| replace::
+    (:download:`local<docs/use-documentation.pdf>`,
+    `web <http://www.db.informatik.uni-bremen.de/projects/use/use-documentation.pdf>`__)
+
+.. |use-demo| replace::
+    (:download:`local<docs/use-demonstration.swf>`,
+    `web <http://sourceforge.net/projects/useocl/>`__)
+
+
+
 
 .. _USE: http://sourceforge.net/projects/useocl/
 .. _`source forge project`: http://sourceforge.net/projects/useocl/
