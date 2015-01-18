@@ -52,11 +52,16 @@ Documentation
 -------------
 
 The main elements of documentation for use are the following:
+
 # a quick tour |use-quick-tour|
 # demo |use-demo| as a screen cast.
 # the reference documentation |use-documentation|.
 
+Examples
+--------
+
 Various examples of use specifications are available in the distribution |use.zip| in particular in the directory ``examples``.
+
 The file ``README.examples`` |use-readme-examples| provides an interesting
 index that show which OCL features are used in which files.
 
@@ -69,6 +74,8 @@ index that show which OCL features are used in which files.
 
 .. ...........................................................................
 
+.. |use-readme-examples| replace::
+    (:download:`local<docs/README.examples.txt>`)
 
 .. |use.zip| replace::
     (:download:`local<install/use-3.0.6.zip>`,
@@ -90,8 +97,7 @@ index that show which OCL features are used in which files.
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
 
-.. |use-readme-examples|::
-    (:download:`local<docs/
+
 
 
 

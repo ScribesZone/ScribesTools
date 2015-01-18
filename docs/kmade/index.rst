@@ -24,9 +24,9 @@ KMADe is easy to install:
 
 #. Download the KMADe zip archive |kmade-zip|.
 
-#. Move this file to the directory in which `KMADe`_ will be installed, to be more precise to the directory that will contain the |KMADe-dir| directory (e.g. ``C:\S\``).
+#. Move this file to the directory in which `KMADe`_ will be installed, to be more precise to the directory that will contain the |kmade-dir| directory (e.g. ``C:\S\``).
 
-#. Copy the zip file in this directory and unzip it here. This create a |KMADe-dir| directory (e.g. ``C:\S\`` |KMADe-dir|)
+#. Copy the zip file in this directory and unzip it here. This create a |kmade-dir| directory (e.g. ``C:\S\`` |kmade-dir|)
 
 #. Remove the zip file if you want.
 
@@ -55,7 +55,7 @@ KMADe as an extensive documentation |kmade-doc|. It is mostly in french.
     (:download:`local<docs/KMADe-1.2-UserManual-FR.pdf>`,
     `web <http://www.lias-lab.fr/forge/attachments/download/136/KMADe-1.2-UserManual-FR.pdf>`__)
 
-.. |KMADe-dir| replace::
+.. |kmade-dir| replace::
     ``KMADe-1.2``
 
 .. _`KMADe`: http://www.lias-lab.fr/forge/projects/kmad

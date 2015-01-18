@@ -1,19 +1,36 @@
 ScribeTools
 ===========
 
+Welcome to ScribeTools documentation. You will find here some indications
+on how to install and use some useful software development tools. If you are
+interested in quality aspect you may also be interested in ScribeQuality_.
+
 .. ifconfig:: local
 
-    this is local documentation
+    .. note::
+        You are looking at the local documentation. You will therefore be able
+        to use 'local' download links.
 
 .. ifconfig:: web
 
-    this is remote
 
 .. toctree::
     :maxdepth: 2
 
+    modelio/index
     useocl/index
     ganttproject/index
     kmade/index
+    checkstyle/index
+    pylint/index
 
+The pages below provide some hints about some platform customization:
 
+.. toctree::
+    :maxdepth: 2
+
+    windows/index
+
+.. ............................................................................
+
+.. _ScribeQuality: http://ScribeQuality.readthedocs.org
