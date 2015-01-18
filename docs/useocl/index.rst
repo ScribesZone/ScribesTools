@@ -9,8 +9,8 @@ This open source environment has been developed at the University of Bremen and
 is available as a `source forge project`_. All the resources available here
 have been developed by USE OCL project members under `GPL v2 licence`_
 
-Installation of USE OCL
------------------------
+Installation
+------------
 
 To install USE OCL on your machine download and extract the file
 ``use-3.0.6.zip`` |use.zip|.
@@ -51,16 +51,14 @@ just type ``use``).
 Documentation
 -------------
 
-.. ifconfig:: local
+The main elements of documentation for use are the following:
+# a quick tour |use-quick-tour|
+# demo |use-demo| as a screen cast.
+# the reference documentation |use-documentation|.
 
-    The documentation of the USE OCL system is available in the
-    ``docs`` directory of this archive:
-
-    * a quick tour |use-quick-tour|
-    * the reference documentation |use-documentation|.
-    * demo |use-demo| as a screen cast.
-
-
+Various examples of use specifications are available in the distribution |use.zip| in particular in the directory ``examples``.
+The file ``README.examples`` |use-readme-examples| provides an interesting
+index that show which OCL features are used in which files.
 
 
 
@@ -69,6 +67,7 @@ Documentation
 
 
 
+.. ...........................................................................
 
 
 .. |use.zip| replace::
@@ -91,6 +90,8 @@ Documentation
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
 
+.. |use-readme-examples|::
+    (:download:`local<docs/
 
 
 

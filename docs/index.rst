@@ -13,5 +13,7 @@ ScribeTools
     :maxdepth: 2
 
     useocl/index
+    ganttproject/index
+    kmade/index
 
 
