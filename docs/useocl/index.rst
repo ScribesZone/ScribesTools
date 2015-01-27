@@ -34,10 +34,12 @@ For instance the PATH could look like:
 Launching USE OCL
 -----------------
 
-Once installed, you can just type ``use -nogui`` in a new shell window.
-This launch the USE OCL interpreter in the same window.
+Once installed, you can just type ``use -nogui`` in a new shell window. This launch the USE OCL Command Line Interface (CLI).
 
-.. image:: media/USEOCL-shell.jpg
+.. figure:: media/USEOCL-shell.jpg
+    :align: center
+
+    A session with the Command Line Interface. Use is started and then some OCL expression are evaluated with the ? command.
 
 .. NOTE::   On Windows, if you want to use cygwin, then type ``use.bat -nogui``
             otherwise you may encounter problem with the use script.
@@ -45,17 +47,36 @@ This launch the USE OCL interpreter in the same window.
 If you want you can also have a look at the graphical interface (in this case
 just type ``use``).
 
-.. image:: media/USEOCL-gui.jpg
+.. figure:: media/USEOCL-gui.jpg
+    :align: center
+
+    The Graphical User Interface.
 
 
 Documentation
 -------------
 
-The main elements of documentation for use are the following:
+There is quite some documentation for USE OCL, but we recommend to read for instance the following elements in the following order:
 
-# a quick tour |use-quick-tour|
-# demo |use-demo| as a screen cast.
-# the reference documentation |use-documentation|.
+1. Read first the quick tour |use-quick-tour|.
+    A MUST READ. A simple class model with 3 classes, 3 associations and 4 OCL invariants.
+
+2. Watch the video |use-demo|.
+    The first part (until frame 128/208) deals with the static part and invariants. The second part deals with operation simulation and pre/post conditions. You may be interested only by the first part or by both parts.
+
+    .. image:: media/USEOCL-video.jpg
+
+
+3. Use the reference documentation |use-documentation|.
+    Use this document as a reference, for instance to check something about USE OCL language. Note that chapter 6 (page 82) contains the list of OCL operations supported by OCL USE.
+
+.. note::
+    This documentation has not evolved for quite some time. More features have been added to USE OCL, in particular to follow the evolution of OCL/UML or to remove some limitations. For instance support for qualified associations is possible although undocumented. The directory ``examples`` and/or ``test`` of the distribution contains some examples demonstrating the use of these features. For instance various qualified association examples are visible in the ``test/t086.use``.
+
+.. attention::
+    The documentation and the video show both the Command Line Interface (CLI) and the Graphical User Interface (GUI). You might be however interested only by the CLI (in particular in the context of automation and integration with other tools). In this case, use the following option when launching USE OCL
+
+        use -nogui
 
 Examples
 --------
@@ -87,7 +108,7 @@ index that show which OCL features are used in which files.
 
 .. |use-quick-tour| replace::
     (:download:`local<docs/use-quick-tour.pdf>`,
-    `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>__`)
+    `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
 .. |use-documentation| replace::
     (:download:`local<docs/use-documentation.pdf>`,
