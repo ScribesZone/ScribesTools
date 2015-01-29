@@ -14,8 +14,12 @@ interested in quality aspect you may also be interested in ScribeQuality_.
 .. ifconfig:: web
 
 
+Tools
+-----
+
 .. toctree::
     :maxdepth: 2
+    :numbered:
 
     modelio/index
     useocl/index
@@ -24,12 +28,25 @@ interested in quality aspect you may also be interested in ScribeQuality_.
     checkstyle/index
     pylint/index
 
+Platforms
+---------
+
 The pages below provide some hints about some platform customization:
 
 .. toctree::
+    :numbered:
     :maxdepth: 2
 
     windows/index
+
+.. Misc
+.. ----
+
+.. toctree::
+    :maxdepth: 2
+    :numbered: 8
+
+.. diigo/index
 
 .. ............................................................................
 

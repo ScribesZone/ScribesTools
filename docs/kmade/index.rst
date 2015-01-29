@@ -8,7 +8,7 @@ Features
 
 `KMADe`_ is an editor of task models.
 
-.. figure:: media/task-model.jpg
+.. image:: media/task-model.jpg
 
     *task model* by `Sybille Caffiau <http://iihm.imag.fr/en/member/caffiau/>`__
 
@@ -40,7 +40,7 @@ Once installed, you can just have to double click on the ``kmade.jar`` file in t
 Documentation
 -------------
 
-KMADe as an extensive documentation |kmade-doc|. It is mostly in french.
+KMADe has an extensive documentation |kmade-doc|. It is mostly in french.
 
 
 
