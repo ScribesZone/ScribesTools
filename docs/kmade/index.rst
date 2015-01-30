@@ -8,7 +8,7 @@ Features
 
 `KMADe`_ is an editor of task models.
 
-.. image:: media/task-model.jpg
+.. thumbnail:: media/task-model.jpg
 
     *task model* by `Sybille Caffiau <http://iihm.imag.fr/en/member/caffiau/>`__
 

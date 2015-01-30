@@ -1,5 +1,7 @@
 @ECHO OFF
 
+rem ..\..\VENV\ReadTheDocs\Scripts\activate
+
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
