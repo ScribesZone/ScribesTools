@@ -23,7 +23,7 @@ import os
 #--------------------------------------------------------------------------
 
 sys.path.insert(0, os.path.abspath('.'))
-import sphinxcontrib.images
+# import sphinxcontrib.images
 
 
 #--------------------------------------------------------------------------
@@ -44,13 +44,13 @@ import sphinxcontrib.images
 # >+JFE
 #--------------------------------------------------------------------------
 
-images_config = {
-    "override_image_directive": True
-}
+#images_config = {
+#    "override_image_directive": True
+#}
 
 extensions = [
     'scribeextension',
-    'sphinxcontrib.images',
+#    'sphinxcontrib.images',
 #--------------------------------------------------------------------------
 #  <+JFE
 #--------------------------------------------------------------------------
