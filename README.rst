@@ -1,7 +1,7 @@
 ScribeTools
 ===========
 
-This repository gather documentation about some useful development tools.
+This repository gathers documentation about some useful development tools.
 
 This documentation is better viewed on http://scribetools.readthedocs.org
 
