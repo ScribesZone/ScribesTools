@@ -19,7 +19,6 @@ Tools
 
 .. toctree::
     :maxdepth: 2
-    :numbered:
 
     modelio/index
     useocl/index
@@ -27,6 +26,7 @@ Tools
     kmade/index
     checkstyle/index
     pylint/index
+    github/index
 
 Platforms
 ---------
@@ -34,7 +34,6 @@ Platforms
 The pages below provide some hints about some platform customization:
 
 .. toctree::
-    :numbered:
     :maxdepth: 2
 
     windows/index
@@ -44,7 +43,6 @@ The pages below provide some hints about some platform customization:
 
 .. toctree::
     :maxdepth: 2
-    :numbered: 8
 
 .. diigo/index
 
