@@ -25,8 +25,9 @@ Tools
     ganttproject/index
     kmade/index
     checkstyle/index
-    pylint/index
     github/index
+    pylint/index
+    pycharm/index
 
 Platforms
 ---------
