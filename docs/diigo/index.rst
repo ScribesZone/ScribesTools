@@ -20,13 +20,21 @@ Installation
 You have fist to `register to Diigo`_ and select the free plan. This will
 give you access to the web interface of Diigo_.
 
+.. figure:: media/diigoGroups.jpg
+    :align: center
+
+    Diigo web interface for managing groups
+
 To take the full profit of Diigo_ (and in particular to add annotations) you
 should install a plugin for you favorite browser. You can either search
 the web for with google ``diigo plugin chrome`` for instance or use the
 `Diigo tools`_ page (use the Extension/Web Apps). Diigo is also available on
 android and iphone.
 
+.. figure:: media/diigo4chrome.jpg
+    :align: center
 
+    "Annotate & Capture the Web" in action, the plugin for Chrome
 
 
 
