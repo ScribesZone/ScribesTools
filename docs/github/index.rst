@@ -13,8 +13,9 @@ are very popular hosting services on the cloud.
 Overview
 --------
 
-It is important to clearly distinguish right from the beginning Git and GitHub.
-Git is a general tool for versioning like SVN. GitHub is a hosting service
+It is important to clearly distinguish right from the beginning Git_ and
+GitHub_.
+Git_ is a general tool for versioning like SVN_. GitHub is a hosting service
 based on Git and also a particular tool (the GitHub client) that can be
 installed on your machine.
 
@@ -30,19 +31,28 @@ This is essentially a set of commands that you can run in a shell.
 
     A shell with a typical git command ``git status``
 
-One interesting aspect of git is that it is file-based repository:
-installing it do not necessitate to install any kind of server, database,
-or whatever. Using git locally is extremely cheap and easy. It will just
-create a `.git` directory in your project directory and that's all. Full stop.
-git can be be useful to work alone some revision controls for instance.
+Git_ can be used both locally by a single developper but also locally and on
+the web in a collaborative mode.
 
-Obviously if the goal is to collaborate with others one need a *git server* .
-In this case the local copy of git installed on your machine will serve as
-a *client*. You can setup a git server (if you are in a company) or reuse
-existing services from the cloud as explained in the next section.
+* git for local usage.
+    One interesting aspect of Git_ is that it is file-based repository:
+    installing it do not necessitate to install any kind of server, database;
+    no daemon process is required, etc.
+    Using git locally is therefore cheap and easy. It will just
+    create a `.git` directory in your project directory and that's all. Full stop.
+    Git_ can be useful really useful when working alone. This provides you
+    some revision control for instance.
 
-GitHub or BitBucket
-^^^^^^^^^^^^^^^^^^^
+* git for collaborative usage.
+    Obviously if the goal is to collaborate with others one need a
+    *git server*. In this case the local copy of Git_ installed on your machine
+    will serve as a *client*. You can setup a git server (if you are in a
+    company) or reuse existing services from the cloud.
+
+The next section is about git on the cloud.
+
+GitHub or/and BitBucket
+^^^^^^^^^^^^^^^^^^^^^^^
 
 If you need to collaborate with others to develop an open source project,
 GitHub_ or BitBucket_ are obvious solutions to consider, at least if you plan
@@ -148,3 +158,4 @@ it following the instructions for your plaform.
 .. _`comparison of hosting services` : http://en.wikipedia.org/wiki/Comparison_of_source_code_software_hosting_facilities
 .. _`bitbucket vs. github`: http://www.infoworld.com/article/2611771/application-development/bitbucket-vs--github--which-project-host-has-the-most-.html
 .. _`download git`: http://git-scm.com/downloads
+.. _SVN: http://en.wikipedia.org/wiki/Apache_Subversion
