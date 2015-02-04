@@ -1,7 +1,7 @@
 Diigo
 =====
 
-Diigo_ is collaborative bookmaring and annotation service on the cloud.
+Diigo_ is a collaborative bookmarking and annotation service on the cloud.
 
 Features
 --------
