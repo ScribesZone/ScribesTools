@@ -26,6 +26,7 @@ Tools
     kmade/index
     checkstyle/index
     github/index
+    diigo/index
     pylint/index
     pycharm/index
 
