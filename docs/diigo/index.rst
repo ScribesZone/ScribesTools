@@ -1,51 +1,28 @@
-Description
-===========
-
-
-
-
-
 Diigo
 =====
+
+Diigo_ is collaborative bookmaring and annotation service on the cloud.
+
+Features
+--------
+
+Diigo allows to:
+
+* manage bookmarks (and store them in the cloud, not on your computers)
+* create libraries of images from the web
+* annotate any web pages and also pdf from the web
+* create groups and share information (bookmarks, notes, annotations) among these groups
+* generate rss feeds that are updated everytime you publish a new link
 
 Installation
 ------------
 
-.. list-table:: Frozen Delights!
-   :widths: 15 10 30
-   :header-rows: 1
+You have to `register to Diigo`_ and select the free plan.
 
-   *
-         - Treat
-         - Quantity
-         - Description
-   *
-        - Albatross
-        - 2.99
-        - On a stick!
-          lekrjzerjlkzjer   zelrjzlker
-          zerkjlzkejr zelkrjzlkejr
 
-          * a
-          * b
-          * c
 
-          .. list-table::
 
-            * - 1
-              - 2
-            * - a
-              - b
+.. ............................................................................
 
-          zerlkjzlerjk
-          zerzerjlk zerlzlerj
+.. _`register to Diigo`: https://www.diigo.com/sign-up
 
-                toto gfkdf
-
-   *    - Crunchy Frog
-        - 1.49
-        - If we took the bones out, it wouldn't be
-          crunchy, now would it?
-   *    - Gannet Ripple
-        - 1.99
-        - On a stick!
