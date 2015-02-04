@@ -25,7 +25,10 @@ Tools
     ganttproject/index
     kmade/index
     checkstyle/index
+    schemaspy/index
     github/index
+    readthedocs/index
+    travisci/index
     diigo/index
     pylint/index
     pycharm/index
