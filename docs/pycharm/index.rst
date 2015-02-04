@@ -34,7 +34,7 @@ the open source version. It is really worth anyway and you will probably not
 see the difference for quite some time.
 
 In practice you just have to go the `download PyCharm`_ page and then follow
-the instructions.
+the instructions. It should take or minute or so.
 
 .. ............................................................................
 
