@@ -46,7 +46,8 @@ GitHub or BitBucket
 
 If you need to collaborate with others to develop an open source project,
 GitHub_ or BitBucket_ are obvious solutions to consider, at least if you plan
-to use Git_. They both provide hosting public git repositories for free. GitHub and BitBucket have web-based interfaces to explore repositories.
+to use Git_. They both provide hosting public git repositories for free.
+GitHub and BitBucket have web-based interfaces to explore repositories.
 
 .. figure:: media/github-project.jpg
     :align: Center
@@ -58,14 +59,21 @@ to use Git_. They both provide hosting public git repositories for free. GitHub 
 
     A git repository as shown on BitBucket
 
-We recommend to use GitHub, but if you want you can have a look
-at the article `bitbucket vs. github`_ or to have a look at a more general
-`comparison of hosting services`_.
+We highly recommend to use GitHub, unless if you need private repository.
+If you want you can have a look at the article `bitbucket vs. github`_ or
+to have a look at a more general `comparison of hosting services`_.
 
 Here we will use GitHub since:
 
 * this is the most popular service,
 * it provides an excellent *git client* which is amazingly easy to use.
+
+If you need to have a private repository, and want to have that for free,
+then you have to use BitBucket for that repository. By contrast to Github
+(which offer only public repository), BitBucket provide unlimited private
+repositories (will a limit of 5 collaborators including you). The good news
+is that tools work with any provider so the solution is most probably:
+all public repositories on GitHub, all private repositories on BitBucket.
 
 Installation
 ------------
