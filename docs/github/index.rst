@@ -122,8 +122,24 @@ Installation is really simple:
 
     .. image:: media/github4mac.jpg
 
-Install a git toolkit
-^^^^^^^^^^^^^^^^^^^^^
+Install the BitBucket client
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The github client is really easy to use. However if you want to learn more
+about git and want to do some advanced things without the shell, the github
+client is not the best choice. In fact, it hides some commands behind some
+cool features like 'Sync'. You might prefer another client, for instance the
+one proposed on BitBucket. This git client is called SourceTree.
+
+.. figure:: media/BitBucketSourceTree.jpg
+    :align: Center
+
+    SourceTree at work
+
+Your can download it from the `SourceTree home page`_. It works on windows
+and mac.
+
+Using the git shell
+^^^^^^^^^^^^^^^^^^^
 The github client installed in the previous sessions include not only a
 graphical interface, but also give you access to a git shell where you
 can type all commands.
@@ -137,8 +153,16 @@ While the GUI is very nice and enough for most situations, sometimes you
 will need to type git commands that are not available in the GUI. In this
 case using the git shell is the solution.
 
-In some situations you will have to install a git toolkit:
+Install the git toolkit
+^^^^^^^^^^^^^^^^^^^^^^^
+In some situations you will however have to install a git toolkit.
 
+.. figure:: media/gitDownload.jpg
+    :align: Center
+
+    Git web site.
+
+You have to install git:
 * if you have not installed the GitHub client at all (either because you do
   not want or because it is not available on your platform).
 * if you want to run some scripts with git commands but you cannot always
@@ -148,7 +172,7 @@ In some situations you will have to install a git toolkit:
 
 In these case you will have to install git (possibly in addition to github
 client). In order to do so, just `download git`_ and install
-it following the instructions for your plaform.
+it following the instructions for your platform.
 
 .. ............................................................................
 
@@ -159,3 +183,4 @@ it following the instructions for your plaform.
 .. _`bitbucket vs. github`: http://www.infoworld.com/article/2611771/application-development/bitbucket-vs--github--which-project-host-has-the-most-.html
 .. _`download git`: http://git-scm.com/downloads
 .. _SVN: http://en.wikipedia.org/wiki/Apache_Subversion
+.. _`SourceTree home page`: https://www.atlassian.com/software/sourcetree
