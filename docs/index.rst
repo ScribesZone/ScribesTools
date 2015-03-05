@@ -32,6 +32,7 @@ Tools
     diigo/index
     pylint/index
     pycharm/index
+    assembla/index
 
 Platforms
 ---------

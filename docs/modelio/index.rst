@@ -110,7 +110,77 @@ Different kind of documentation is also available on the web:
     Use the "Search" tab if you want to search some information about a given
     topic.
 
-    .. figure:: media/forums.jpg
+.. figure:: media/forums.jpg
+
+
+
+Collaborative Modeling with SVN
+-------------------------------
+Thanks to the ``TeamworkManager`` module Modelio can store projet ``fragments``
+in a remote ``SVN`` repository. ``TeamworkManager``  allows various users to
+work on the same model at the same time.
+
+.. warning::
+    ``TeamworkManager`` feature is available only in some commercial versions
+    of modelio. The ``ultimate edition`` provides this feature.
+
+The documentation to create and use ``SVN`` fragments with ``TeamworkManager``
+is available in the menu ``help`` of Modelio (but not on the web). It can be
+found in the section  ``Modelio by Modeliosoft extensions > Teamwork`` as
+shown in the figure below.
+
+.. figure:: media/ModelioSvnDocumentation.jpg
+    :align: center
+
+Creating a SVN repository
+^^^^^^^^^^^^^^^^^^^^^^^^^
+This step is necessary only to create your own reprository. *This is not
+necessary if someone give you access to a shared repository*.
+
+To create the SVN directory itself you need to have a SVN server. If you don't
+have one, you can use :ref:`AssemblaSection` which is a free-svn provider on the
+cloud.
+
+Connecting to a SVN repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Open the project in which you want to add the access to ``SVN``. A project is a
+set of ``fragments``; there is always one ``local fragment``, the one where you
+work. In this section a ``remote fragment`` will be added, the one that
+correspond to the ``SVN`` repository.
+
+``Work models`` are the fragments in read/write mode. That is, the fragment
+where the developer work. To add the possibility to work on the SVN model
+select the menu ``Configuration > Work Models``.
+
+.. figure:: media/ModelioSvnConfigurationMenu.jpg
+    :align: center
+
+In order to register the SVN repository as a remote work model, click the
+``Add`` button in the ``SVN models`` section of the following window:
+
+.. figure:: media/ModelioSVNWorkModels.jpg
+    :align: center
+
+In the following form, you can choose a name for the fragment itself. The
+URI of the svn repository must be provided as well as the credentials for
+accessing it (if required). Checking the URI  with the corresponding button
+is a good idea.
+
+.. figure:: media/ModelioSVNLogin.jpg
+    :align: center
+
+A new remote fragment is then available in your project as shown in the window
+below.
+
+.. figure:: media/ModelionSVNFragment.jpg
+    :align: center
+
+You should be able to use it and modifying it. The version control commands to use
+are mostly:
+
+* update: to get the last updates from the central SVN repository,
+* commit: to commit the local changes to the central SVN repository/
+
 
 .. ............................................................................
 

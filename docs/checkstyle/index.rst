@@ -21,7 +21,6 @@ Installation
     Please refer to the documentation of your IDE if you just want to use it via
     this plugin.
 
-CheckStyle can also been int
 CheckStyle is easy to install:
 
 #. Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
