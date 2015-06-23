@@ -28,7 +28,20 @@ Modelio can be extended to add more features via `java modules`_,
 Installation
 ------------
 
-Modelio_ exists both in an open source and commercial version.
+Modelio_ exists both in an open source and commercial version. Yyou need a
+licence in the latter case.
+
+.. tip::
+    If you have a licence code you can install both an open source version
+    and a commercial version on the same machine.
+
+Installation of modelio open-source
+'''''''''''''''''''''''''''''''''''
+Go to modelio.org download space |modelio-free-download| and select the
+installer for your platform. No registration is required.
+
+Installation of modelio open-source
+'''''''''''''''''''''''''''''''''''
 
 .. attention::
     You need either a *node-locked licence* or a *floating licence* to execute
@@ -50,25 +63,15 @@ Modelio_ exists both in an open source and commercial version.
         the licence server (e.g. at the UFRIMAG_ the host name is
         ``im2ag-ad.e-im2ag.ujf-grenoble.fr`` and the port is ``6200``
 
-.. tip::
-    If you have a licence code you can install both an open source version
-    and a commercial version on the same machine.
 
-The open source and commercial version(s) of Modelio_ are downloadable at
-different places:
+#. Register to modelio community |modelio-register|. This is free.
+   This will allow you to download commercial products but also to
+   participate in modelio forums, etc.
 
-* download modelio open source:
-    Go to modelio.org download space |modelio-free-download| and select
-    the installer for your platform. No registration is required.
+#. Go to model the *ultimate solution* download space |modelio-ultimate| and
+   select the installer for your platform.
 
-* download modelio commercial (*ultimate solution*):
-    You will need to:
 
-    #. Register to modelio community |modelio-register|. This is free.
-       This will allow you to download commercial products but also to
-       participate in modelio forums, etc.
-    #. Go to model the *ultimate solution* download space |modelio-ultimate| and
-       select the installer for your platform.
 
 
 
@@ -79,7 +82,7 @@ you just have to click on it. Otherwise you can click on the executable in the
 installation directory.
 
 Modelio can be launched within a script or from a shell with a command line
-like that (here the installation directory is ``C:\S\Modelio3.2Open\``::
+like that (here the installation directory is ``C:\S\Modelio3.2OpenSource\``::
 
     C:\S\Modelio3.2Open\modelio.exe
 
@@ -94,7 +97,9 @@ modelio errors)::
 Documentation
 -------------
 
-Documentation on Modelio_ is available from the ``Help > Help`` menu of Modelio_ as shown below. You will most probably want to use the section ``Modelio Modeler`` if you are just interested in using modelio.
+Documentation on Modelio_ is available from the ``Help > Help`` menu of
+Modelio_ as shown below. You will most probably want to use the section
+``Modelio Modeler`` if you are just interested in using modelio.
 
 .. figure:: media/help.jpg
 
