@@ -2,7 +2,7 @@ SchemaSpy
 =========
 
 SchemaSpy_ is a simple reverse engineering tool that takes a SQL database
-and generate diagrams of the database schema. As this is a java program, it
+and generate diagrams of the database schema. This is a java program; it
 runs on all platforms.
 
 Features
