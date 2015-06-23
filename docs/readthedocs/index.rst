@@ -18,12 +18,12 @@ Setup
 
 Create an `ReadTheDocs account`_.
 
-.. figure:: media/ReadTheDocsAccount.jpg
+..                        .. figure:: media/ReadTheDocsAccount.jpg
 
 Then you need to connect this account with your GitHub account. Once this is
 done you can import the projects that have sphinx documentation.
 
-.. todo: to continue
+
 
 Usage
 -----
