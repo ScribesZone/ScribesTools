@@ -1,6 +1,7 @@
-docs/*/_build
-docs/_build
-docs/*/install
+docs/*/_build/
+docs/_build/
+docs/*/install/
+docs/*/archives/
 libs/*
 
 
