@@ -13,13 +13,13 @@ Installation
 ------------
 
 To install USE OCL on your machine download and extract the file
-``use-3.0.6.zip`` |use.zip|.
+``use-4.1.0.zip`` |use.zip|.
 
 For more convenience add the *bin* sub-directory to your system PATH.
 For instance the PATH could look like:
 
-*  ``C:\\use-3.0.6\\bin;...rest of the path...`` on Windows or,
-*  ``/home/ahmed/use-3.0.6/bin: ... rest ...`` on a Unix-like machine.
+*  ``C:\\use-4.1.0\\bin;...rest of the path...`` on Windows or,
+*  ``/home/ahmed/use-4.1.0/bin: ... rest ...`` on a Unix-like machine.
 
 .. NOTE::
     On Windows, you can use a OCL language definition for notepad++.
@@ -28,18 +28,21 @@ For instance the PATH could look like:
     To install this file:
 
     * go to "*Main menu > Language > Define your language... > Import ...*\ "
-    * select the file ``USE_Notepad_plusplus_User_Defined_Language.xml`` |use-notepad.xml|.
+    * select the file ``USE_Notepad_plusplus_User_Defined_Language.xml``
+      |use-notepad.xml|.
     * You may have to restart notepad++.
 
 Launching USE OCL
 -----------------
 
-Once installed, you can just type ``use -nogui`` in a new shell window. This launch the USE OCL Command Line Interface (CLI).
+Once installed, you can just type ``use -nogui`` in a new shell window.
+This launch the USE OCL Command Line Interface (CLI).
 
 .. figure:: media/USEOCL-shell.jpg
     :align: center
 
-    A session with the Command Line Interface. Use is started and then some OCL expression are evaluated with the ? command.
+    A session with the Command Line Interface. Use is started and then some
+    OCL expression are evaluated with the ? command.
 
 .. NOTE::   On Windows, if you want to use cygwin, then type ``use.bat -nogui``
             otherwise you may encounter problem with the use script.
@@ -99,8 +102,8 @@ index that show which OCL features are used in which files.
     (:download:`local<docs/README.examples.txt>`)
 
 .. |use.zip| replace::
-    (:download:`local<install/use-3.0.6.zip>`,
-    `web <http://sourceforge.net/projects/useocl/files/USE/3.0.0/>`__)
+    (:download:`local<install/use-4.1.0.zip>`,
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/>`__)
 
 .. |use-notepad.xml| replace::
     (:download:`local<install/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
