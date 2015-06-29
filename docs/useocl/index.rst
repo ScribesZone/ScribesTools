@@ -12,14 +12,15 @@ have been developed by USE OCL project members under `GPL v2 licence`_
 Installation
 ------------
 
-To install USE OCL on your machine download and extract the file
-``use-4.1.0.zip`` |use.zip|.
+To install use:
 
-For more convenience add the *bin* sub-directory to your system PATH.
-For instance the PATH could look like:
+* download the use zip file (``use-4.1.0.zip`` |use.zip|).
+* extract this zip file where you want to install it (e.g. C:\S on windows)
+* for convenience add the *bin* directory to your system PATH. For instance
+  the PATH could look like:
 
-*  ``C:\\use-4.1.0\\bin;...rest of the path...`` on Windows or,
-*  ``/home/ahmed/use-4.1.0/bin: ... rest ...`` on a Unix-like machine.
+  *  ``C:\\S\use-4.1.0\\bin;...rest of the path...`` on Windows or,
+  *  ``/home/ahmed/use-4.1.0/bin: ... rest ...`` on a Unix-like machine.
 
 .. NOTE::
     On Windows, you can use a OCL language definition for notepad++.
@@ -35,8 +36,9 @@ For instance the PATH could look like:
 Launching USE OCL
 -----------------
 
-Once installed, you can just type ``use -nogui`` in a new shell window.
-This launch the USE OCL Command Line Interface (CLI).
+Once installed, you can just type ``use -nogui`` in a new shell window (if
+you didn't added the *bin* directory to the PATH, then you hav type the full$
+path to use binary). This launch the USE OCL Command Line Interface (CLI).
 
 .. figure:: media/USEOCL-shell.jpg
     :align: center
@@ -59,32 +61,49 @@ just type ``use``).
 Documentation
 -------------
 
-There is quite some documentation for USE OCL, but we recommend to read for instance the following elements in the following order:
+There is quite some documentation for USE OCL, but we recommend to read for
+instance the following elements in the following order:
 
 1. Read first the quick tour |use-quick-tour|.
-    A MUST READ. A simple class model with 3 classes, 3 associations and 4 OCL invariants.
+    A MUST READ. A simple class model with 3 classes, 3 associations and
+    4 OCL invariants.
 
 2. Watch the video |use-demo|.
-    The first part (until frame 128/208) deals with the static part and invariants. The second part deals with operation simulation and pre/post conditions. You may be interested only by the first part or by both parts.
+    The first part (until frame 128/208) deals with the static part and
+    invariants. The second part deals with operation simulation and pre/post
+    conditions. You may be interested only by the first part or by both parts.
 
     .. image:: media/USEOCL-video.jpg
 
 
 3. Use the reference documentation |use-documentation|.
-    Use this document as a reference, for instance to check something about USE OCL language. Note that chapter 6 (page 82) contains the list of OCL operations supported by OCL USE.
+    Use this document as a reference, for instance to check something about
+    USE OCL language. Note that chapter 6 (page 82) contains the list of OCL
+    operations supported by OCL USE.
 
 .. note::
-    This documentation has not evolved for quite some time. More features have been added to USE OCL, in particular to follow the evolution of OCL/UML or to remove some limitations. For instance support for qualified associations is possible although undocumented. The directory ``examples`` and/or ``test`` of the distribution contains some examples demonstrating the use of these features. For instance various qualified association examples are visible in the ``test/t086.use``.
+    This documentation has not evolved for quite some time. More features have
+    been added to USE OCL, in particular to follow the evolution of OCL/UML or
+    to remove some limitations. For instance support for qualified associations
+    is possible although undocumented. The directory ``examples`` and/or
+    ``test`` of the distribution contains some examples demonstrating the use
+    of these features. For instance various qualified association examples
+    are visible in the ``test/t086.use``.
 
 .. attention::
-    The documentation and the video show both the Command Line Interface (CLI) and the Graphical User Interface (GUI). You might be however interested only by the CLI (in particular in the context of automation and integration with other tools). In this case, use the following option when launching USE OCL
+    The documentation and the video show both the Command Line Interface (CLI)
+    and the Graphical User Interface (GUI). You might be however interested
+    only by the CLI (in particular in the context of automation and
+    integration with other tools). In this case, use the following option when
+    launching USE OCL
 
         use -nogui
 
 Examples
 --------
 
-Various examples of use specifications are available in the distribution |use.zip| in particular in the directory ``examples``.
+Various examples of use specifications are available in the distribution
+|use.zip| in particular in the directory ``examples``.
 
 The file ``README.examples`` |use-readme-examples| provides an interesting
 index that show which OCL features are used in which files.
