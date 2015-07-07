@@ -30,12 +30,12 @@ Tools
     checkstyle/index
     pylint/index
     diigo/index
-    pycharm/index
     assembla/index
     github/index
     readthedocs/index
     travisci/index
     python/index
+    pycharm/index
     sqlite/index
 
 ..  balsamic/index

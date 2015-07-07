@@ -22,19 +22,36 @@ Installation
 There are two versions:
 
 * An open source version which is quite complete and very useful.
-* A professional version which has support for django, databases, etc.
+* A commercial version which has support for django, databases, etc.
 
 .. Attention::
 
     If you are student you can very easily get `PyCharm for students`_.
     You just need to register with the email of your university.
+    It quite easy.
 
-If you have access to the profession version that's fine. Otherwise, just use
-the open source version. It is really worth anyway and you will probably not
-see the difference for quite some time.
+* `download PyCharm`_ page and then download the appropriate version (e.g.
+  Windows community edition |PyCharmOpenWin|, Windows commercial edition
+  |PyCharmCommercialWin|).
 
-In practice you just have to go the `download PyCharm`_ page and then follow
-the instructions. It should take or minute or so.
+* install the version downloaded in a directory like ``C:\S\PyCharm4.5Open`` or
+  ``C:\S\PyCharm4.5Commercial``. This naming schema allows to have various
+  version installed at the same time.
+
+Launching PyCharm
+-----------------
+The installers most likely create a shortcut. Click on it to launch PyCharm.
+
+
+Documentation
+-------------
+Documentation is available from the ``help`` menu of the tool.
+
+Configuration
+-------------
+
+* 80 columns. File -> Settings -> Code Style -> General: Right margin (columns)
+
 
 .. ............................................................................
 
@@ -43,3 +60,12 @@ the instructions. It should take or minute or so.
 .. _`PyCharm for students`: https://www.jetbrains.com/estore/students/
 .. _`download PyCharm`: https://www.jetbrains.com/pycharm/download/
 .. _PyDev: http://pydev.org/
+
+.. |PyCharmOpenWin| replace::
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.2.exe>`,
+    `web <http://download.jetbrains.com/python/pycharm-community-4.5.2.exe>`__)
+
+.. |PyCharmCommercialWin| replace::
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.2.exe>`,
+    `web <http://download.jetbrains.com/python/pycharm-professional-4.5.2.exe>`__)
+
