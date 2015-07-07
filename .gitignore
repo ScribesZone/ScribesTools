@@ -2,7 +2,7 @@ docs/*/_build/
 docs/_build/
 docs/*/install/
 docs/*/archives/
-libs/*
+res/*/downloads/
 
 
 # Python / Jython
