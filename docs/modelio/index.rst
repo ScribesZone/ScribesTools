@@ -7,9 +7,8 @@ for example.
 
 .. figure:: media/various-models.jpg
 
-Modelio_ is high extensible via `java modules`_,
-`python scripts`_ or `python plugins`_. Modelio_ runs on Windows, Mac, and
-Linux.
+Modelio_ is high extensible via `java modules`_ or `python scripts`_ .
+Modelio_ runs on Windows, Mac, and Linux.
 
 Features
 --------
@@ -20,25 +19,46 @@ Modelio if a full-fledged modeling environment supporting:
 * model distribution over the web,
 * model versioning with SVN (commercial edition only),
 * documentation generation,
-* code generation and or reverse engineering of C++, Java, C#, Hibernate, SQL, XSD...
+* code generation and or reverse engineering of C++, Java, C#, Hibernate,
+  SQL, XSD...
 
-Modelio can be extended to add more features via `java modules`_,
-`python scripts`_ or `python plugins`_
+Modelio can be extended to add more features via `java modules`_ or
+`python scripts`_.
 
 Installation
 ------------
 
-Modelio_ exists both in an open source and commercial version. Yyou need a
-licence in the latter case.
+Modelio_ exists both in an open source and commercial version. You need a
+licence in the later case.
+
 
 .. tip::
     If you have a licence code you can install both an open source version
-    and a commercial version on the same machine.
+    and a commercial version on the same machine. Just use different
+    directories such as  ``C:\S\Modelio3.3Open`` and
+    ``C:\S\Modelio3.3Commercial``.
+
+.. attention::
+    The architecture (32bits or 64bits) of your modelio and java installations
+    much match.  If this is not the case then launching modelio will likely
+    generate a java error exit code 13. If you want to check which architecture
+    is used by your java installation open a shell and type ``java -version``.
+    If this information is important it will be displayed on the 3rd line.
 
 Installing modelio open-source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Go to modelio.org download space |modelio-free-download| and select the
-installer for your platform. No registration is required.
+
+*   Go to the `modelio.org download center` and select
+    the archive for your platform (e.g. windows
+    64 bits |ModelioWin64| or windows 32 bits |ModelioWin32|).
+
+*   Copy the archive into the directory that will contain the software
+    (e.g. ``C:\S\Modelio3.3Open``).
+
+*   Extract the archive and then rename it into something like
+    ``C:\S\Modelio3.3Open`` (you may want later to install the commercial
+    version as well or another version).
+
 
 Installing modelio commercial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -64,35 +84,34 @@ Installing modelio commercial
         ``im2ag-ad.e-im2ag.ujf-grenoble.fr`` and the port is ``6200``
 
 
-#. Register to modelio community |modelio-register|. This is free.
-   This will allow you to download commercial products but also to
-   participate in modelio forums, etc.
+* Register to modelio community |modelio-register|. This is free.
+    This will allow you to download commercial products but also to
+    participate in modelio forums, etc.
 
-#. Go to model the *ultimate solution* download space |modelio-ultimate| and
-   select the installer for your platform.
-
-
-
+* Go to model the *ultimate solution* download space |modelio-ultimate| and
+    select the installer for your platform.
 
 
 Launching Modelio
 -----------------
-If a shortcut has been created to launch Modelio_ (it depends on your platform),
-you just have to click on it. Otherwise you can click on the executable in the
-installation directory.
+If a shortcut has been created to launch Modelio_ (it depends on your
+platform), you just have to click on it. Otherwise you can click on the
+executable in the installation directory.
 
 Modelio can be launched within a script or from a shell with a command line
-like that (here the installation directory is ``C:\S\Modelio3.2OpenSource\``::
+like that (here the installation directory is ``C:\S\Modelio3.3Open\``::
 
-    C:\S\Modelio3.2Open\modelio.exe
+    C:\S\Modelio3.3Open\modelio.exe
 
 It could be wise to create a command to add parameters (or to change the
 shortcut on windows) in order to display the console window and run the Modelio_
 in debug mode (this allows to have more messages in the console in case of
 modelio errors)::
 
-    C:\S\Modelio3.2Open\modelio.exe -mdebug -consoleLog
+    C:\S\Modelio3.3Open\modelio.exe -mdebug -consoleLog
 
+If you get an error 'exit code 13' it is likely that the java and modelio
+architecture (32 bits or 64 bits) do not match.
 
 Documentation
 -------------
@@ -207,8 +226,8 @@ are mostly:
 .. |modelio-forums| replace::
     `forums <https://www.youtube.com/user/ModelioCommunity>`__
 
-.. |modelio-free-download| replace::
-    (`web <https://www.modelio.org/downloads/download-modelio.html>`__)
+.. _`modelio.org download center` :
+    https://www.modelio.org/downloads/download-modelio.html
 
 .. |modelio-register| replace::
     (`web <http://www.modeliosoft.com/en/purchase/user-registration.html?page=shop.registration>`__)
@@ -244,3 +263,12 @@ are mostly:
 .. _`python plugins`: http://PyModelio.readthedocs.org
 
 .. _UFRIMAG: http://ufrima.imag.fr/
+
+
+.. |ModelioWin64| replace::
+    (:download:`local <../../res/modelio/downloads/Win/modelio-open-201502191121-win32.win32.x86_64.zip>`,
+    `web <https://www.modelio.org/modelio-122/doc_download/106-modelio-331-windows-64-bit.html>`__)
+
+.. |ModelioWin32| replace::
+    (:download:`local <../../res/modelio/downloads/Win/modelio-open-201502191121-win32.win32.x86.zip>`,
+    `web <https://www.modelio.org/modelio-122/doc_download/105-modelio-331-windows-32-bit.html>`__)
