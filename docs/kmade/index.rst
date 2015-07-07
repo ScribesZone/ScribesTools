@@ -48,7 +48,7 @@ KMADe has an extensive documentation |kmade-doc|. It is mostly in french.
 
 
 .. |kmade-zip| replace::
-    (:download:`local<install/KMADe-1.2-dist.zip>`,
+    (:download:`local<../../res/kmade/downloads/KMADe-1.2-dist.zip>`,
     `web <http://www.lias-lab.fr/forge/projects/kmade/files>`__)
 
 .. |kmade-doc| replace::
