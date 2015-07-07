@@ -1,7 +1,7 @@
 GanttProject
 ============
 
-`GanttProject`_ is a free `project management`_ tool allowing to edit `gantt models`_ but also view `pert models`_ and `resource allocation models`_. As this tools is written in java it runs on all platforms. The development project is host at https://code.google.com/p/ganttproject/
+`GanttProject`_ is a free `project management`_ tool allowing to edit `gantt models`_ but also view `pert models`_ and `resource allocation models`_. As this tools is written in java it runs on all platforms.
 
 Features
 --------
@@ -41,12 +41,10 @@ development.
 Installation
 ------------
 
-`GanttProject`_ project is available as multi-platform zip file |gantt-zip|
-or on other formats |gantt-download|. To install read the instruction on the
-download page. Installers are available for various platforms (e.g. windows
-debian). If you choose to use the zip format a little bit of more work could
-be required, at least if your java installation is specific (read
-`installing from zip`_).
+To install `GanttProject`_ in a directory like ``C:\S\GanttProject-2.7``.
+In order to do that read the instructions on the `download page`_.
+For the sake of simplicity installers are available for various platforms
+(e.g. |WindowsInstaller|).
 
 Launching GanttProject
 ----------------------
@@ -105,12 +103,12 @@ This project is store in the ``HouseBuildingSample.gan``
 .. |gantt-demo| replace::
     (`youtube <https://www.youtube.com/watch?v=5rHCSa5ad34>`__)
 
-.. |gantt-download| replace::
-    (local :download:`windows<install/Win/ganttproject-2.6.6-r1715.exe>`,
-    `web <http://www.ganttproject.biz/download.php>`__)
+.. _`download page`:
+    http://www.ganttproject.biz/download.php
 
-.. |gantt-zip| replace::
-    (local :download:`local<install/ganttproject-2.6.6-r1715.zip>`,
+.. |WindowsInstaller| replace::
+    windows (:download:`local<../../res/ganttproject/downloads/Win/ganttproject-2.7-r1891.exe>`,
+    `web <http://www.ganttproject.biz/download#windows>`__)
 
 .. _`installing from zip`: https://code.google.com/p/ganttproject/wiki/InstallingFromZIPArchive
 
