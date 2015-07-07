@@ -22,25 +22,27 @@ Installation
 
 KMADe is easy to install:
 
-#. Download the KMADe zip archive |kmade-zip|.
-
-#. Move this file to the directory in which `KMADe`_ will be installed, to be more precise to the directory that will contain the |kmade-dir| directory (e.g. ``C:\S\``).
-
-#. Copy the zip file in this directory and unzip it here. This create a |kmade-dir| directory (e.g. ``C:\S\`` |kmade-dir|)
-
-#. Remove the zip file if you want.
+* Download the KMADe zip archive |kmade-zip|.
+* Move this file to the directory in which `KMADe`_ will be installed,
+  to be more precise to the directory that will contain the |kmade-dir|
+  directory (e.g. ``C:\S\``).
+* Copy the zip file in this directory and unzip it here. This create a
+  |kmade-dir| directory (e.g. ``C:\S\`` |kmade-dir|)
+* Remove the zip file if you want.
 
 That's all.
 
 Launching KMADe
 ---------------
 
-Once installed, you can just have to double click on the ``kmade.jar`` file in the installation direction. `KMADe`_ should start as this is a java executable.
+Once installed, you can just have to double click on the ``kmade.jar`` file
+in the installation direction. `KMADe`_ should start as this is a java
+executable.
 
 Documentation
 -------------
 
-KMADe has an extensive documentation |kmade-doc|. It is mostly in french.
+KMADe has an extensive documentation |kmade-doc| but it is mostly in french.
 
 
 
