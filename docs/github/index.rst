@@ -31,7 +31,7 @@ This is essentially a set of commands that you can run in a shell.
 
     A shell with a typical git command ``git status``
 
-Git_ can be used both locally by a single developper but also locally and on
+Git_ can be used both locally by a single developer but also locally and on
 the web in a collaborative mode.
 
 * git for local usage.
@@ -114,7 +114,8 @@ the next section.
 
 Installation is really simple:
 
-* for Windows just visit https://windows.github.com/ ,
+* for Windows just visit https://windows.github.com/ (windows installer
+  |GithubClientWindows|).
 
     .. image:: media/github4windows.jpg
 
@@ -168,12 +169,13 @@ You have to install git:
   not want or because it is not available on your platform).
 * if you want to run some scripts with git commands but you cannot always
   run them from the GitHub shell (e.g. launching them from a cron tab).
-* if you use some programs relying on the availablity of git commands (those
+* if you use some programs relying on the availability of git commands (those
   program will complain that git commands and not available).
 
 In these case you will have to install git (possibly in addition to github
 client). In order to do so, just `download git`_ and install
-it following the instructions for your platform.
+it following the instructions for your platform (e.g. for windows
+|GitWindows|).
 
 .. ............................................................................
 
@@ -185,3 +187,11 @@ it following the instructions for your platform.
 .. _`download git`: http://git-scm.com/downloads
 .. _SVN: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _`SourceTree home page`: https://www.atlassian.com/software/sourcetree
+
+.. |GithubClientWindows| replace::
+    (:download:`local<../../res/github/downloads/Win/GitHubSetup.exe>`,
+    `web <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`__)
+
+.. |GitWindows| replace::
+    (:download:`local<../../res/github/downloads/Win/Git-1.9.5-preview20150319.exe>`,
+    `web <https://git-scm.com/download/win>`__)
