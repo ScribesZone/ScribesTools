@@ -18,20 +18,21 @@ Installation
 To install SchemaCrawler_:
 
 * Create a directory that will contain the software (e.g.
-  `C:\S\SchemaCrawler`).
-* Download |schemacrawler-12.06.03-main.zip|.
+  ``C:\S\SchemaCrawler``).
+* Download schemacrawler-12.06.03-main.zip |SchemaCrawlerZip|.
 * Extract the content of the archive in the target directory.
-* As a result you will 3 sub directories `_ivy`, `_schemacrawler`, `examples`.
+* As a result you will 3 sub directories ``_ivy``, ``_schemacrawler``,
+  ``examples``.
 * Add the directory to the system PATH
 
 The "sc" scripts provided ("sc" stands for SchemaCrawler) assume that
-this command will run in the `_schemacrawler` directory. In order to
-remove this constraints replaces the content of `_schemacrawler\sc.cmd` by:
+this command will run in the ``_schemacrawler`` directory. In order to
+remove this constraints replaces the content of ``_schemacrawler\sc.cmd`` by:
 
     @SET SC=%~dp0
     @java -classpath %SC%/lib/*;%SC% schemacrawler.Main %*
 
-On unix replace the content of `_schemacrawler\sc.sh` by:
+On unix replace the content of ``_schemacrawler\sc.sh`` by::
 
     #!/bin/sh
     SC=`dirname $0`
@@ -39,7 +40,7 @@ On unix replace the content of `_schemacrawler\sc.sh` by:
 
 SchemaCrawler_ is written in java but supports scripting with different
 languages (). In order to use Python for Scripting the following commands
-should be executed (assuming that the directory is `C:\S\SchemaCrawler`):
+should be executed (assuming that the directory is ``C:\S\SchemaCrawler``)::
 
     cd C:\S\SchemaCrawler\_ivy
     download.cmd python     # use download.sh on unix
@@ -47,18 +48,18 @@ should be executed (assuming that the directory is `C:\S\SchemaCrawler`):
 
 Launching SchemaCrawler
 -----------------------
-The simplest test to installation is to type the following:
+The simplest test to installation is to type the following::
 
     cd C:\S\SchemaCrawler\_schemacrawler    #  to be adapted if necessary
     sc.cmd --version                        # .sh on unix
     sc.cmd --help
 
-This should display the verison of SchemaCrawler_ and then the help of the
+This should display the version of SchemaCrawler_ and then the help of the
 command line.
 
-To go further the directory `examples` contains many examples of usage.
+To go further the directory ``examples`` contains many examples of usage.
 A HSQLDB database server is provided for testing purposes. To launch this
-example database server open a shell window and type the following commands:
+example database server open a shell window and type the following commands::
 
     cd C:\S\SchemaCrawler\examples    # directory to be adapted if necessary
     StartDatabase.cmd                 # .sh on unix
@@ -66,18 +67,18 @@ example database server open a shell window and type the following commands:
 At that level the test server should be running in this window (and the window
 color may have changed).
 
-Open another shell and try:
+Open another shell and try::
 
     cd C:\S\SchemaCrawler\_schemacrawler     # to be adapted
     sc.cmd -server=hsqldb -database=schemacrawler -password= -infolevel=detail -command=schema
 
-If you have a sqlite database you can also try:
+If you have a sqlite database you can also try::
 
     sc.cmd -server sqlite -database <path to the sqlite file>\db.sqlite3 -infolevel=maximum -password=  -command schema
 
 Documentation
 -------------
-The documentation of the command line interface is available via the command:
+The documentation of the command line interface is available via the command::
 
     sc.cmd -help     # sc.sh on unix
 
@@ -85,13 +86,13 @@ The detail of the API is documented through `SchemaCrawler javadocs`_.
 
 Examples
 --------
-The directory `examples` of the installation contains examples of use for the
+The directory ``examples`` of the installation contains examples of use for the
 command line interface, for scripting or for the API.
 
 .. ...........................................................................
 
-.. |schemacrawler-12.06.03-main.zip| replace::
-    (:download:`local<install/schemacrawler-12.06.03-main.zip>`,
+.. |SchemaCrawlerZip| replace::
+    (:download:`local<../../res/schemacrawler/downloads/schemacrawler-12.06.03-main.zip>`,
     `web <http://sourceforge.net/projects/schemacrawler/files/SchemaCrawler%20-%20_MAIN%20DISRIBUTION_/12.06.03/schemacrawler-12.06.03-main.zip/download>`__)
 
 
