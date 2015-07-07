@@ -129,20 +129,18 @@ PyCrypto is a Python cryptography package used by other packages.
 
 Libraries
 ^^^^^^^^^
+To install python libraries type the following command (make sure that
+``(ScribeEnv)`` is in the prompt)::
 
-::
+    pip install XXXX\requirements-common.txt
 
-    # with preliminary downloads
-    # pip install --download C:\DOWNLOADS -r requirements.txt
+On platforms other than windows type::
+
+    pip install XXXX\requirements-unix.txt
+
+XXX
+
     pip install --no-index --find-links=C:\DOWNLOADS -r requirements.txt
-
-    # both download and install
-    pip install XXXX\requirements.txt
-
-
-
-
-
 
 
 
