@@ -1,6 +1,5 @@
-
-Diigo
-=====
+Sphinx
+======
 
 Installation
 ------------
@@ -31,10 +30,8 @@ Installation
             * - a
               - b
 
-          zerlkjzlerjk
-          zerzerjlk zerlzlerj
 
-                toto gfkdf
+
 
    *    - Crunchy Frog
         - 1.49
