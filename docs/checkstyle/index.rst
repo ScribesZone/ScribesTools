@@ -31,7 +31,7 @@ Installation
 Installing CheckStyle_ as a standalone tool is easy:
 
 * Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
-* Create a directory such as ``C:\\S\\CheckStyle``.
+* Create a directory such as ``C:\S\CheckStyle``.
 * Copy the jar file into this directory.
 
 
