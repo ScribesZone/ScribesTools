@@ -107,7 +107,7 @@ This project is store in the ``HouseBuildingSample.gan``
     http://www.ganttproject.biz/download.php
 
 .. |WindowsInstaller| replace::
-    windows (:download:`local<../../res/ganttproject/downloads/Win/ganttproject-2.7-r1891.exe>`,
+    (:download:`local<../../res/ganttproject/downloads/Win/ganttproject-2.7-r1891.exe>`,
     `web <http://www.ganttproject.biz/download#windows>`__)
 
 .. _`installing from zip`: https://code.google.com/p/ganttproject/wiki/InstallingFromZIPArchive
