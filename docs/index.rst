@@ -20,19 +20,29 @@ Tools
 .. toctree::
     :maxdepth: 2
 
+    ganttproject/index
     modelio/index
     useocl/index
-    ganttproject/index
     kmade/index
-    checkstyle/index
+    pandoc/index
     schemaspy/index
+    schemacrawler/index
+    checkstyle/index
+    pylint/index
+    diigo/index
+    pycharm/index
+    assembla/index
     github/index
     readthedocs/index
     travisci/index
-    diigo/index
-    pylint/index
-    pycharm/index
-    assembla/index
+    python/index
+    sqlite/index
+
+..  balsamic/index
+..  django/index
+..  sphinx/index
+
+
 
 Platforms
 ---------
