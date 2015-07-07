@@ -163,6 +163,7 @@ In some situations you will however have to install a git toolkit.
     Git web site.
 
 You have to install git:
+
 * if you have not installed the GitHub client at all (either because you do
   not want or because it is not available on your platform).
 * if you want to run some scripts with git commands but you cannot always
