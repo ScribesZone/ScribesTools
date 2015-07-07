@@ -36,12 +36,12 @@ licence in the latter case.
     and a commercial version on the same machine.
 
 Installing modelio open-source
-''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Go to modelio.org download space |modelio-free-download| and select the
 installer for your platform. No registration is required.
 
 Installing modelio commercial
-'''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. attention::
     You need either a *node-locked licence* or a *floating licence* to execute
