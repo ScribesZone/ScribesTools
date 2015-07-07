@@ -3,7 +3,7 @@ docs/_build/
 docs/*/install/
 docs/*/archives/
 res/*/downloads/
-
+res/*/pipdownloads/
 
 # Python / Jython
 
