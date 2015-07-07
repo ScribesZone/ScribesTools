@@ -25,9 +25,9 @@ To install SchemaCrawler_:
   ``examples``.
 * Add the directory to the system PATH
 
-The "sc" scripts provided ("sc" stands for SchemaCrawler) assume that
+The ``sc`` scripts provided ("sc" stands for SchemaCrawler) assume that
 this command will run in the ``_schemacrawler`` directory. In order to
-remove this constraints replaces the content of ``_schemacrawler\sc.cmd`` by:
+remove this constraints replaces the content of ``_schemacrawler\sc.cmd`` by::
 
     @SET SC=%~dp0
     @java -classpath %SC%/lib/*;%SC% schemacrawler.Main %*
