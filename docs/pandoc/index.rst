@@ -9,19 +9,29 @@ EPUB, etc.
 Installation
 ------------
 See the `installation page`_ for detailed information. Install the application
-in a directory like `C:\\S\\Pandoc`. Change the PATH
+in a directory like ``C:\S\Pandoc``. On windows:
 
-On windows:
-
-* download `pandoc-1.15-windows.msi` |PandocWin|.
+* download ``pandoc-1.15-windows.msi`` |PandocWin|.
 
 * if you are on a personal PC just click on the executable.
-  On the contrary if the application should be installed on multiple user
-  you must type:
+  If the application should be installed on multiple users
+  type instead::
 
-        msiexec /i pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="C:\S\Pandoc"
+        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="C:\S\Pandoc"
+
+Launching Pandoc
+----------------
+
+To test your installation type in a new shell::
+
+    pandoc --version
 
 
+Documentation
+-------------
+
+There is a lot of documentation online. The `user guide`_ describes command
+lines options.
 .. ............................................................................
 
 .. _Pandoc:
@@ -31,11 +41,7 @@ On windows:
     http://pandoc.org/installing.html
 
 .. |PandocWin| replace::
-    (:download:`local <../../res/pandoc/downloads/Win/pandoc-1.15-windows.msi>`,web `<https://github.com/jgm/pandoc/releases/download/1.15/pandoc-1.15-windows.msi>`__)
+    (:download:`local <../../res/pandoc/downloads/Win/pandoc-1.15-windows.msi>`, `web <https://github.com/jgm/pandoc/releases/download/1.15/pandoc-1.15-windows.msi>`__)
 
-
-Launching Pandoc
-----------------
-
-To launch Pandoc_ and test your installation type:
-
+.. _`user guide`:
+    http://pandoc.org/README.html
