@@ -9,7 +9,7 @@ EPUB, etc.
 Installation
 ------------
 See the `installation page`_ for detailed information. Install the application
-in a directory like ``C:\S\Pandoc``. On windows:
+in a directory like ``%SCRIBETOOLS%\Pandoc``. On windows:
 
 * download ``pandoc-1.15-windows.msi`` |PandocWin|.
 
@@ -17,7 +17,7 @@ in a directory like ``C:\S\Pandoc``. On windows:
   If the application should be installed on multiple users
   type instead::
 
-        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="C:\S\Pandoc"
+        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="%SCRIBETOOLS%\Pandoc"
 
 Launching Pandoc
 ----------------

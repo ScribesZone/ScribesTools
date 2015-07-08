@@ -41,7 +41,7 @@ development.
 Installation
 ------------
 
-To install `GanttProject`_ in a directory like ``C:\S\GanttProject-2.7``.
+To install `GanttProject`_ in a directory like ``%SCRIBETOOLS%\GanttProject``.
 In order to do that read the instructions on the `download page`_.
 For the sake of simplicity installers are available for various platforms
 (e.g. |WindowsInstaller|).

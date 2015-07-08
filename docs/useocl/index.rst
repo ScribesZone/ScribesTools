@@ -15,12 +15,12 @@ Installation
 To install use:
 
 * download the use zip file (``use-4.1.0.zip`` |use.zip|).
-* extract this zip file where you want to install it (e.g. C:\S on windows)
+* extract this zip file where you want to install it (e.g. %SCRIBETOOLS% on windows)
 * for convenience add the *bin* directory to your system PATH. For instance
   the PATH could look like::
 
-  *  C:\S\use-4.1.0\bin; ...        # Windows
-  *  /home/ahmed/use-4.1.0/bin: ... # Unix
+  *  %SCRIBETOOLS%\use-4.1.0\bin; ...   # Windows. ; is the separator
+  *  /home/ahmed/use-4.1.0/bin: ...     # Unix.    : is the separator
 
 .. NOTE::
     On Windows, you can use a OCL language definition for notepad++.

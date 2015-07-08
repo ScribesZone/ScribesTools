@@ -28,18 +28,18 @@ Detailed information is available in the `BeginnersGuide`_ of python wiki.
 * `Download Python 2.7.10`_. **WARNING: On windows you must select the 32
   bits version** |Python2710Windows32|.
 
-* Install python in a directory like ``C:\S\Python27``. Keep the version
+* Install python in a directory like ``%SCRIBETOOLS%\Python27``. Keep the version
   number (at least 2.7) since it is common to have another directory
-  like ``C:\S\Python34`` for Python 3.4.
+  like ``%SCRIBETOOLS%\Python34`` for Python 3.4.
 
-    msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=C:\S\Python27
+    msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=%SCRIBETOOLS%\Python27
     ALLUSER=1 ADDLOCAL=ALL
 
 * Change the two following directories to the PATH environment variable
   (if not already done by the installation program). ::
 
     # replace ';' separator by ':' on unix
-    # add   C:\S\Python2.7;C:\S\Python2.7\Scripts   to PATH
+    # add   %SCRIBETOOLS%\Python2.7;%SCRIBETOOLS%\Python2.7\Scripts   to PATH
 
 * To test your installation, open a shell windows and type ``python``.
   The python interpreter should open and you should be able to type
@@ -54,19 +54,19 @@ This can be done with one command (according to your platform)::
     pip install virtualenvwrapper       # otherwise
 
 Create a directory that will contains all virtual environments. For instance
-``C:\S\PyVEnvs27``::
+``%SCRIBETOOLS%\PyVEnvs27``::
 
-    mkdir C:\S\PyVEnvs27
+    mkdir %SCRIBETOOLS%\PyVEnvs27
 
 Set the ``WORKON_HOME`` environment variable to the directory just created and
 don't forget to open a new shell to see the effects of this change.::
 
-    # define WORKON_HOME variable as C:\S\PyVEnvs27
+    # define WORKON_HOME variable as %SCRIBETOOLS%\PyVEnvs27
 
 Use a new shell to create a new virtual environment named `ScribeEnv`::
 
     mkvirtualenv ScribeEnv
-    # this creates a directory ``C:\S\PyVEnvs27\ScribeEnv``.
+    # this creates a directory ``%SCRIBETOOLS%\PyVEnvs27\ScribeEnv``.
     # You should also see that the prompt of the shell is now prefixed with
     # (ScribeEnv) like in the following line:
     # (ScribeEnv) C:\Users\jmfavre>
@@ -137,12 +137,6 @@ To install python libraries type the following command (make sure that
 On platforms other than windows type::
 
     pip install XXXX\requirements-unix.txt
-
-XXX
-
-    pip install --no-index --find-links=C:\DOWNLOADS -r requirements.txt
-
-
 
 
 

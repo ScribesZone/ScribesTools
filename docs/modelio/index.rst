@@ -35,8 +35,8 @@ licence in the later case.
 .. tip::
     If you have a licence code you can install both an open source version
     and a commercial version on the same machine. Just use different
-    directories such as  ``C:\S\Modelio3.3Open`` and
-    ``C:\S\Modelio3.3Commercial``.
+    directories such as  ``%SCRIBETOOLS%\Modelio3.3Open`` and
+    ``%SCRIBETOOLS%\Modelio3.3Commercial``.
 
 .. attention::
     The architecture (32bits or 64bits) of your modelio and java installations
@@ -53,10 +53,10 @@ Installing modelio open-source
     64 bits |ModelioWin64| or windows 32 bits |ModelioWin32|).
 
 *   Copy the archive into the directory that will contain the software
-    (e.g. ``C:\S\Modelio3.3Open``).
+    (e.g. ``%SCRIBETOOLS%\Modelio3.3Open``).
 
 *   Extract the archive and then rename it into something like
-    ``C:\S\Modelio3.3Open`` (you may want later to install the commercial
+    ``%SCRIBETOOLS%\Modelio3.3Open`` (you may want later to install the commercial
     version as well or another version).
 
 
@@ -99,16 +99,16 @@ platform), you just have to click on it. Otherwise you can click on the
 executable in the installation directory.
 
 Modelio can be launched within a script or from a shell with a command line
-like that (here the installation directory is ``C:\S\Modelio3.3Open\``::
+like that (here the installation directory is ``%SCRIBETOOLS%\Modelio3.3Open\``::
 
-    C:\S\Modelio3.3Open\modelio.exe
+    %SCRIBETOOLS%\Modelio3.3Open\modelio.exe
 
 It could be wise to create a command to add parameters (or to change the
 shortcut on windows) in order to display the console window and run the Modelio_
 in debug mode (this allows to have more messages in the console in case of
 modelio errors)::
 
-    C:\S\Modelio3.3Open\modelio.exe -mdebug -consoleLog
+    %SCRIBETOOLS%\Modelio3.3Open\modelio.exe -mdebug -consoleLog
 
 If you get an error 'exit code 13' it is likely that the java and modelio
 architecture (32 bits or 64 bits) do not match.
@@ -272,3 +272,4 @@ are mostly:
 .. |ModelioWin32| replace::
     (:download:`local <../../res/modelio/downloads/Win/modelio-open-201502191121-win32.win32.x86.zip>`,
     `web <https://www.modelio.org/modelio-122/doc_download/105-modelio-331-windows-32-bit.html>`__)
+

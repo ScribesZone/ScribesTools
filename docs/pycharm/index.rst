@@ -34,14 +34,15 @@ There are two versions:
   Windows community edition |PyCharmOpenWin|, Windows commercial edition
   |PyCharmCommercialWin|).
 
-* install the version downloaded in a directory like ``C:\S\PyCharm4.5Open`` or
-  ``C:\S\PyCharm4.5Commercial``. This naming schema allows to have various
+* install the version downloaded in a directory like ``%SCRIBETOOLS%\PyCharm4.5Open`` or
+  ``%SCRIBETOOLS%\PyCharm4.5Commercial``. This naming schema allows to have various
   version installed at the same time.
 
 Launching PyCharm
 -----------------
-The installers most likely create a shortcut. Click on it to launch PyCharm.
-
+The installers most likely created a shortcut. Click on it to launch PyCharm.
+Alternatively you can also find the executable in the bin directory of the
+installation.
 
 Documentation
 -------------

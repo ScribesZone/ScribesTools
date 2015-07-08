@@ -25,9 +25,9 @@ KMADe is easy to install:
 * Download the KMADe zip archive |kmade-zip|.
 * Move this file to the directory in which `KMADe`_ will be installed,
   to be more precise to the directory that will contain the |kmade-dir|
-  directory (e.g. ``C:\S\``).
+  directory (e.g. ``%SCRIBETOOLS%\``).
 * Copy the zip file in this directory and unzip it here. This create a
-  |kmade-dir| directory (e.g. ``C:\S\`` |kmade-dir|)
+  |kmade-dir| directory (e.g. ``%SCRIBETOOLS%\`` |kmade-dir|)
 * Remove the zip file if you want.
 
 That's all.

@@ -11,7 +11,7 @@ Installation
 *   go to the `download page`_ and download the page for your operation system.
     ``graphviz-2.38.msi`` must be used on windows if you plan to use the
     pygraphviz_ windows library for python |GraphVizWin|.
-*   install the program in a directory like ``C:\S\Graphviz\``
+*   install the program in a directory like ``%SCRIBETOOLS%\Graphviz\``
 
 Launching Graphviz
 ------------------
