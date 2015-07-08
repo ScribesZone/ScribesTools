@@ -2,7 +2,13 @@ SchemaCrawler
 =============
 
 SchemaCrawler_ is a tool and an API dealing with SQL database schemas
-information. The tool provides:
+information.
+
+.. image:: media/diagram_example.jpg
+
+Features
+--------
+The tool provides:
 
 * extracted information about database schemas in various formats
   (e.g. text, json, csv, html5)
