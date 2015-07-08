@@ -17,10 +17,10 @@ To install use:
 * download the use zip file (``use-4.1.0.zip`` |use.zip|).
 * extract this zip file where you want to install it (e.g. C:\S on windows)
 * for convenience add the *bin* directory to your system PATH. For instance
-  the PATH could look like:
+  the PATH could look like::
 
-  *  ``C:\\S\use-4.1.0\\bin;...rest of the path...`` on Windows or,
-  *  ``/home/ahmed/use-4.1.0/bin: ... rest ...`` on a Unix-like machine.
+  *  C:\S\use-4.1.0\bin; ...        # Windows
+  *  /home/ahmed/use-4.1.0/bin: ... # Unix
 
 .. NOTE::
     On Windows, you can use a OCL language definition for notepad++.
@@ -95,7 +95,7 @@ instance the following elements in the following order:
     and the Graphical User Interface (GUI). You might be however interested
     only by the CLI (in particular in the context of automation and
     integration with other tools). In this case, use the following option when
-    launching USE OCL
+    launching USE OCL::
 
         use -nogui
 
@@ -121,11 +121,11 @@ index that show which OCL features are used in which files.
     (:download:`local<docs/README.examples.txt>`)
 
 .. |use.zip| replace::
-    (:download:`local<install/use-4.1.0.zip>`,
+    (:download:`local<../../res/useocl/downloads/use-4.1.0.zip>`,
     `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/>`__)
 
 .. |use-notepad.xml| replace::
-    (:download:`local<install/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
+    (:download:`local<../../res/useocl/downloads/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
     `web <http://sourceforge.net/projects/useocl/files/Misc/>`__)
 
 .. |use-quick-tour| replace::
