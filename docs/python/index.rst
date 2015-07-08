@@ -161,10 +161,6 @@ Launching Python
 .. _`Download Python 2.7.10`:
     https://www.python.org/downloads/release/python-2710/
 
-.. |Python2710Windows32| replace::
-    (:download:`local <../../res/python/downloads/Win/python-2.7.10.msi>`,
-    `web <https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi>`__)
-
 .. _`BeginnersGuide`:
     https://wiki.python.org/moin/BeginnersGuide
 
@@ -180,6 +176,21 @@ Launching Python
 .. _`virtualenvwrapper-win`:
     https://pypi.python.org/pypi/virtualenvwrapper-win
 
+.. _Scrapy:
+    http://scrapy.org/
+
+.. _GraphViz:
+    http://graphviz.org/
+
+.. _pywin32:
+    http://sourceforge.net/projects/pywin32/
+
+.. _pygraphviz:
+    http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz
+
+.. |Python2710Windows32| replace::
+    (:download:`local <../../res/python/downloads/Win/python-2.7.10.msi>`,
+    `web <https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi>`__)
 
 .. |PyWin32| replace::
     (:download:`local <../../res/python/downloads/Win/pywin32-219.win32-py2.7.exe>`,
@@ -192,10 +203,4 @@ Launching Python
 .. |PyCrypto| replace::
     (:download:`local <../../res/python/downloads/Win/pycrypto-2.6.win32-py2.7.exe>`,
     `web <http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe>`__)
-
-.. _Scrapy:
-    http://scrapy.org/
-
-.. _GraphViz:
-    http://graphviz.org/
 
