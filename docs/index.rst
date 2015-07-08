@@ -37,6 +37,7 @@ Tools
     python/index
     pycharm/index
     sqlite/index
+    graphviz/index
 
 ..  balsamic/index
 ..  django/index
