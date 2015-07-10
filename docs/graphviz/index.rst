@@ -8,10 +8,11 @@ Graphviz_ is a set of tool to deal visualize graphs. See the gallery_.
 Installation
 ------------
 
-*   go to the `download page`_ and download the page for your operation system.
-    ``graphviz-2.38.msi`` must be used on windows if you plan to use the
-    pygraphviz_ windows library for python |GraphVizWin|.
+*   download the installer for your operating system  the `download page`_.
+    On Windows ``graphviz-2.38.msi`` must be used, at least if you
+    plan to use the pygraphviz_ windows library for python |GraphVizWin|.
 *   install the program in a directory like ``%SCRIBETOOLS%\Graphviz\``
+*   add ``%SCRIBETOOLS%\Graphviz\`` into the PATH environment variable.
 
 Launching Graphviz
 ------------------
