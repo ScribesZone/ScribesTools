@@ -34,9 +34,9 @@ There are two versions:
   Windows community edition |PyCharmOpenWin|, Windows commercial edition
   |PyCharmCommercialWin|).
 
-* install the version downloaded in a directory like ``%SCRIBETOOLS%\PyCharm4.5Open`` or
-  ``%SCRIBETOOLS%\PyCharm4.5Commercial``. This naming schema allows to have various
-  version installed at the same time.
+* install the version downloaded in a directory like
+  ``%SCRIBETOOLS%\PyCharm4.5Open`` or ``%SCRIBETOOLS%\PyCharm4.5Commercial``.
+  This naming schema allows to have various version installed at the same time.
 
 Launching PyCharm
 -----------------
@@ -51,7 +51,8 @@ Documentation is available from the ``help`` menu of the tool.
 Configuration
 -------------
 
-* 80 columns. File -> Settings -> Code Style -> General: Right margin (columns)
+* UTF8 encoding. ``File > Settings > Editor > File Encodings``
+* 80 columns. ``File > Settings > Code Style > General``, Right margin (columns)
 
 
 .. ............................................................................
@@ -63,10 +64,10 @@ Configuration
 .. _PyDev: http://pydev.org/
 
 .. |PyCharmOpenWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.2.exe>`,
-    `web <http://download.jetbrains.com/python/pycharm-community-4.5.2.exe>`__)
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.3.exe>`,
+    `web <http://download.jetbrains.com/python/pycharm-community-4.5.3.exe>`__)
 
 .. |PyCharmCommercialWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.2.exe>`,
-    `web <http://download.jetbrains.com/python/pycharm-professional-4.5.2.exe>`__)
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.3.exe>`,
+    `web <http://download.jetbrains.com/python/pycharm-professional-4.5.3.exe>`__)
 
