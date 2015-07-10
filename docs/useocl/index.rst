@@ -16,7 +16,7 @@ To install use:
 
 * download the use zip file (``use-4.1.0.zip`` |use.zip|).
 * extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
-* rename the directory to ``%SCRIBETOOLS%\UseOCL``
+* rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``
 * for convenience add the ``bin`` directory to your system PATH. For instance
   the PATH could look like::
 
@@ -37,8 +37,11 @@ To install use:
 Launching USE OCL
 -----------------
 
-Once installed, you can just type ``use -nogui`` in a new shell window (if
-you didn't added the *bin* directory to the PATH, then you hav type the full$
+Once installed, you can just type the following command in a new shell::
+
+    use -nogui
+
+If the *bin* directory is not in the PATH, then you have type the full
 path to use binary). This launch the USE OCL Command Line Interface (CLI).
 
 .. figure:: media/USEOCL-shell.jpg
@@ -51,7 +54,9 @@ path to use binary). This launch the USE OCL Command Line Interface (CLI).
             otherwise you may encounter problem with the use script.
 
 If you want you can also have a look at the graphical interface (in this case
-just type ``use``).
+just type::
+
+    use
 
 .. figure:: media/USEOCL-gui.jpg
     :align: center
@@ -65,11 +70,11 @@ Documentation
 There is quite some documentation for USE OCL, but we recommend to read for
 instance the following elements in the following order:
 
-1. Read first the quick tour |use-quick-tour|.
+1.  Read first the quick tour |use-quick-tour|.
     A MUST READ. A simple class model with 3 classes, 3 associations and
     4 OCL invariants.
 
-2. Watch the video |use-demo|.
+2.  Watch the video |use-demo|.
     The first part (until frame 128/208) deals with the static part and
     invariants. The second part deals with operation simulation and pre/post
     conditions. You may be interested only by the first part or by both parts.
@@ -77,7 +82,7 @@ instance the following elements in the following order:
     .. image:: media/USEOCL-video.jpg
 
 
-3. Use the reference documentation |use-documentation|.
+3.  Use the reference documentation |use-documentation|.
     Use this document as a reference, for instance to check something about
     USE OCL language. Note that chapter 6 (page 82) contains the list of OCL
     operations supported by OCL USE.
