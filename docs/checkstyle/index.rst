@@ -30,10 +30,15 @@ Installation
 
 Installing CheckStyle_ as a standalone tool is easy:
 
-* Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
-* Create a directory such as ``%SCRIBETOOLS%\CheckStyle``.
-* Copy the jar file into this directory.
+*   Create a directory ``%SCRIBETOOLS%\CheckStyle``.
+*   Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
+*   Copy the jar file *into* ``%SCRIBETOOLS%\CheckStyle\checkstyle-all.jar``
+    (remove the version number).
+*   Copy the files ``checkstyle.bat`` and ``checkstyle.sh`` into the directory.
+*   Add the ``%SCRIBETOOLS%\CheckStyle`` directory to the path.
 
+.. todo::
+    update installation section
 
 Launching CheckStyle
 --------------------
@@ -41,13 +46,13 @@ Launching CheckStyle
 You check the installation as following. The option ``-h`` and ``-v`` display
 the CheckStyle_ help and version respectively::
 
-    java -jar %SCRIBETOOLS%\CheckStyle\checkstyle-6.8.1-all.jar -h
-    java -jar %SCRIBETOOLS%\CheckStyle\checkstyle-6.8.1-all.jar -v
+    checkstyle -h
+    checkstyle -v
 
 If you have a java program at hand (let's say ``MyProg.java``) and you want to
 use Sun Code Conventions on it type::
 
-    java -jar %SCRIBETOOLS%\CheckStyle\checkstyle-6.8.1-all.jar -c /sun_checks.xml MyProg.java
+    checkstyle -c /sun_checks.xml MyProg.java
 
 Documentation
 -------------
