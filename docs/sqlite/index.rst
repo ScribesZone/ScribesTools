@@ -6,20 +6,25 @@ SQLite_ is a file-based SQL database system.
 Installation
 ------------
 
-* download the "command line shell” for "sqlite3" from `SQLite download page`_.
-  For Windows download ``sqlite-shell-win32-x86-3081002.zip`` |SQLiteWin32zip|.
-* create a directory where you want to install sqlite3 (e.g. ``%SCRIBETOOLS%\sqlite3``)
-* extract the archive (only one file on windows: ``sqlite3.exe``)
-* move the content of the archive to the directory created
-* add this directory to the system PATH (e.g. add ``%SCRIBETOOLS%\sqlite3`` to the path)
+*   download the "command line shell” for "sqlite3" from
+    `SQLite download page`_.
+    For Windows download ``sqlite-shell-win32-x86-3081002.zip``
+    |SQLiteWin32zip|.
+*   create a directory where you want to install sqlite3 (e.g.
+    ``%SCRIBETOOLS%\sqlite3``)
+*   extract the archive (only one file on windows: ``sqlite3.exe``)
+*   move the content of the archive to the directory created
+*   add this directory to the system PATH (e.g. add ``%SCRIBETOOLS%\sqlite3``
+    to the path)
 
 The following step is optional, but is useful if you intend to use sqlite3
 database from java. This is useful for instance if you plan to use
 SchemaSpy.
 
-* download ``sqlite-jdbc-3.8.10.1.jar`` |SQLiteJDBCJar|
-* copy this jar file in the ``sqlite3`` directory created above (e.g.
-  ``%SCRIBETOOLS%\sqlite3``)
+*   download ``sqlite-jdbc-3.8.10.1.jar`` |SQLiteJDBCJar|
+*   copy this jar file in the ``sqlite3`` directory created above
+    e.g. ``%SCRIBETOOLS%\sqlite3``)
+*   rename this file into ``sqlite-jdbc.jar``
 
 
 Launching sqlite3
