@@ -14,11 +14,11 @@ Installation
 
 To install use:
 
-* download the use zip file (``use-4.1.0.zip`` |use.zip|).
-* extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
-* rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``
-* for convenience add the ``bin`` directory to your system PATH. For instance
-  the PATH could look like::
+*   download the use zip file (``use-4.1.0.zip`` |use.zip|).
+*   extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
+*   rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``
+*   for convenience add the ``bin`` directory to your system PATH. For instance
+    the PATH could look like::
 
   *  %SCRIBETOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
   *  /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
