@@ -5,7 +5,7 @@ Welcome to ScribeTools documentation. You will find here some indications
 on how to install and use some useful software development tools. If you are
 interested in quality aspect you may also be interested in ScribeQuality_.
 
-.. ifconfig:: local
+..  ifconfig:: local
 
     .. note::
         You are looking at the local documentation. You will therefore be able
@@ -13,13 +13,13 @@ interested in quality aspect you may also be interested in ScribeQuality_.
 
     .. todolist::
 
-.. ifconfig:: web
+..  ifconfig:: web
 
 
 Tools
 -----
 
-.. toctree::
+..  toctree::
     :maxdepth: 2
 
     ganttproject/index
@@ -51,18 +51,23 @@ Platforms
 
 The pages below provide some hints about some platform customization:
 
-.. toctree::
+..  toctree::
     :maxdepth: 2
 
     windows/index
 
-.. Misc
-.. ----
+..  ifconfig:: local
 
-.. toctree::
-    :maxdepth: 2
+    .. note::
 
-.. diigo/index
+        There is a sandbox here:
+
+        ..  toctree::
+            :maxdepth: 2
+
+            sandbox
+
+
 
 .. ............................................................................
 
