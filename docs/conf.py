@@ -18,17 +18,13 @@ import os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#--------------------------------------------------------------------------
-# >+JFE
-#--------------------------------------------------------------------------
-
+# %JFE+[
+# add current directory to access scribeextension.py
 sys.path.insert(0, os.path.abspath('.'))
 # import sphinxcontrib.images
 
 
-#--------------------------------------------------------------------------
-# <+JFE
-#--------------------------------------------------------------------------
+# %JFE+]
 
 # -- General configuration ------------------------------------------------
 
@@ -40,9 +36,7 @@ sys.path.insert(0, os.path.abspath('.'))
 # ones.
 
 
-#--------------------------------------------------------------------------
-# >+JFE
-#--------------------------------------------------------------------------
+# %JFE+[
 
 #images_config = {
 #    "override_image_directive": True
@@ -51,9 +45,7 @@ sys.path.insert(0, os.path.abspath('.'))
 extensions = [
     'scribeextension',
 #    'sphinxcontrib.images',
-#--------------------------------------------------------------------------
-#  <+JFE
-#--------------------------------------------------------------------------
+# %JFE+]
 
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
@@ -101,13 +93,9 @@ release = '0.1.1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-#--------------------------------------------------------------------------
-# >+JFE
-#--------------------------------------------------------------------------
+# %JFE+[
 exclude_patterns = ['_build', 'README.rst']
-#--------------------------------------------------------------------------
-# <+JFE
-#--------------------------------------------------------------------------
+# %JFE+]
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 #default_role = None
@@ -137,9 +125,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#--------------------------------------------------------------------------
-# >+JFE
-#--------------------------------------------------------------------------
+# %JFE+[
 # html_theme = 'default'
 
 
@@ -149,6 +135,7 @@ pygments_style = 'sphinx'
 # on_rtd is whether we are on readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 local = not on_rtd
+todo_include_todos = local
 web = on_rtd
 if local:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
@@ -167,12 +154,11 @@ else:
 
 """
 
+
 # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
 
-#--------------------------------------------------------------------------
-# <+JFE
-#--------------------------------------------------------------------------
+# %JFE+]
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
