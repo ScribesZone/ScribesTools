@@ -11,6 +11,8 @@ interested in quality aspect you may also be interested in ScribeQuality_.
         You are looking at the local documentation. You will therefore be able
         to use 'local' download links.
 
+    .. todolist::
+
 .. ifconfig:: web
 
 
@@ -34,6 +36,7 @@ Tools
     github/index
     readthedocs/index
     travisci/index
+    java/index
     python/index
     pycharm/index
     sqlite/index
@@ -42,8 +45,6 @@ Tools
 ..  balsamic/index
 ..  django/index
 ..  sphinx/index
-
-
 
 Platforms
 ---------
