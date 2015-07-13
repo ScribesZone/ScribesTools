@@ -20,10 +20,11 @@ To install use:
 *   for convenience add the ``bin`` directory to your system PATH. For instance
     the PATH could look like::
 
-  *  %SCRIBETOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
-  *  /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
+        %SCRIBETOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
+        /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
 
 .. NOTE::
+
     On Windows, you can use a OCL language definition for notepad++.
     This will allow you to use this editor with OCL sources "highlighted".
 
