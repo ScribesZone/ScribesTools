@@ -51,9 +51,17 @@ Documentation is available from the ``help`` menu of the tool.
 Configuration
 -------------
 
-* UTF8 encoding. ``File > Settings > Editor > File Encodings``
-* 80 columns. ``File > Settings > Code Style > General``, Right margin (columns)
+To configure PyCharm_ use the menu ``File > Settings``::
 
+    Editor
+        File Encodings
+            UTF8
+        Appearance
+            Show line numbers
+            Show method separators
+    Code Style
+        General
+            right margin (columns)
 
 .. ............................................................................
 
