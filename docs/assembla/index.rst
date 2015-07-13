@@ -54,4 +54,3 @@ The URI can be found on the repository page in the ``SVN`` tab in the
 
 .. _Assembla: https://www.assembla.com
 
-.. `Sign Up for a Free Plan`
