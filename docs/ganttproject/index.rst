@@ -1,7 +1,9 @@
 GanttProject
 ============
 
-`GanttProject`_ is a free `project management`_ tool allowing to edit `gantt models`_ but also view `pert models`_ and `resource allocation models`_. As this tools is written in java it runs on all platforms.
+`GanttProject`_ is a free `project management`_ tool allowing to edit
+`gantt models`_ but also view `pert models`_ and `resource allocation models`_.
+As this tools is written in java it runs on all platforms.
 
 Features
 --------
@@ -24,7 +26,8 @@ views.
     *pert diagram* of the `house building example`_
 
 `GanttProject`_ also supports `resource allocation models`_. *Resources* can be
-attached to *tasks* and the tool will generate a resource allocation models showing the allocation of each resource along the project.
+attached to *tasks* and the tool will generate a resource allocation models
+showing the allocation of each resource along the project.
 
 .. figure:: media/resource.png
 
@@ -33,27 +36,41 @@ attached to *tasks* and the tool will generate a resource allocation models show
 Interoperability
 ----------------
 
-Microsoft Project and CSV files can be imported and exported. `GanttProject`_
+Microsoft Project and CSV files can be imported and exported from the
+Graphical User Interface (GUI). `GanttProject`_
 can also generate PDF, PNG, JPEG. The tool use an .xml format reasonably
 simple so interoperability with other tools is also possible with some
-development.
+development. The tool has also (a limited) Command Line Interface (CLI)
+allowing to export models in different formats.
 
 Installation
 ------------
 
-To install `GanttProject`_ in a directory like ``%SCRIBETOOLS%\GanttProject``.
-In order to do that read the instructions on the `download page`_.
-For the sake of simplicity installers are available for various platforms
-(e.g. |WindowsInstaller|).
+*   Download the archive |GanttProjectZip|
+*   Copy the archive into ``%SCRIBETOOLS%`` and extract it here.
+*   Rename the directory to obtain ``%SCRIBETOOLS%\GanttProject``.
+*   Copy the ``gandttproject.bat`` to the directory (replace the existing
+    file).
+*   Add ``%SCRIBETOOLS%\GanttProject`` to the ``PATH`` variable
 
 Launching GanttProject
 ----------------------
 
-The way to launch `GanttProject`_ depends on how the tool has been installed.
-With installers you should have create icons. When launched, one way to see
-what `GanttProject`_ is all about is to load `house building example`_. In
-order to do that use the menu `` Projects >> Open `` and select the
-``HouseBuildingSample.gan`` file in the installation directory of the tools.
+`GanttProject`_ is mostly used trough its Graphical User Interface (GUI), but
+it also has a Command Line Interface (CLI) allowing some limited kind of
+automation. In a (new) shell you can type the following command to see the
+help about the CLI::
+
+    ganttproject.bat -h
+
+The normal way to use the program is the GUI tough. You can launch it just
+clicking on the executable or the shortcut that the installer might have
+created.
+
+When launched, one way to see what `GanttProject`_ is all about is to load
+`house building example`_. In order to do that use the menu
+`` Projects >> Open `` and select the ``HouseBuildingSample.gan`` file in the
+installation directory of the tools.
 
 Documentation
 -------------
@@ -67,10 +84,10 @@ is also a valuable resource for learning how to use `GanttProject`_.
 You may also want to have a look at the following *unofficial* documents
 created by people outside of the project:
 
-* "Apprendre Gantt project Ver 2.6" |gantt-apprendre| by Lycée du Dauphiné DD & JPG
-    This tutorial, in french, is rather good.
+*   "Apprendre Gantt project Ver 2.6" |gantt-apprendre| by Lycée du Dauphiné
+    DD & JPG. This tutorial, in french, is rather good.
 
-* "GandttProject Handbook 0.52" |gantt-handbook52| by alexandre thomas.
+*   "GandttProject Handbook 0.52" |gantt-handbook52| by alexandre thomas.
     This handbook is rather obsolete and do not contains too much
     information.
 
@@ -106,9 +123,9 @@ This project is store in the ``HouseBuildingSample.gan``
 .. _`download page`:
     http://www.ganttproject.biz/download.php
 
-.. |WindowsInstaller| replace::
-    (:download:`local<../../res/ganttproject/downloads/Win/ganttproject-2.7-r1891.exe>`,
-    `web <http://www.ganttproject.biz/download#windows>`__)
+.. |GanttProjectZip| replace::
+    (:download:`local<../../res/ganttproject/downloads/ganttproject-2.7-r1891.zip>`,
+    `web <http://www.ganttproject.biz/download#zip>`__)
 
 .. _`installing from zip`: https://code.google.com/p/ganttproject/wiki/InstallingFromZIPArchive
 
