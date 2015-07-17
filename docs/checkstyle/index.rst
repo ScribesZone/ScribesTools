@@ -28,13 +28,17 @@ Installation
     want to use it via this plugin. You can also have a look at the
     the list of `tools related to Checkstyle`_.
 
+On Ubuntu you can install CheckStyle_ has following::
+
+    sudo apt-get install checkstyle
+
 Installing CheckStyle_ as a standalone tool is easy:
 
 *   Create a directory ``%SCRIBETOOLS%\CheckStyle``.
 *   Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
 *   Copy the jar file *into* ``%SCRIBETOOLS%\CheckStyle\checkstyle-all.jar``
     (remove the version number).
-*   Copy the files ``checkstyle.bat`` and ``checkstyle.sh`` into the directory.
+*   Copy the files ``checkstyle.cmd`` and ``checkstyle.sh`` into the directory.
 *   Add the ``%SCRIBETOOLS%\CheckStyle`` directory to the path.
 
 .. todo::
