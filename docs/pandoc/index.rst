@@ -19,6 +19,10 @@ in a directory like ``%SCRIBETOOLS%\Pandoc``. On windows:
 
         msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="%SCRIBETOOLS%\Pandoc"
 
+On Ubuntu you can install Pandoc_ as following::
+
+    sudo apt-get install pandoc
+
 Launching Pandoc
 ----------------
 

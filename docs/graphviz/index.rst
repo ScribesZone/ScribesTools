@@ -11,6 +11,7 @@ Installation
 *   download the installer for your operating system  the `download page`_.
     On Windows ``graphviz-2.38.msi`` must be used, at least if you
     plan to use the pygraphviz_ windows library for python |GraphVizWin|.
+    On Ubuntu Graphviz_ can be installed via ``sudo apt-get install git``.
 *   install the program in a directory like ``%SCRIBETOOLS%\Graphviz\``
 *   add ``%SCRIBETOOLS%\Graphviz\`` into the PATH environment variable.
 

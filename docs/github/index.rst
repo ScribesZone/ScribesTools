@@ -175,7 +175,9 @@ You have to install git:
 In these case you will have to install git (possibly in addition to github
 client). In order to do so, just `download git`_ and install
 it following the instructions for your platform (e.g. for windows
-|GitWindows|).
+|GitWindows|). On Ubuntu you can install git as following:
+
+    sudo apt-get install git
 
 .. ............................................................................
 
