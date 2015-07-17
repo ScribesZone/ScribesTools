@@ -55,6 +55,7 @@ The pages below provide some hints about some platform customization:
     :maxdepth: 2
 
     windows/index
+    ubuntu/index
 
 ..  ifconfig:: local
 
