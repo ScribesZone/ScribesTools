@@ -11,9 +11,6 @@ adding lexer for pygments: https://github.com/jptomo/symfony-docs-trans-env/issu
 coding standard for sphinx :http://documentation-style-guide-sphinx.readthedocs.org/en/latest/index.html
 http://rest-sphinx-memo.readthedocs.org/en/latest/index.html
 
-Markdown and reStructuredText
------------------------------
-https://gist.github.com/dupuy/1855764
 
 
 
