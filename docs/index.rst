@@ -39,12 +39,14 @@ Tools
     java/index
     python/index
     pycharm/index
+    django/index
     sqlite/index
     graphviz/index
+    sphinx/index
 
 ..  balsamic/index
-..  django/index
-..  sphinx/index
+
+
 
 Platforms
 ---------
