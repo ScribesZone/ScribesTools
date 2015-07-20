@@ -1,6 +1,24 @@
 Sphinx
 ======
 
+
+
+
+https://pythonhosted.org/an_example_pypi_project/sphinx.html#full-code-example
+http://raxcloud.blogspot.fr/2013/02/documenting-python-code-using-sphinx.html
+http://www.unexpected-vortices.com/doc-notes/markdown-and-rest-compared.html
+adding lexer for pygments: https://github.com/jptomo/symfony-docs-trans-env/issues/6
+coding standard for sphinx :http://documentation-style-guide-sphinx.readthedocs.org/en/latest/index.html
+http://rest-sphinx-memo.readthedocs.org/en/latest/index.html
+
+Markdown and reStructuredText
+-----------------------------
+https://gist.github.com/dupuy/1855764
+
+
+
+
+
 Installation
 ------------
 
