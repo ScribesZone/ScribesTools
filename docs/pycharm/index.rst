@@ -35,8 +35,8 @@ There are two versions:
   |PyCharmCommercialWin|).
 
 * install the version downloaded in a directory like
-  ``%SCRIBETOOLS%\PyCharm4.5Open`` or ``%SCRIBETOOLS%\PyCharm4.5Commercial``.
-  This naming schema allows to have various version installed at the same time.
+  ``%SCRIBETOOLS%\PyCharmOpen`` or ``%SCRIBETOOLS%\PyCharmCommercial``.
+  This naming schema allows to have both editions installed at the same time.
 
 Launching PyCharm
 -----------------

@@ -9,7 +9,9 @@ EPUB, etc.
 Installation
 ------------
 See the `installation page`_ for detailed information. Install the application
-in a directory like ``%SCRIBETOOLS%\Pandoc``. On windows:
+in a directory like ``%SCRIBETOOLS%\Pandoc``.
+
+On Windows:
 
 * download ``pandoc-1.15-windows.msi`` |PandocWin|.
 
@@ -19,7 +21,7 @@ in a directory like ``%SCRIBETOOLS%\Pandoc``. On windows:
 
         msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="%SCRIBETOOLS%\Pandoc"
 
-On Ubuntu you can install Pandoc_ as following::
+On Ubuntu::
 
     sudo apt-get install pandoc
 
