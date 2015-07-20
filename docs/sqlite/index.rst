@@ -18,7 +18,7 @@ Installation
     ``%SCRIBETOOLS%\SQLite``)
 *   extract the archive (only one file on windows: ``sqlite3.exe``)
 *   move the content of the archive to the directory created
-*   add ``%SCRIBETOOLS%\SQLite to the path.
+*   add ``%SCRIBETOOLS%\SQLite`` to the path.
 
 On Ubuntu you can install SQLite_ as following::
 

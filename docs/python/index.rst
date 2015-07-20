@@ -192,7 +192,7 @@ Launching Python
 .. _`Unofficial Windows Binaries for Python Extension Packages`:
     http://www.lfd.uci.edu/~gohlke/pythonlibs/
 
-.. _`python279ubuntu`:
+.. _`install python 2.7.9 on ubuntu`:
     http://shiny1210-blog.logdown.com/posts/259363-how-to-install-python-279-on-ubuntu-1404
 
 .. _`virtualenvwrapper`:
