@@ -1,15 +1,19 @@
+# coding=utf-8
+
+.. _`ReadTheDocs chapter`:
+
 ReadTheDocs
 ===========
 
 ReadTheDocs_ is a cloud service for publishing and hosting documentation using
-the Sphinx tool. The documentation your are reading is hosted on readthedocs.
+the Sphinx tool. The documentation your are reading is hosted on readthedocs_.
 
 Features
 --------
 ReadTheDocs_ provide the following services:
-* hosts the documentation of projects
-* continuous sphinx generation connected to GitHubt
-* various versions of the documentation can be hosted and browsed
+* hosting of projects documentation
+* continuous Sphinx generation (connected to GitHub)
+* management of documentation versioning within the browser
 * support for downloading documentation in html, pdf, and e-pub formats
 * searchable documentation
 
@@ -36,7 +40,7 @@ rendering both on computer screens but also on tablet or smart phones.
 
     `sphinx rtd theme`_
 
-.. todo: to continue
+.. todo:: to continue
 
 Documentation
 -------------
