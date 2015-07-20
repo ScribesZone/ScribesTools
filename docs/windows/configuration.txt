@@ -1,0 +1,5 @@
+control panel
+    folder options
+        view
+            "Show hidden files, folders and drives" -> ON
+            "Hide extensions for known file types" -> OFF

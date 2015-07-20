@@ -3,6 +3,26 @@ Notepad++
 
 allowAppDataPlugins.xml
 
+Plugins
+-------
+CCompletion
+Compare
+Customize Toolbar
+Document Monitor
+Explorer
+JSON Viewer
+NotepadStarterPlugin
+NppExec
+PyNPP
+Python Indent
+Python Script
+RegEx Helper
+RegRexPlace
+Session Manager
+SQL
+XML Tools
+XPatherizerNPP
+
 NPPExec
 -------
 Filters:  C:\Users\jmfavre\AppData\Roaming\Notepad++\plugins\config\NppExec.ini

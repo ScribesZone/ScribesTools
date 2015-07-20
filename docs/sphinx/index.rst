@@ -5,7 +5,7 @@ Sphinx
 
 Sphinx_ is a documentation generator based on the reStructuredText (rst for
 short) for short. It can be used to publish documentation on ReadTheDocs_ (see
-:ref:`ReadTheDocs` chapter).
+:ref:`ReadTheDocs chapter`).
 
 Installation
 ------------
@@ -26,6 +26,10 @@ and related components.
 Launching Sphinx
 ----------------
 
+To try the installation of Sphinx_ type the following command and press Ctrl-C
+to exit from the program::
+
+    sphinx-quickstart
 
 Documentation
 -------------
@@ -48,6 +52,8 @@ learn rst_ different kind of resources are probably better:
 
 If you have already some knowledge about markdown you may be interested by
 `Markdown vs. rst`_ comparison.
+
+.. todo:: add references to the cheat sheets in docs/
 
 .. .............................................................................
 
