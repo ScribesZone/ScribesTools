@@ -1,5 +1,3 @@
-# coding=utf-8
-
 .. _`SchemaSpy chapter`:
 
 SchemaSpy
