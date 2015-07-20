@@ -22,11 +22,13 @@ install python but also Django_ as well as many useful Django_ components.
 
 .. Note::
 
-    The installation is done in the ``ScribeEnv`` virtual environment so
-    all the commands should be executed with ``(ScribeEnv)`` in your
-    command prompt. Make sure to execute the following command::
+    The installation is done in the ``ScribeEnv`` virtual environment.
+    Make sure to execute the following command::
 
         workon ScribeEnv
+
+    The shell prompt should then start with ``(ScribeEnv)`` meaning that
+    you are working in the proper virtual environment.
 
 
 Launching Django
