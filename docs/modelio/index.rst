@@ -1,3 +1,7 @@
+# coding=utf-8
+
+.. _`Modelio chapter`:
+
 Modelio
 =======
 
@@ -35,8 +39,8 @@ licence in the later case.
 .. tip::
     If you have a licence code you can install both an open source version
     and a commercial version on the same machine. Just use different
-    directories such as  ``%SCRIBETOOLS%\Modelio3.3Open`` and
-    ``%SCRIBETOOLS%\Modelio3.3Commercial``.
+    directories such as  ``%SCRIBETOOLS%\ModelioOpen`` and
+    ``%SCRIBETOOLS%\ModelioCommercial``.
 
 .. attention::
     The architecture (32bits or 64bits) of your modelio and java installations
@@ -53,10 +57,10 @@ Installing modelio open-source
     64 bits |ModelioWin64| or windows 32 bits |ModelioWin32|).
 
 *   Copy the archive into the directory that will contain the software
-    (e.g. ``%SCRIBETOOLS%\Modelio3.3Open``).
+    (e.g. ``%SCRIBETOOLS%\ModelioOpen``).
 
 *   Extract the archive and then rename it into something like
-    ``%SCRIBETOOLS%\Modelio3.3Open`` (you may want later to install the commercial
+    ``%SCRIBETOOLS%\ModelioOpen`` (you may want later to install the commercial
     version as well or another version).
 
 
@@ -99,16 +103,16 @@ platform), you just have to click on it. Otherwise you can click on the
 executable in the installation directory.
 
 Modelio can be launched within a script or from a shell with a command line
-like that (here the installation directory is ``%SCRIBETOOLS%\Modelio3.3Open\``::
+like that (here the installation directory is ``%SCRIBETOOLS%\ModelioOpen\``::
 
-    %SCRIBETOOLS%\Modelio3.3Open\modelio.exe
+    %SCRIBETOOLS%\ModelioOpen\modelio.exe
 
 It could be wise to create a command to add parameters (or to change the
 shortcut on windows) in order to display the console window and run the Modelio_
 in debug mode (this allows to have more messages in the console in case of
 modelio errors)::
 
-    %SCRIBETOOLS%\Modelio3.3Open\modelio.exe -mdebug -consoleLog
+    %SCRIBETOOLS%\ModelioOpen\modelio.exe -mdebug -consoleLog
 
 If you get an error 'exit code 13' it is likely that the java and modelio
 architecture (32 bits or 64 bits) do not match.
@@ -162,8 +166,8 @@ This step is necessary only to create your own reprository. *This is not
 necessary if someone give you access to a shared repository*.
 
 To create the SVN directory itself you need to have a SVN server. If you don't
-have one, you can use :ref:`AssemblaSection` which is a free-svn provider on the
-cloud.
+have one, you can use Assembla  which is a free-svn provider on the cloud
+(see :ref:`Assembla chapter`).
 
 Connecting to a SVN repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
