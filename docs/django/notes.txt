@@ -1,26 +1,27 @@
-Django
-manage.py sqlclear demo_scrapy | manage.py dbshell
-manage.py syncdb
-
-Installation de django.
-Documentation additionnelle si nécessaire: https://docs.djangoproject.com/en/1.6/intro/install/
-https://docs.djangoproject.com/en/1.6/topics/install/
-(1) installer django via la commande “pip install Django==1.6.6”
-(2) tester en lancant l’interpreteur “python”. taper “import django ; print django.get_version()”. Ce programme doit afficher “1.6.6”
-(4) pour tester le serveur
-(4.a) aller dans un repertoire temporaire;
-(4.b) django-admin.py startproject testdjango  (si cela ne marche pas sous windows taper le chemin absolu par exemple C:\Python27\Scripts\django-admin.py). Cette commande doit créer un repertoire testdjango. En cas de problème se reporter à https://docs.djangoproject.com/en/1.6/faq/troubleshooting/#troubleshooting-django-admin-py
-(4.c) aller dans le répertoire créé     cd testdjango
-(4.d) créer la base de données:  manage.py syncdb. Créer un compte administrateur.
-(4.e) lancer le serveur:  manage.py runserveur. Affiche “Validating models… Quit the server with CTRL-BREAK”
-(4.f) dans un navigateur ouvrir l’URL http://localhost:8000/admin/ . Apres avoir une fenêtre de connection (entrer le login et mot de passe définis auparavant), une page affiche “Administration - Groups, Users  - etc.”
 
 
-Installation de packages pour django
-Pour info une liste de packages est disponible https://www.djangopackages.com/
+..  Django
+    manage.py sqlclear demo_scrapy | manage.py dbshell
+    manage.py syncdb
+
+..  Installation de django.
+    Documentation additionnelle si nécessaire: https://docs.djangoproject.com/en/1.6/intro/install/
+    https://docs.djangoproject.com/en/1.6/topics/install/
+    (1) installer django via la commande “pip install Django==1.6.6”
+    (2) tester en lancant l’interpreteur “python”. taper “import django ; print django.get_version()”. Ce programme doit afficher “1.6.6”
+    (4) pour tester le serveur
+    (4.a) aller dans un repertoire temporaire;
+    (4.b) django-admin.py startproject testdjango  (si cela ne marche pas sous windows taper le chemin absolu par exemple C:\Python27\Scripts\django-admin.py). Cette commande doit créer un repertoire testdjango. En cas de problème se reporter à https://docs.djangoproject.com/en/1.6/faq/troubleshooting/#troubleshooting-django-admin-py
+    (4.c) aller dans le répertoire créé     cd testdjango
+    (4.d) créer la base de données:  manage.py syncdb. Créer un compte administrateur.
+    (4.e) lancer le serveur:  manage.py runserveur. Affiche “Validating models… Quit the server with CTRL-BREAK”
+    (4.f) dans un navigateur ouvrir l’URL http://localhost:8000/admin/ . Apres avoir une fenêtre de connection (entrer le login et mot de passe définis auparavant), une page affiche “Administration - Groups, Users  - etc.”
 
 
------------------------------------------------------------------------------------------
+..  Installation de packages pour django
+    Pour info une liste de packages est disponible https://www.djangopackages.com/
+
+
 
 
 #generator
@@ -76,7 +77,7 @@ qs.aggregate(...) : v
 qs.exists(...) : b
 
    att__op=
-      	[i]exact,[i]contains,[i]startswith,[i]endwith,search,regex,iregex
+        [i]exact,[i]contains,[i]startswith,[i]endwith,search,regex,iregex
 in
 isnull
 gt,gte,lt,lte,range
@@ -201,8 +202,8 @@ http://stackoverflow.com/questions/6776592/django-model-graphic-representation-e
 
 uml-to-django:    https://code.google.com/p/uml-to-django/
 django-to-uml @ django-extensions (graph_models)
-	http://django-extensions.readthedocs.org/en/latest/graph_models.html
-	http://jaredforsyth.com/blog/2010/apr/29/django-uml/
+    http://django-extensions.readthedocs.org/en/latest/graph_models.html
+    http://jaredforsyth.com/blog/2010/apr/29/django-uml/
 dia2django @ django-extensions (create_app)
-	http://django-extensions.readthedocs.org/en/latest/create_app.html
+    http://django-extensions.readthedocs.org/en/latest/create_app.html
 
