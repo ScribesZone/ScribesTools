@@ -15,26 +15,38 @@ By contrast, the JDK comes usually with a JRE. Here are short instructions to
 install the JDK (including the JRE).  More information is available on
 the `java installation guide`_:
 
-*   Download the jdk from the `java download page`_.
-*   Create the following directory structure::
+On Windows:
 
-        %SCRIBETOOLS%
-            Java
-                jre
-                jdk
+    *   Download the jdk from the `java download page`_.
+    *   Create the following directory structure::
 
-*   Install the JDK in ``%SCRIBETOOLS%\Java\JDK`` and the JRE in
-    ``%SCRIBETOOLS%\Java\jdk``
+            %SCRIBETOOLS%
+                Java
+                    jre
+                    jdk
+
+    *   Install the JDK in ``%SCRIBETOOLS%\Java\JDK`` and the JRE in
+        ``%SCRIBETOOLS%\Java\jdk``
 
 
-*   Add the following directory to the system PATH::
+    *   Add the following directory to the system PATH::
 
-        %SCRIBETOOLS%\Java\jdk\bin
+            %SCRIBETOOLS%\Java\jdk\bin
 
-*   Set the ``JAVA_HOME`` environment variable to::
+    *   Set the ``JAVA_HOME`` environment variable to::
 
-        %SCRIBETOOLS%\Java\jdk
+            %SCRIBETOOLS%\Java\jdk
 
+On Ubuntu::
+
+    # Remove existing OpenJDK
+    sudo apt-get purge openjdk*
+    # Install Oracle Java 8
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java8-installer
+    # Set Java Environment Variable
+    sudo apt-get install oracle-java8-set-default
 
 Launching Java
 --------------
