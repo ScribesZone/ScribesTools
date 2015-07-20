@@ -13,8 +13,8 @@ This section shows how to install Python 2.7.10, how to use create
 virtual environments, how to install necessary libraries including windows
 specific libraries.
 
-Installing Python 2.7.10
-^^^^^^^^^^^^^^^^^^^^^^^^
+Installing Python > 2.7.9
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Detailed information is available in the `BeginnersGuide`_ of python wiki.
 
@@ -25,25 +25,53 @@ Detailed information is available in the `BeginnersGuide`_ of python wiki.
     is still the most common choice when a lot of libraries are required.
 
 
-* `Download Python 2.7.10`_. **WARNING: On windows you must select the 32
-  bits version** |Python2710Windows32|.
+*   `Download Python 2.7.10`_. **WARNING: On windows you must select the 32
+    bits version** |Python2710Windows32|.
 
-* Install python in a directory like ``%SCRIBETOOLS%\Python27``. Keep the version
-  number (at least 2.7) since it is common to have another directory
-  like ``%SCRIBETOOLS%\Python34`` for Python 3.4.
+*   Install python in a directory like ``%SCRIBETOOLS%\Python27``. Keep the version
+    number (at least 2.7) since it is common to have another directory
+    like ``%SCRIBETOOLS%\Python34`` for Python 3.4.
 
-    msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=%SCRIBETOOLS%\Python27
-    ALLUSER=1 ADDLOCAL=ALL
+        msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=%SCRIBETOOLS%\Python27 ALLUSER=1 ADDLOCAL=ALL
 
-* Change the two following directories to the PATH environment variable
-  (if not already done by the installation program). ::
+*   Change the two following directories to the PATH environment variable
+    (if not already done by the installation program). ::
 
-    # replace ';' separator by ':' on unix
-    # add   %SCRIBETOOLS%\Python2.7;%SCRIBETOOLS%\Python2.7\Scripts   to PATH
+        # replace ';' separator by ':' on unix
+        # add   %SCRIBETOOLS%\Python2.7;%SCRIBETOOLS%\Python2.7\Scripts   to PATH
 
-* To test your installation, open a shell windows and type ``python``.
-  The python interpreter should open and you should be able to type
-  ``print 'hello world'`` for instance. ``quit()`` will close the interpreter.
+
+.. todo::
+
+    * installation procedure to be rewriten
+    * add information about /usr/local/bin vs. /usr/bin + pip2.7
+
+*   On Ubunu python is already installed but this is not a recent version
+    (version 2.6 for Ubuntu 10.4). This description below comes from an
+    article explaining how to `install python 2.7.9 on ubuntu`_.
+
+        # First, install some dependencies:
+        sudo apt-get install build-essential
+        sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+        # Then download using the following command:
+        cd ~/Downloads/
+        wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
+
+        # Extract and go to the dirctory:
+        tar -xvf Python-2.7.9.tgz
+        cd Python-2.7.9
+
+        # Now, install using the command you just tried:
+        ./configure
+        make
+        make test
+        sudo make install
+
+*   To test your installation, open a shell windows and type ``python``.
+    The python interpreter should open and you should be able to type
+    ``print 'hello world'`` for instance. ``quit()`` will close the interpreter.
+
 
 Virtual environments
 ^^^^^^^^^^^^^^^^^^^^
@@ -163,6 +191,9 @@ Launching Python
 
 .. _`Unofficial Windows Binaries for Python Extension Packages`:
     http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+.. _`python279ubuntu`:
+    http://shiny1210-blog.logdown.com/posts/259363-how-to-install-python-279-on-ubuntu-1404
 
 .. _`virtualenvwrapper`:
     http://virtualenvwrapper.readthedocs.org/
