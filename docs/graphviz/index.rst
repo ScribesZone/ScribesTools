@@ -1,3 +1,7 @@
+# coding=utf-8
+
+.. _`Graphviz chapter`:
+
 Graphviz
 ========
 

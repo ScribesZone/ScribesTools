@@ -1,3 +1,8 @@
+# coding=utf-8
+
+.. _`KMADe chapter`:
+
+
 KMADe
 =====
 

@@ -1,3 +1,5 @@
+# coding=utf-8
+
 .. _`SchemaSpy chapter`:
 
 SchemaSpy
@@ -74,7 +76,7 @@ The SQLite driver delivered with SchemaSpy is not working. If you want to
 use SQLite, a driver and a property file must be installed:
 
 *   make sure that the driver have been installed (see the
-    :ref:`SQLite-Installation` section of :ref:`SQLite chapter`).
+    :ref:`SQLite Installation` section of :ref:`SQLite chapter`).
     This results in the driver ``%SCRIBETOOLS%\SQLite\sqlite-jdbc.jar``.
 *   Copy the file ``sqlite.properties`` into the directory
     ``%SCRIBETOOLS%\SchemaSpy``.

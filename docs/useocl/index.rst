@@ -1,5 +1,9 @@
-USE OCL
-=======
+# coding=utf-8
+
+.. _`UseOCL chapter`:
+
+UseOCL
+======
 
 "`USE`_ is a system for the specification and validation of Information Systems
 based on a subset of the Unified Modeling Language (UML) and the
@@ -124,26 +128,26 @@ index that show which OCL features are used in which files.
 
 .. ...........................................................................
 
-.. |use-readme-examples| replace::
+..  |use-readme-examples| replace::
     (:download:`local<docs/README.examples.txt>`)
 
-.. |use.zip| replace::
+..  |use.zip| replace::
     (:download:`local<../../res/useocl/downloads/use-4.1.0.zip>`,
     `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/>`__)
 
-.. |use-notepad.xml| replace::
+..  |use-notepad.xml| replace::
     (:download:`local<../../res/useocl/downloads/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
     `web <http://sourceforge.net/projects/useocl/files/Misc/>`__)
 
-.. |use-quick-tour| replace::
+..  |use-quick-tour| replace::
     (:download:`local<docs/use-quick-tour.pdf>`,
     `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
-.. |use-documentation| replace::
+..  |use-documentation| replace::
     (:download:`local<docs/use-documentation.pdf>`,
     `web <http://www.db.informatik.uni-bremen.de/projects/use/use-documentation.pdf>`__)
 
-.. |use-demo| replace::
+..  |use-demo| replace::
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
 

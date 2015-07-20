@@ -1,3 +1,7 @@
+# coding=utf-8
+
+.. _`SchemaCrawler chapter`:
+
 SchemaCrawler
 =============
 

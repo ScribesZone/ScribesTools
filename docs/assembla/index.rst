@@ -1,4 +1,6 @@
-.. _AssemblaSection:
+# coding=utf-8
+
+.. _`Assembla chapter`:
 
 Assembla
 ========

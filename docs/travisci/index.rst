@@ -1,9 +1,12 @@
+# coding=utf-8
+
+.. _`TravisCI chapter`:
+
 TravisCI
 ========
 
 TravisCI_ is a Continuous Integration (CI) system. It helps automating tests
 on git repository changes.
-
 
 
 Documentation

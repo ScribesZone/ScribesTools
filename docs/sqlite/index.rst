@@ -1,3 +1,5 @@
+# coding=utf-8
+
 .. _`SQLite chapter`:
 
 SQLite
@@ -5,7 +7,7 @@ SQLite
 
 SQLite_ is a file-based SQL database system.
 
-.. _`SQLite-Installation`:
+.. _`SQLite Installation`:
 
 Installation
 ------------
