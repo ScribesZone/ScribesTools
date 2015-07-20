@@ -171,13 +171,17 @@ On platforms other than windows type::
     pip install XXXX\requirements-unix.txt
 
 
-
-
-
-
-
 Launching Python
 ----------------
+
+To test your python installation try the following command::
+
+    python -V
+
+Documentation
+-------------
+
+.. todo:: add references to the cheat sheets in docs/
 
 .. ...........................................................................
 
