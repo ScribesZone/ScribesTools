@@ -1,5 +1,9 @@
 
 
+
+
+
+
 ..  Django
     manage.py sqlclear demo_scrapy | manage.py dbshell
     manage.py syncdb
