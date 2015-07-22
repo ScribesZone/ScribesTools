@@ -21,7 +21,7 @@ On Windows:
   If the application should be installed on multiple users
   type instead::
 
-        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER="%SCRIBETOOLS%\Pandoc"
+        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER=%SCRIBETOOLS%\Pandoc
 
 On Ubuntu::
 
