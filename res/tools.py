@@ -111,6 +111,13 @@ class Tool(object):
             )
 
     #===========================================================================
+    #  download
+    #===========================================================================
+
+    def download(self):
+        raise NotImplementedError('download operation is not implemented yet')
+
+    #===========================================================================
     #  install
     #===========================================================================
 
@@ -157,6 +164,19 @@ class Tool(object):
 
 
     #===========================================================================
+    #  extract
+    #===========================================================================
+
+    def extract(self):
+        if hasattr(self, "locals"):
+            answer = raw_input('Do you want to update %s ?' % self.localsDir)
+            if answer == 'y':
+                for local in self.locals:
+                    self.copyReferenceToLocal(local)
+            else:
+                print('changed nothing')
+
+    #===========================================================================
     #  utilities
     #===========================================================================
 
@@ -170,12 +190,17 @@ class Tool(object):
         target_file = os.path.join(self.targetDir, targetName)
         copyFile(source_file, target_file)
 
-    def copyLocalToTarget(self, name, targetName=None):
+    def copyLocalToTarget(self, name):
+        """ Copy a local file from /locals to the target directory """
         source_file = self.localPath(name)
-        if targetName is None:
-            targetName = name
-        target_file = os.path.join(self.targetDir, targetName)
+        target_file = os.path.join(self.targetDir, name)
         copyFile(source_file, target_file)
+
+    def copyReferenceToLocal(self, name):
+        """ Copy a reference file to /locals """
+        reference_file = os.path.join(self.targetDir, name)
+        local_file = self.localPath(name)
+        copyFile(reference_file, local_file)
 
 #===============================================================================
 #  doCheck  strategies
