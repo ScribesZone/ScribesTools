@@ -18,6 +18,7 @@ class Tool(tools.Tool):
             self._failInstallOnPlatform()
 
     def doInstallWin(self):
+        self.ensureTargetDir()
         bin = self.resourcePath('exec', 'Win')
         cmd = 'msiexec /i %s TARGETDIR=%s  ALLUSER=1' % (bin, self.targetDir)
         tools.command(cmd)

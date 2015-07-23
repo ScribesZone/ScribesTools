@@ -18,6 +18,7 @@ class Tool(tools.Tool):
             self._failInstallOnPlatform()
 
     def doInstallWin(self):
+        self.ensureTargetDir()
         for d in ['jre','jdk']:
             tools.ensure_dir(os.path.join(self.sourceDir, d))
         bin = self.resourcePath('exec', 'Win')

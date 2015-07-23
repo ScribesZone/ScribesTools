@@ -18,6 +18,7 @@ class Tool(tools.Tool):
             self._failInstallOnPlatform()
 
     def doInstallWin(self):
+        self.ensureTargetDir()
         bin = self.resourcePath('exec_open', 'Win')
         tools.command(bin)
 
