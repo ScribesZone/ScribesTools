@@ -13,21 +13,42 @@ Eventually it should support something like
 
 
 """
+import importlib
+import argparse
 
 from tools import ROOT_SOURCE_DIR, SCRIBETOOLS, PLATFORM
 
-print('TODO: THIS FRAMEWORK IS IN CONSTRUCTION')
-print('Resource directory    : %s' % ROOT_SOURCE_DIR)
-print('SRIBETOOLS directory  : %s' % SCRIBETOOLS)
-print('Platform              : %s' % PLATFORM)
 
-#FIXME: this should be generalized.
-#TODO: implement a small command line with "options" interface
+def parseArguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "command",
+        help="install or check",
+        type=str)
+    parser.add_argument(
+        "tool",
+        help="name of the tool",
+        type=str)
+    arguments = parser.parse_args()
+    return arguments
 
-import graphviz
-graphviz.Tool().install()
-graphviz.Tool().check()
+def displayContext():
+    print('TODO: THIS FRAMEWORK IS IN CONSTRUCTION')
+    print('Resource directory    : %s' % ROOT_SOURCE_DIR)
+    print('SRIBETOOLS directory  : %s' % SCRIBETOOLS)
+    print('Platform              : %s' % PLATFORM)
 
-import github
-github.Tool().install()
-github.Tool().check()
+def processCommand(command, tool):
+    try:
+        tool_module = importlib.import_module(tool.lower())
+    except ImportError:
+        raise Exception('No tool named %s' % tool)
+    if command == 'install':
+        tool_module.Tool().install()
+    elif command == 'check':
+        tool_module.Tool().check()
+    else:
+        raise Exception('command is invalid')
+
+args = parseArguments()
+processCommand(args.command, args.tool)
