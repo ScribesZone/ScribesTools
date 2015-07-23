@@ -10,19 +10,36 @@ The framework is under construction. See GitHub
 
 import os
 import abc
+import zipfile
+import shutil
 
 ROOT_SOURCE_DIR = os.path.dirname(os.path.realpath(__file__))
 SCRIBETOOLS = os.environ['SCRIBETOOLS']
 PLATFORM = 'Win'  # FIXME: compute the PLATFORM
 
-def ensure_dir(path):
+def ensure_dir(path, show=True):
     if not os.path.exists(path):
+        if show:
+            print('**** Creating directory %s' % path)
         os.makedirs(path)
+    else:
+        if show:
+            print('**** Directory %s already exists' % path)
 
-def command(cmd, showCommand=True):
-    if showCommand:
-        print('Executing: %s '%cmd)
+def command(cmd, show=True):
+    if show:
+        print('**** Executing: %s '%cmd)
     os.system(cmd)
+
+def unzip(zip, targetParent):
+    with zipfile.ZipFile(zip) as z:
+        z.extractall(targetParent)
+
+def copyFile(sourceFile, targetFile, show=True):
+    if show:
+        print ('**** Copy: %s to %s' % (sourceFile,targetFile))
+    shutil.copyfile(sourceFile, targetFile)
+
 
 
 class Tool(object):
@@ -69,6 +86,13 @@ class Tool(object):
         return os.path.join(self.sourceDir, 'downloads')
 
     @property
+    def localsDir(self):
+        return os.path.join(self.sourceDir, 'locals')
+
+    def localPath(self, name):
+        return os.path.join(self.localsDir, name)
+
+    @property
     def targetDir(self):
         return os.path.join(SCRIBETOOLS, self.name)
 
@@ -94,15 +118,19 @@ class Tool(object):
         print("")
         print('='*80)
         print('INSTALLING %s ...' % self.name)
-        print('Creating directory %s' % self.targetDir )
-        ensure_dir(self.targetDir)
         self.doInstall()
+        self.doCopyAllLocalsToTarget()
         print('='*80)
         print("")
 
     @abc.abstractmethod
     def doInstall(self):
         pass
+
+    def doCopyAllLocalsToTarget(self):
+        if hasattr(self, "locals"):
+            for local in self.locals:
+                self.copyLocalToTarget(local)
 
     def _failInstallOnPlatform(self):
         """
@@ -128,6 +156,26 @@ class Tool(object):
         print("")
 
 
+    #===========================================================================
+    #  utilities
+    #===========================================================================
+
+    def ensureTargetDir(self):
+        ensure_dir(self.targetDir)
+
+    def copyResourceToTarget(self, resourceTag, targetName=None):
+        source_file = self.resourcePath(resourceTag)
+        if targetName is None:
+            targetName = self.resourceName(resourceTag)
+        target_file = os.path.join(self.targetDir, targetName)
+        copyFile(source_file, target_file)
+
+    def copyLocalToTarget(self, name, targetName=None):
+        source_file = self.localPath(name)
+        if targetName is None:
+            targetName = name
+        target_file = os.path.join(self.targetDir, targetName)
+        copyFile(source_file, target_file)
 
 #===============================================================================
 #  doCheck  strategies
