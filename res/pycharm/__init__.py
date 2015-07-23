@@ -1,12 +1,12 @@
 # coding=utf-8
-import os
+
 import tools
 
 class Tool(tools.Tool):
-    name = 'Java'
+    name = 'PyCharm'
     bundles = {
-        'exec' : {
-            'Win':  ['Win','jdk-8u51-windows-x64.exe']
+        'exec_open' : {
+            'Win':  ['Win','pycharm-community-4.5.3.exe']
         }
     }
     installPlatforms = ['Win']
@@ -18,17 +18,18 @@ class Tool(tools.Tool):
             self._failInstallOnPlatform()
 
     def doInstallWin(self):
-        for d in ['jre','jdk']:
-            tools.ensure_dir(os.path.join(self.sourceDir, d))
-        bin = self.resourcePath('exec', 'Win')
+        bin = self.resourcePath('exec_open', 'Win')
         tools.command(bin)
 
     doCheck = tools.CmdsCheck(
-        message = 'next step should display Java version',
-        cmds = [ 'java -version' ],
+        message = 'Next step should open pycharm open',
+        cmds = [ 'pycharm' ],
     )
 
 # FIXME: the tool reference must be automatically associated to the
 # attribute via a metaclass
 # TODO: implement the metaclass
 Tool.doCheck.tool = Tool
+
+
+
