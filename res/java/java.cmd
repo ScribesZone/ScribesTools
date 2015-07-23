@@ -1,6 +1,4 @@
-@SET BIN=Win\jdk-8u51-windows-x64.exe
 
-@SET TARGETDIR=%SCRIBETOOLS%\Java
 
 mkdir %TARGETDIR%
 mkdir %TARGETDIR%\jre
