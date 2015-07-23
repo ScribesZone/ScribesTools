@@ -8,7 +8,7 @@ pandoc -v
 schemacrawler -version
 schemaspy
 sqlite3 -version
-use -h
+use -V
 python --version
 modelio
 pycharm
