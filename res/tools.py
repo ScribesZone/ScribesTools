@@ -129,6 +129,9 @@ class Tool(object):
 
 
 
+#===============================================================================
+#  doCheck  strategies
+#===============================================================================
 
 class DoCheck(object):
     """
@@ -146,6 +149,7 @@ class DoCheck(object):
         self.message=message
 
     def __call__(self):
+        print(self.message)
         raw_input('Type any key to continue ...')
 
 
