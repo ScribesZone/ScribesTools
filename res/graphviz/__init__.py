@@ -2,8 +2,6 @@
 
 import tools
 
-
-
 class Tool(tools.Tool):
     name = 'Graphviz'
     bundles = {
