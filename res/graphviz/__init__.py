@@ -1,28 +1,38 @@
 # coding=utf-8
 
-BIN='Win\graphviz-2.38.msi'
-PACKAGE_NAME='Graphviz'
+import tools
 
-NAME='GraphViz'
-PACKAGE='graphviz'
-BUNDLES={
-    'Win':  'Git-1.9.5-preview20150319.exe',
-}
 
-import os
-OS='Win'
 
-import os
-THIS_DIR = os.path.dirname(os.path.realpath(__file__))
-SOURCE_DIR = os.path.dirname(THIS_DIR)
-TARGET_DIR = os.path.join(os.environ['SCRIBETOOLS'],'Git')
-FULL_BIN = os.path.join(SOURCE_DIR, 'downloads', BIN)
+class Tool(tools.Tool):
+    name = 'Graphviz'
+    bundles = {
+        'exec' : {
+            'Win':  ['Win','graphviz-2.38.msi']
+        }
+    }
+    installPlatforms = ['Win']
 
-def install():
-    if not os.path.exists(TARGET_DIR): os.makedirs(TARGET_DIR)
-    os.system('msiexec /i %s TARGETDIR=%s  ALLUSER=1' % (FULL_BIN,TARGET_DIR))
+    def doInstall(self):
+        if tools.PLATFORM is 'Win':
+            self.doInstallWin()
+        else:
+            self._failInstallOnPlatform()
 
-def check():
-    raw_input('Checking: next step should display graphviz/dot version ...')
-    os.system('dot -V')
+    def doInstallWin(self):
+        bin = self.resourcePath('exec', 'Win')
+        cmd = 'msiexec /i %s TARGETDIR=%s  ALLUSER=1' % (bin, self.targetDir)
+        tools.command(cmd)
+
+    doCheck = tools.CmdsCheck(
+        message = 'Next step should display graphviz/dot version',
+        cmds = [ 'dot -V' ],
+    )
+
+# FIXME: the tool reference must be automatically associated to the
+# attribute via a metaclass
+# TODO: implement the metaclass
+Tool.doCheck.tool = Tool
+
+
 
