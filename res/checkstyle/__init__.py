@@ -1,14 +1,35 @@
 # coding=utf-8
 
-NAME='CheckStyle'
-PACKAGE='checkstyle'
-BUNDLES={
-    '*':  'checkstyle-6.8.1-all.jar',
-}
+import shutil
 
-RESOURCES=[
-    'checkstyle.cmd',
-    'checkstyle.sh',
+import tools
 
-]
+class Tool(tools.Tool):
+    name = 'CheckStyle'
+    installPlatforms = ['*']
+    bundles = {
+        'checkstyle_jar' : {
+            '*':  ['checkstyle-6.8.1-all.jar']
+        }
+    }
+    locals=[
+        'checkstyle.cmd',
+        'checkstyle.sh',
+    ]
+
+    def doInstall(self):
+        self.ensureTargetDir()
+        self.copyResourceToTarget('checkstyle_jar','checkstyle-all.jar')
+
+    doCheck = tools.CmdsCheck(
+        message = 'Next step should open checkstyle version',
+        cmds = [ 'checkstyle -v' ],
+    )
+
+# FIXME: the tool reference must be automatically associated to the
+# attribute via a metaclass
+# TODO: implement the metaclass
+Tool.doCheck.tool = Tool
+
+
 
