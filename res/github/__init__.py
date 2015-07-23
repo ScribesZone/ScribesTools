@@ -1,23 +1,41 @@
 # coding=utf-8
 
-NAME='GitHub'
-PACKAGE='github'
-BUNDLES={
-    'Win':  'Git-1.9.5-preview20150319.exe',
-}
+"""
+GitHub tool representation.
 
-import os
-OS='Win'
-THIS_DIR = os.path.dirname(os.path.realpath(__file__))
-SOURCE_DIR = os.path.dirname(THIS_DIR)
-TARGET_DIR = os.path.join(os.environ['SCRIBETOOLS'],NAME)
-FULL_BIN = os.path.join(SOURCE_DIR, 'downloads', 'Win', BUNDLES[OS])
+TODO: this is the referenced class. Other installation procedure should be
+migrated to this framework.
+"""
 
-def install():
-    if not os.path.exists(TARGET_DIR): os.makedirs(TARGET_DIR)
-    os.system(FULL_BIN)
+import tools
 
-def check():
-    raw_input('Checking %s: next step should display git help ...'
-              % NAME)
-    os.system('git help')
+
+
+class Tool(tools.Tool):
+    name = 'GitHub'
+    bundles = {
+        'exec' : {
+            'Win':  ['Win','Git-1.9.5-preview20150319.exe']
+        }
+    }
+    installPlatforms = ['Win']
+
+    def doInstall(self):
+        if tools.PLATFORM is 'Win':
+            self.doInstallWin()
+        else:
+            self._failInstallOnPlatform()
+
+    def doInstallWin(self):
+        bin = self.resourcePath('exec', 'Win')
+        tools.command(bin)
+
+    doCheck = tools.CmdsCheck(
+        message = 'Next step should display git help',
+        cmds = [ 'git help' ],
+    )
+
+# FIXME: the tool reference must be automatically associated to the
+# attribute via a metaclass
+# TODO: implement the metaclass
+Tool.doCheck.tool = Tool
