@@ -31,9 +31,38 @@ def command(cmd, show=True):
         print('**** Executing: %s '%cmd)
     os.system(cmd)
 
-def unzip(zip, targetParent):
+def unzip(zip, targetParent, show=True):
+    if show:
+        print('**** Unzip %s to %s' % (zip,targetParent)),
+    # raw_input('continue')
     with zipfile.ZipFile(zip) as z:
         z.extractall(targetParent)
+    if show:
+        print(' done')
+
+def unzipAndRenameDir(zip, targetParent, extractedDirName, newDirName,
+                      show = True):
+    """
+    Unzip the given file in the target directory and then rename
+    the resulting directory (extractedDirName) into a given name
+    (newDirName). If the extracted directory or final directory exists
+    then raises an exception.
+    """
+    extracted_dir = os.path.join(targetParent, extractedDirName)
+    new_dir = os.path.join(targetParent, newDirName)
+    if os.path.exists(extracted_dir):
+        raise Exception('The directory %s already exist' % extracted_dir)
+    if os.path.exists(new_dir):
+        raise Exception('The directory %s already exist' % new_dir)
+    unzip(zip, targetParent)
+    if not os.path.isdir(extracted_dir):
+        raise Exception('No directory %s' % extracted_dir)
+    if show:
+        print (
+            '     Rename extracted root %s to %s'
+            % (extractedDirName, newDirName)
+        )
+        os.rename(extracted_dir, new_dir)
 
 def copyFile(sourceFile, targetFile, show=True):
     if show:
@@ -67,7 +96,7 @@ class Tool(object):
     #     self.platforms = platforms
 
 
-    def canInstallOnPlatform(self, platform):
+    def canInstallOnPlatform(self, platform=PLATFORM):
         return (
             '*' in self.installPlatforms
             or platform in self.installPlatforms
@@ -96,18 +125,34 @@ class Tool(object):
     def targetDir(self):
         return os.path.join(SCRIBETOOLS, self.name)
 
-    def resourceName(self, name, platform='*'):
-        return os.path.join(*self.bundles[name][platform])
+    @property
+    def targetParentDir(self):
+        return os.path.dirname(self.targetDir)
 
-    def resourcePath(self, name, platform='*', directory='downloads'):
+    def resourceName(self, name, platform=PLATFORM):
+        # check for exact pattern matching first
+        if platform in self.bundles[name]:
+            resource = self.bundles[name][platform]
+        # then check if there is a '*' entry
+        elif '*' in self.bundles[name]:
+            resource = self.bundles[name]['*']
+        else:
+            raise Exception(
+                'resourceName: Cannot find resources %s for platform %s'
+                % (name, platform)
+            )
+        return os.path.join(*resource)
+
+    def resourcePath(self, name, platform=PLATFORM, directory='downloads'):
         resourceName = self.resourceName(name, platform=platform)
         path = os.path.join(self.sourceDir, directory, resourceName)
         if os.path.exists(path):
             return path
         else:
             raise ValueError(
-                'The "%s" resource cannot be found for the platform "%s": '
-                ' invalid path: %s' % (name, platform, path)
+                'resourcePath: The "%s" resource cannot be found for the '
+                'platform "%s":  invalid path: %s'
+                % (name, platform, path)
             )
 
     #===========================================================================
@@ -183,10 +228,11 @@ class Tool(object):
     def ensureTargetDir(self):
         ensure_dir(self.targetDir)
 
-    def copyResourceToTarget(self, resourceTag, targetName=None):
-        source_file = self.resourcePath(resourceTag)
+    def copyResourceToTarget(self, resourceTag,
+                             targetName=None, platform=PLATFORM):
+        source_file = self.resourcePath(resourceTag, platform=platform)
         if targetName is None:
-            targetName = self.resourceName(resourceTag)
+            targetName = self.resourceName(resourceTag, platform=platform)
         target_file = os.path.join(self.targetDir, targetName)
         copyFile(source_file, target_file)
 
@@ -201,6 +247,20 @@ class Tool(object):
         reference_file = os.path.join(self.targetDir, name)
         local_file = self.localPath(name)
         copyFile(reference_file, local_file)
+
+    def unzipResourceToTargetParent(self, resourceTag, platform=PLATFORM ):
+        zip_file = self.resourcePath(resourceTag, platform=platform)
+        unzip(zip_file, self.targetParentDir)
+
+    def unzipResourceToTarget(self, resourceTag, platform=PLATFORM ):
+        zip_file = self.resourcePath(resourceTag, platform=platform)
+        unzip(zip_file, self.targetDir)
+
+    def unzipResourceAndRenameToTarget(self, resourceTag, extractedDirName,
+                                       platform=PLATFORM):
+        zip_file = self.resourcePath(resourceTag, platform=platform)
+        unzipAndRenameDir(
+            zip_file, self.targetParentDir, extractedDirName, self.name)
 
 #===============================================================================
 #  doCheck  strategies
