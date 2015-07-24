@@ -18,9 +18,8 @@ class Tool(tools.Tool):
     ]
 
     def doInstall(self):
-        raise NotImplementedError()
-        # FIXME: to be implemented
-        self.unzipResourceToTargetThenRename('kmade_zip')
+        self.unzipResourceAndRenameToTarget(
+            'kmade_zip', 'KMADe-1.2')
 
     doCheck = tools.CmdsCheck(
         message = 'Next step should open kmade',
