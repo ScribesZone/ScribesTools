@@ -9,7 +9,8 @@ class Tool(tools.Tool):
     installPlatforms = ['Win']
     bundles = {
         'sqlite_shell_zip' : {
-            'Win':  ['sqlite-shell-win32-x86-3081002.zip']
+            'Win':
+                ['Win', 'sqlite-shell-win32-x86-3081002.zip']
         },
         'sqlite_jdbc_jar' : {
             '*': ['sqlite-jdbc-3.8.10.1.jar']
@@ -18,13 +19,12 @@ class Tool(tools.Tool):
 
     def doInstall(self):
         self.ensureTargetDir()
+        self.unzipResourceToTarget('sqlite_shell_zip')
         self.copyResourceToTarget('sqlite_jdbc_jar','sqlite-jdbc.jar')
-        raise NotImplementedError()
-        self.unzipContentIn()
 
     doCheck = tools.CmdsCheck(
-        message = 'Next step should display schemaspy help',
-        cmds = [ 'schemaspy' ],
+        message = 'Next step should display schemaspy version',
+        cmds = [ 'sqlite3 -version' ],
     )
 
 # FIXME: the tool reference must be automatically associated to the
