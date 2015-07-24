@@ -4,6 +4,7 @@ docs/*/install/
 docs/*/archives/
 res/*/downloads/
 res/*/pipdownloads/
+res*.zip
 
 # Python / Jython
 
