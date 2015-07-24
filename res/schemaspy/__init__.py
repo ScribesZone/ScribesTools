@@ -8,7 +8,7 @@ class Tool(tools.Tool):
     name = 'SchemaSpy'
     installPlatforms = ['*']
     bundles = {
-        'schemaspy_zip' : {
+        'schemaspy_jar' : {
             '*':  ['schemaSpy_5.0.0.jar']
         }
     }
@@ -20,7 +20,7 @@ class Tool(tools.Tool):
 
     def doInstall(self):
         self.ensureTargetDir()
-        self.copyResourceToTarget('schemaspy_zip','schemaSpy_5.0.0.jar')
+        self.copyResourceToTarget('schemaspy_jar','schemaSpy.jar')
 
     doCheck = tools.CmdsCheck(
         message = 'Next step should display schemaspy help',

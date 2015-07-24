@@ -43,7 +43,8 @@ To install SchemaSpy_:
 
 * Download the SchemaSpy_ jar file |SchemaSpyJar|.
 * Create the directory ``%SCRIBETOOLS%\SchemaSpy``.
-* Move the schemaSpy_5.0.0.jar file to this directory.
+* Move the ``schemaSpy_5.0.0.jar`` file into
+``%SCRIBETOOLS%\SchemaSpy\schemaSpy.jar``.
 * Add ``%SCRIBETOOLS%\SchemaSpy`` to the system PATH.
 * Copy the files ``schemaspy.bat`` and ``schemaspy.sh`` into the directory
 
