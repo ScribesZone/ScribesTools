@@ -18,14 +18,12 @@ class Tool(tools.Tool):
     ]
 
     def doInstall(self):
-        raise NotImplementedError()
-        # FIXME: to be implemented
-        self.unzipResourceToTargetThenRename('schemacrawler_zip')
-        # TODO: Here we should modify the content of the properties file
+        self.unzipResourceAndRenameToTarget(
+            'schemacrawler_zip', 'schemacrawler-12.06.03-main')
 
     doCheck = tools.CmdsCheck(
-        message = 'Next step should open ganttproject help',
-        cmds = [ 'ganttproject.cmd -help' ],
+        message = 'Next step should display schemacrawler help',
+        cmds = [ 'schemacrawler -version' ],
     )
 
 # FIXME: the tool reference must be automatically associated to the

@@ -9,18 +9,19 @@ class Tool(tools.Tool):
     installPlatforms = ['*']
     bundles = {
         'use_zip' : {
-            '*':  ['sqlite-shell-win32-x86-3081002.zip']
+            '*':
+                ['use-4.1.0.zip']
         },
         # TODO: add notpad++ bundle
     }
 
     def doInstall(self):
-        raise NotImplementedError()
-        self.unzipContentIn('use')
+        self.unzipResourceAndRenameToTarget(
+            'use_zip', 'use-4.1.0')
 
     doCheck = tools.CmdsCheck(
         message = 'Next step should display use help',
-        cmds = [ 'use -v' ],
+        cmds = [ 'use -V' ],
     )
 
 # FIXME: the tool reference must be automatically associated to the

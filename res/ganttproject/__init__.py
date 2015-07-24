@@ -17,12 +17,11 @@ class Tool(tools.Tool):
     ]
 
     def doInstall(self):
-        raise NotImplementedError()
-        # FIXME: to be implemented
-        self.unzipResourceToTargetThenRename('ganttproject_zip')
+        self.unzipResourceAndRenameToTarget(
+            'ganttproject_zip', 'ganttproject-2.7-r1891')
 
     doCheck = tools.CmdsCheck(
-        message = 'Next step should open ganttproject help',
+        message = 'Next step should display ganttproject help',
         cmds = [ 'ganttproject.cmd -help' ],
     )
 
