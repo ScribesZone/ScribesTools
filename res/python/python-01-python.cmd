@@ -1,6 +1,0 @@
-@SET BIN=Win\python-2.7.10.msi
-
-@SET TARGETDIR=%SCRIBETOOLS%\Python27
-
-mkdir %TARGETDIR%
-msiexec /i  python\downloads\%BIN% TARGETDIR=%TARGETDIR% ALLUSER=1 ADDLOCAL=ALL
