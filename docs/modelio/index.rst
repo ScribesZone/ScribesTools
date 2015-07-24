@@ -51,8 +51,7 @@ Installing modelio open-source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *   Go to the `modelio.org download center` and select
-    the archive for your platform (e.g. windows
-    64 bits |ModelioWin64| or windows 32 bits |ModelioWin32|).
+    the archive for your platform (e.g. windows 64 bits |ModelioWin64|).
 
 *   Copy the archive into the directory that will contain the software
     (e.g. ``%SCRIBETOOLS%\ModelioOpen``).
@@ -271,7 +270,5 @@ are mostly:
     (:download:`local <../../res/modelio/downloads/Win/modelio-open-201502191121-win32.win32.x86_64.zip>`,
     `web <https://www.modelio.org/modelio-122/doc_download/106-modelio-331-windows-64-bit.html>`__)
 
-.. |ModelioWin32| replace::
-    (:download:`local <../../res/modelio/downloads/Win/modelio-open-201502191121-win32.win32.x86.zip>`,
-    `web <https://www.modelio.org/modelio-122/doc_download/105-modelio-331-windows-32-bit.html>`__)
+
 
