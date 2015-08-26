@@ -20,7 +20,7 @@ class Tool(tools.Tool):
     def doInstallWin(self):
         self.ensureTargetDir()
         for d in ['jre','jdk']:
-            tools.ensure_dir(os.path.join(self.sourceDir, d))
+            tools.ensure_dir(os.path.join(self.targetDir, d))
         bin = self.resourcePath('exec', 'Win')
         tools.command(bin)
 
