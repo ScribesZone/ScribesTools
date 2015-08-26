@@ -16,7 +16,7 @@ Installation
 
 To install use:
 
-*   download the use zip file (``use-4.1.0.zip`` |use.zip|).
+*   download the use zip file (``use-4.1.1.zip`` |use.zip|).
 *   extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
 *   rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``
 *   for convenience add the ``bin`` directory to your system PATH. For instance
@@ -130,8 +130,8 @@ index that show which OCL features are used in which files.
     (:download:`local<docs/README.examples.txt>`)
 
 ..  |use.zip| replace::
-    (:download:`local<../../res/useocl/downloads/use-4.1.0.zip>`,
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/>`__)
+    (:download:`local<../../res/useocl/downloads/use-4.1.1.zip>`,
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.1/>`__)
 
 ..  |use-notepad.xml| replace::
     (:download:`local<../../res/useocl/downloads/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,

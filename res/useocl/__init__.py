@@ -10,14 +10,14 @@ class Tool(tools.Tool):
     bundles = {
         'use_zip' : {
             '*':
-                ['use-4.1.0.zip']
+                ['use-4.1.1.zip']
         },
         # TODO: add notpad++ bundle
     }
 
     def doInstall(self):
         self.unzipResourceAndRenameToTarget(
-            'use_zip', 'use-4.1.0')
+            'use_zip', 'use-4.1.1')
 
     doCheck = tools.CmdsCheck(
         message = 'Next step should display use help',
