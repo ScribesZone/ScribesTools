@@ -75,7 +75,7 @@ Installation
 ------------
 
 Each tools can be installed following the "Installation" section in the
-tool chapter. If you received a disk you may be intersted in the following
+tool chapter. If you received a disk you may be interested in the following
 chapter.
 
 ..  toctree::
