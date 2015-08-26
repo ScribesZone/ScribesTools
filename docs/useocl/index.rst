@@ -3,8 +3,8 @@
 UseOCL
 ======
 
-"`USE`_ is a system for the specification and validation of Information Systems
-based on a subset of the Unified Modeling Language (UML) and the
+"`USE`_ (OCL) is a system for the specification and validation of Information
+Systems based on a subset of the Unified Modeling Language (UML) and the
 Object Constraint Language (OCL)."
 
 This open source environment has been developed at the University of Bremen and
@@ -14,7 +14,7 @@ have been developed by USE OCL project members under `GPL v2 licence`_
 Installation
 ------------
 
-To install use:
+To install `USE`_ (OCL):
 
 *   download the use zip file (``use-4.1.1.zip`` |use.zip|).
 *   extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
@@ -131,7 +131,7 @@ index that show which OCL features are used in which files.
 
 ..  |use.zip| replace::
     (:download:`local<../../res/useocl/downloads/use-4.1.1.zip>`,
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.1/>`__)
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download>`__)
 
 ..  |use-notepad.xml| replace::
     (:download:`local<../../res/useocl/downloads/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
@@ -148,6 +148,7 @@ index that show which OCL features are used in which files.
 ..  |use-demo| replace::
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
+
 
 
 
