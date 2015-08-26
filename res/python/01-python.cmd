@@ -3,5 +3,5 @@
 @SET DOWNLOADS=downloads
 @SET TARGETDIR=%SCRIBETOOLS%\Python27
 
-mkdir %TARGETDIR%
+# REM:  cause a warning in the installer mkdir %TARGETDIR%
 msiexec /i  %DOWNLOADS%\%BIN% TARGETDIR=%TARGETDIR% ALLUSER=1 ADDLOCAL=ALL
