@@ -79,8 +79,9 @@ instance the following elements in the following order:
 
 2.  Watch the video |use-demo|.
     The first part (until frame 128/208) deals with the static part and
-    invariants. The second part deals with operation simulation and pre/post
-    conditions. You may be interested only by the first part or by both parts.
+    invariants. The second part deals with dynamics, operation simulation
+    and pre/post conditions.
+    You may be interested only by the first part or by both parts.
 
     .. image:: media/USEOCL-video.jpg
 
@@ -116,11 +117,6 @@ Various examples of use specifications are available in the distribution
 
 The file ``README.examples`` |use-readme-examples| provides an interesting
 index that show which OCL features are used in which files.
-
-
-
-
-
 
 
 
