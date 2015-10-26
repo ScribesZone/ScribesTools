@@ -179,9 +179,21 @@ client). In order to do so, just `download git`_ and install
 it following the instructions for your platform (e.g. for windows
 |GitWindows|).
 
-On Ubuntu you can install git as following:
+On Ubuntu you can install git as following (if it is not already installed)::
 
     sudo apt-get install git
+
+
+Configuration
+-------------
+
+If you use the command line, you should configure git as following::
+
+    git config --global user.name "escribis"
+    git config --global user.email "escribis@users.noreply.github.com"
+
+    git config --global credential.helper cache
+    git config --global credential.helper 'cache --timeout=3600'
 
 .. ............................................................................
 
