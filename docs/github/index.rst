@@ -187,14 +187,23 @@ On Ubuntu you can install git as following (if it is not already installed)::
 Configuration
 -------------
 
-If you use the command line, you should configure git as following::
+If you use the command line, you should configure git. The option ``--global``
+save the configuration in your ``.gitconfig`` home file. Otherwise you could
+configure this for individual project.
+
+Configure who you are (changing ``escribis`` by your github account)::
 
     git config --global user.name "escribis"
     git config --global user.email "escribis@users.noreply.github.com"
 
+To avoid typing always your password (see `Caching you Github password`_)::
+
     git config --global credential.helper cache
     git config --global credential.helper 'cache --timeout=3600'
 
+You may also configure (`Dealing with line endings`_)::
+
+    git config --global core.autocrlf input    # if you use unix
 .. ............................................................................
 
 .. _Git: http://en.wikipedia.org/wiki/Git_%28software%29
@@ -205,6 +214,13 @@ If you use the command line, you should configure git as following::
 .. _`download git`: http://git-scm.com/downloads
 .. _SVN: http://en.wikipedia.org/wiki/Apache_Subversion
 .. _`SourceTree home page`: https://www.atlassian.com/software/sourcetree
+
+.. _`
+.. _`Caching you Github password`:
+    https://help.github.com/articles/caching-your-github-password-in-git/
+
+.. _`Dealing with line endings`:
+    https://help.github.com/articles/dealing-with-line-endings/
 
 .. |GithubClientWindows| replace::
     (:download:`local<../../res/github/downloads/Win/GitHubSetup.exe>`,
