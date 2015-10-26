@@ -17,10 +17,11 @@ Installation
 To install `USE`_ (OCL):
 
 *   download the use zip file (``use-4.1.1.zip`` |use.zip|).
-*   extract this zip file where you want to install it (%SCRIBETOOLS% on windows)
-*   rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``
-*   for convenience add the ``bin`` directory to your system PATH. For instance
-    the PATH could look like::
+*   extract this zip file where you want to install it (e.g. %SCRIBETOOLS% on
+windows).
+*   rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``.
+*   for convenience add the ``bin`` directory to your system PATH.
+    For instance the PATH could look like::
 
         %SCRIBETOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
         /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
@@ -55,6 +56,15 @@ path to use binary). This launch the USE OCL Command Line Interface (CLI).
 
 .. NOTE::   On Windows, if you want to use cygwin, then type ``use.bat -nogui``
             otherwise you may encounter problem with the use script.
+
+.. NOTE::   On Windows, you might see the following warning message that start
+            with ``WARNING: Could not ... Software\JavaSoft\Prefs`` and ends
+            with ``Windows RegCreateKeyEx(...) returned error code 5.``.
+            In this case in administrator mode one should create the key
+            ``HKEY_LOCAL_MACHINE\Software\JavaSoft\Prefs`` with ``regedit``.
+            This is just a warning and you can use USE OCL safely interactively.
+            This might although cause problem if you use USE OCL via
+            some scripts as the command will always return an error code.
 
 If you want you can also have a look at the graphical interface (in this case
 just type::

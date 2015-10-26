@@ -74,10 +74,10 @@ To configure PyCharm_ use the menu ``File > Settings``::
 .. _PyDev: http://pydev.org/
 
 .. |PyCharmOpenWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.3.exe>`,
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.4.exe>`,
     `web <http://download.jetbrains.com/python/pycharm-community-4.5.3.exe>`__)
 
 .. |PyCharmCommercialWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.3.exe>`,
+    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.4.exe>`,
     `web <http://download.jetbrains.com/python/pycharm-professional-4.5.3.exe>`__)
 

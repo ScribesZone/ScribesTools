@@ -42,7 +42,7 @@ operations
         end
     ----------------------------------------------------------------------
     numIsKey():Boolean =
-        Truck.allInstances->forAll(self,self2|
+        Truck.allInstances()->forAll(self,self2|
             self<>self2 implies self.num<>self2.num)
     ----------------------------------------------------------------------
 statemachines

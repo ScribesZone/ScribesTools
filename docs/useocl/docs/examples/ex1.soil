@@ -1,3 +1,6 @@
+
+
+
 --- SOIL ---------------------------------------------------------------
 -- see http://useocl.sourceforge.net/w/index.php/SOIL
 
@@ -43,6 +46,3 @@
 -- aAge := ReadInteger()
 -- Write('Enter your name:')
 -- WriteLine('Hello ' + aName + '!')
-
-
-

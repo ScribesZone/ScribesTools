@@ -1,121 +1,13 @@
 
 
-model ex1
-
--- Enumeration
-enum Flatware {spoon, fork, knife}
-
--- Class and inheritance
-class Apple < Orange, Lemon
-end
-
--- Abstract classes
-abstract class Orange
--- Attributes
-attributes
-    juice : Boolean
-end
-
-class Lemon
--- Operations
-operations
-    squeeze(i : Integer) : Integer = i + 1
-end
-
-class Banana < Lemon
-attributes
-    -- Types
-    length : Integer
-    width : Real
-    isGood : Boolean
-    surname : String
-    flatware : Set(Sequence(Flatware))
-    -- Collections: Bag, Set, OrderedSet, Sequence, Nested Collections
-    goodies : OrderedSet(Bag(Sequence(Set(Integer))))
-    -- Tuples
-    coordinates : Tuple(x:Integer,y:Real,z:String)
-    -- Attribute initialisation
-    remainingDays : Integer
-        init: 0
-    -- Derived attribute
-    size : Real
-        derived: self.length * self.width
-    -- No invariants on attributes
-    -- taste : String
-    --    inv : 1=1
-    -- No cardinality supported for attributes
-    -- keywords : String[*]
-    -- nickname : String[0..1]
-
-operations
-    peel() : String = 'abcd'
-        pre: true
-        post: 2 = 2
-        post: result = 'theResult'
-
-constraints
-    inv: 3 > 2
-    inv neverViolated: true
-
-end
 
 
 
--- TODO add exemple of derivation
---
-
--- association
-association Ingredients between
-    Apple[*] role mainIngredient
-    Orange[1]
-    -- ordered
-    Lemon[1..*] role lemon ordered
-    -- TODO add example pf   subsets, union, redefines
-end
-
--- composition
-composition AppleSpritzer between
-    Apple[*] role base
-    Lemon[1..8,10,15..*] role flavor
-end
-
--- aggregation
-aggregation Mix between
-    Orange[*] role bad
-    Apple[1] role good
-end
 
 
--- Association class
-associationclass FruitSalad between
-    Banana[0..1]
-    Apple[1..*]
-attributes
-    name : String
-    weight : Real
-operations
-    putIn(apple:Apple, banana:Banana)
-end
 
+/*
 -- !create mySalad : FruitSalad between (aBanana,myNewApple)
-
--- Ex bites for association class inheritance
--- class Dog
--- end
--- class Feeling
--- end
-
---associationclass Bites < Feeling between
---   Dog[*] role bitenDogs
---   Dog[*] role badDogs
---end
-
--- Qualified association
-
-class Map
-end
-class Tile
-end
 
 association MapTiles between
     Map[1] role map
@@ -125,30 +17,11 @@ end
 -- !insert (aMap{1,1}, aTile) into MapTiles
 -- ? aMap.tiles[1,1]
 
+*/
 
 
 
 
-
-
--- Constraints (top level declared)
-constraints
-
-context Orange
-    -- Constraints on Classes
-    inv OrangeInv: 1=1
-    inv: Orange.allInstances()->size()>1
-
-context orange:Orange
-    -- Constraints on Attributes
-    inv alwaysTrue: orange=orange
-    inv: juice = true
-
-context Lemon::squeeze(i:Integer):Integer
-    -- Constraints on Operations
-    pre: i>0
-    pre lessThanThenOranges: i<10
-    post alwaysTrue: true
 
 
 -- TODO: add to course ->closure  -- introduced with OCL 2.3.

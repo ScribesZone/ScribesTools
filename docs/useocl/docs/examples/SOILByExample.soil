@@ -1,0 +1,17 @@
+-- ? for queries, ! for actions, commands:  open, check, quit, info, help...
+open -q background.soil                               -- include a file
+? Set{2,3}->including(7)                              -- OCL query
+! b1 := new Banana ; chita := new Animal              -- object creation
+! insert(chita,b1) into Eats                          -- link creation
+! d := new Dislike between (chita,b1)                 -- object-link creation (class association)
+! b1.length := 20                                     -- attribute assignment
+? b1.smash()+' are nices'                             -- call of a query (defined in OCL)*
+! destroy d                                           -- object/object-link destruction
+! delete (chita,b1) from Eats                         -- link destruction
+! Write('jungle'+(4+2).toString()) ; WriteLine('')    -- output
+-- ! r := ReadLine() ; i := ReadInteger() ;              -- input
+! if not (b1.length=20) then WriteLine('error1') end  -- if then else
+! for i in Sequence{1..4} do b := new Banana ; insert(chita,b) into Eats end
+
+
+

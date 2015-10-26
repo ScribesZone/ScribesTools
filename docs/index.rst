@@ -35,6 +35,7 @@ Tools
     assembla/index
     github/index
     readthedocs/index
+    selenium/index
     travisci/index
     java/index
     python/index
