@@ -23,7 +23,7 @@ the variables are set properly you can continue to the next steps.
 
 Python
 ------
-Got to the ``res\python`` directory and execute the scripts for your OS in the
+Go to the ``res\python`` directory and execute the scripts for your OS in the
 given order.
 
 OS dependent packages
