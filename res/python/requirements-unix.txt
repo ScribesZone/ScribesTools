@@ -1,3 +1,0 @@
-pycrypto==2.6
-pygraphviz==1.3rc2
-
