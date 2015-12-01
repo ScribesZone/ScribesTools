@@ -36,12 +36,12 @@ On Ubuntu you can install CheckStyle_ has following::
 
 Installing CheckStyle_ as a standalone tool is easy:
 
-*   Create a directory ``%SCRIBETOOLS%\CheckStyle``.
+*   Create a directory ``%SCRIBESTOOLS%\CheckStyle``.
 *   Download ``checkstyle-X.Y-all.jar`` |checkstyle-jar|.
-*   Copy the jar file *into* ``%SCRIBETOOLS%\CheckStyle\checkstyle-all.jar``
+*   Copy the jar file *into* ``%SCRIBESTOOLS%\CheckStyle\checkstyle-all.jar``
     (remove the version number).
 *   Copy the files ``checkstyle.cmd`` and ``checkstyle.sh`` into the directory.
-*   Add the ``%SCRIBETOOLS%\CheckStyle`` directory to the path.
+*   Add the ``%SCRIBESTOOLS%\CheckStyle`` directory to the path.
 
 .. todo::
     update installation section

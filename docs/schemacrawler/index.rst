@@ -26,7 +26,7 @@ Installation
 To install SchemaCrawler_:
 
 *   Create a directory that will contain the software (e.g.
-    ``%SCRIBETOOLS%\SchemaCrawler``).
+    ``%SCRIBESTOOLS%\SchemaCrawler``).
 *   Download schemacrawler-12.06.03-main.zip |SchemaCrawlerZip|.
 *   Extract the content of the archive in the target directory.
 *   As a result you will 3 sub directories ``_ivy``, ``_schemacrawler``,
@@ -48,9 +48,9 @@ On unix replace the content of ``_schemacrawler\sc.sh`` by::
 
 SchemaCrawler_ is written in java but supports scripting with different
 languages (). In order to use Python for Scripting the following commands
-should be executed (assuming that the directory is ``%SCRIBETOOLS%\SchemaCrawler``)::
+should be executed (assuming that the directory is ``%SCRIBESTOOLS%\SchemaCrawler``)::
 
-    cd %SCRIBETOOLS%\SchemaCrawler\_ivy
+    cd %SCRIBESTOOLS%\SchemaCrawler\_ivy
     download.cmd python     # use download.sh on unix
 
 
@@ -58,7 +58,7 @@ Launching SchemaCrawler
 -----------------------
 The simplest test to installation is to type the following::
 
-    cd %SCRIBETOOLS%\SchemaCrawler\_schemacrawler    #  to be adapted if necessary
+    cd %SCRIBESTOOLS%\SchemaCrawler\_schemacrawler    #  to be adapted if necessary
     sc.cmd --version                        # .sh on unix
     sc.cmd --help
 
@@ -69,7 +69,7 @@ To go further the directory ``examples`` contains many examples of usage.
 A HSQLDB database server is provided for testing purposes. To launch this
 example database server open a shell window and type the following commands::
 
-    cd %SCRIBETOOLS%\SchemaCrawler\examples     # directory to be adapted if necessary
+    cd %SCRIBESTOOLS%\SchemaCrawler\examples     # directory to be adapted if necessary
     StartDatabase.cmd                           # .sh on unix
 
 At that level the test server should be running in this window (and the window
@@ -77,7 +77,7 @@ color may have changed).
 
 Open another shell and try::
 
-    cd %SCRIBETOOLS%\SchemaCrawler\_schemacrawler     # to be adapted
+    cd %SCRIBESTOOLS%\SchemaCrawler\_schemacrawler     # to be adapted
     sc.cmd -server=hsqldb -database=schemacrawler -password= -infolevel=detail -command=schema
 
 If you have a sqlite database you can also try::

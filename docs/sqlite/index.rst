@@ -15,10 +15,10 @@ Installation
     For Windows download ``sqlite-shell-win32-x86-3081002.zip``
     |SQLiteWin32zip|.
 *   create a directory where you want to install sqlite3 (e.g.
-    ``%SCRIBETOOLS%\SQLite``)
+    ``%SCRIBESTOOLS%\SQLite``)
 *   extract the archive (only one file on windows: ``sqlite3.exe``)
 *   move the content of the archive to the directory created
-*   add ``%SCRIBETOOLS%\SQLite`` to the path.
+*   add ``%SCRIBESTOOLS%\SQLite`` to the path.
 
 On Ubuntu you can install SQLite_ as following::
 
@@ -30,7 +30,7 @@ database from java. This is useful for instance if you plan to use
 
 *   download ``sqlite-jdbc-3.8.10.1.jar`` |SQLiteJDBCJar|
 *   copy this jar file in the ``sqlite3`` directory created above
-    e.g. ``%SCRIBETOOLS%\sqlite3``)
+    e.g. ``%SCRIBESTOOLS%\sqlite3``)
 *   rename this file into ``sqlite-jdbc.jar``
 
 

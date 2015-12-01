@@ -25,8 +25,8 @@ Installation
 
 KMADe is easy to install:
 
-* Download the KMADe zip archive |kmade-zip|.
-* Move this file to the directory ``%SCRIBETOOLS%```.
+* Download the KMADe zip archive |kmadeZip|.
+* Move this file to the directory ``%SCRIBESTOOLS%```.
 * Unzip the file here.
 * Rename the created directory to ``KMADe``
 * Remove the zip file if you want.
@@ -41,18 +41,18 @@ executable.
 Documentation
 -------------
 
-KMADe has an extensive documentation |kmade-doc| but it is mostly in french.
+KMADe has an extensive documentation |kmadeDoc| but it is mostly in french.
 
 
 
 .. ...........................................................................
 
 
-.. |kmade-zip| replace::
+.. |kmadeZip| replace::
     (:download:`local<../../res/kmade/downloads/KMADe-1.2-dist.zip>`,
     `web <http://www.lias-lab.fr/forge/projects/kmade/files>`__)
 
-.. |kmade-doc| replace::
+.. |kmadeDoc| replace::
     (:download:`local<docs/KMADe-1.2-UserManual-FR.pdf>`,
     `web <http://www.lias-lab.fr/forge/attachments/download/136/KMADe-1.2-UserManual-FR.pdf>`__)
 

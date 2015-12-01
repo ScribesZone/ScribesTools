@@ -37,8 +37,8 @@ licence in the later case.
 .. tip::
     If you have a licence code you can install both an open source version
     and a commercial version on the same machine. Just use different
-    directories such as  ``%SCRIBETOOLS%\ModelioOpen`` and
-    ``%SCRIBETOOLS%\ModelioCommercial``.
+    directories such as  ``%SCRIBESTOOLS%\ModelioOpen`` and
+    ``%SCRIBESTOOLS%\ModelioCommercial``.
 
 .. attention::
     The architecture (32bits or 64bits) of your modelio and java installations
@@ -54,10 +54,10 @@ Installing modelio open-source
     the archive for your platform (e.g. windows 64 bits |ModelioWin64|).
 
 *   Copy the archive into the directory that will contain the software
-    (e.g. ``%SCRIBETOOLS%\ModelioOpen``).
+    (e.g. ``%SCRIBESTOOLS%\ModelioOpen``).
 
 *   Extract the archive and then rename it into something like
-    ``%SCRIBETOOLS%\ModelioOpen`` (you may want later to install the commercial
+    ``%SCRIBESTOOLS%\ModelioOpen`` (you may want later to install the commercial
     version as well or another version).
 
 
@@ -100,16 +100,16 @@ platform), you just have to click on it. Otherwise you can click on the
 executable in the installation directory.
 
 Modelio can be launched within a script or from a shell with a command line
-like that (here the installation directory is ``%SCRIBETOOLS%\ModelioOpen\``::
+like that (here the installation directory is ``%SCRIBESTOOLS%\ModelioOpen\``::
 
-    %SCRIBETOOLS%\ModelioOpen\modelio.exe
+    %SCRIBESTOOLS%\ModelioOpen\modelio.exe
 
 It could be wise to create a command to add parameters (or to change the
 shortcut on windows) in order to display the console window and run the Modelio_
 in debug mode (this allows to have more messages in the console in case of
 modelio errors)::
 
-    %SCRIBETOOLS%\ModelioOpen\modelio.exe -mdebug -consoleLog
+    %SCRIBESTOOLS%\ModelioOpen\modelio.exe -mdebug -consoleLog
 
 If you get an error 'exit code 13' it is likely that the java and modelio
 architecture (32 bits or 64 bits) do not match.

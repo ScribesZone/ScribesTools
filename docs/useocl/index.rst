@@ -17,13 +17,13 @@ Installation
 To install `USE`_ (OCL):
 
 *   download the use zip file (``use-4.1.1.zip`` |use.zip|).
-*   extract this zip file where you want to install it (e.g. %SCRIBETOOLS% on
-windows).
-*   rename the newly created directory to ``%SCRIBETOOLS%\UseOCL``.
+*   extract this zip file where you want to install it (e.g. %SCRIBESTOOLS%
+    on windows).
+*   rename the newly created directory to ``%SCRIBESTOOLS%\UseOCL``.
 *   for convenience add the ``bin`` directory to your system PATH.
     For instance the PATH could look like::
 
-        %SCRIBETOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
+        %SCRIBESTOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
         /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
 
 .. NOTE::

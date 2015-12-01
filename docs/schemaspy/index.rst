@@ -42,10 +42,10 @@ Installation
 To install SchemaSpy_:
 
 * Download the SchemaSpy_ jar file |SchemaSpyJar|.
-* Create the directory ``%SCRIBETOOLS%\SchemaSpy``.
+* Create the directory ``%SCRIBESTOOLS%\SchemaSpy``.
 * Move the ``schemaSpy_5.0.0.jar`` file into
-``%SCRIBETOOLS%\SchemaSpy\schemaSpy.jar``.
-* Add ``%SCRIBETOOLS%\SchemaSpy`` to the system PATH.
+``%SCRIBESTOOLS%\SchemaSpy\schemaSpy.jar``.
+* Add ``%SCRIBESTOOLS%\SchemaSpy`` to the system PATH.
 * Copy the files ``schemaspy.bat`` and ``schemaspy.sh`` into the directory
 
 Launching SchemaSpy
@@ -76,9 +76,9 @@ use SQLite, a driver and a property file must be installed:
 
 *   make sure that the driver have been installed (see the
     :ref:`SQLite Installation` section of :ref:`SQLite chapter`).
-    This results in the driver ``%SCRIBETOOLS%\SQLite\sqlite-jdbc.jar``.
+    This results in the driver ``%SCRIBESTOOLS%\SQLite\sqlite-jdbc.jar``.
 *   Copy the file ``sqlite.properties`` into the directory
-    ``%SCRIBETOOLS%\SchemaSpy``.
+    ``%SCRIBESTOOLS%\SchemaSpy``.
 *   Adjust the location of the driver in the ``sqlite.properties`` file.
 
 To use a SQLite database file you will have to specify the path to
@@ -86,7 +86,7 @@ the property files with the `-t` option: For instance the following command
 line generate the documentation of the database ``db.sqlite3``
 in the ``docs\SchemaSpy`` directory::
 
-    schemaspy -t %SCRIBETOOLS%/SchemaSpy/sqlite.properties -db db.sqlite3 -sso -o docs\SchemaSpy
+    schemaspy -t %SCRIBESTOOLS%/SchemaSpy/sqlite.properties -db db.sqlite3 -sso -o docs\SchemaSpy
 
 .. ............................................................................
 

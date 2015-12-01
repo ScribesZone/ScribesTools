@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# ScribeTools documentation build configuration file, created by
+# ScribesTools documentation build configuration file, created by
 # sphinx-quickstart on Fri Jan 16 23:33:22 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -69,7 +69,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ScribeTools'
+project = u'ScribesTools'
 copyright = u'2015, (CC)(SA)(BY)escribis'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -237,7 +237,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ScribeToolsdoc'
+htmlhelp_basename = 'ScribesToolsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -257,7 +257,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'ScribeTools.tex', u'ScribeTools Documentation',
+  ('index', 'ScribesTools.tex', u'ScribesTools Documentation',
    u'escribis', 'manual'),
 ]
 
@@ -287,7 +287,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'scribetools', u'ScribeTools Documentation',
+    ('index', 'scribestools', u'ScribesTools Documentation',
      [u'escribis'], 1)
 ]
 
@@ -301,8 +301,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'ScribeTools', u'ScribeTools Documentation',
-   u'escribis', 'ScribeTools', 'One line description of project.',
+  ('index', 'ScribesTools', u'ScribesTools Documentation',
+   u'escribis', 'ScribesTools', 'One line description of project.',
    'Miscellaneous'),
 ]
 

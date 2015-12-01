@@ -11,7 +11,7 @@ EPUB, etc.
 Installation
 ------------
 See the `installation page`_ for detailed information. Install the application
-in a directory like ``%SCRIBETOOLS%\Pandoc``.
+in a directory like ``%SCRIBESTOOLS%\Pandoc``.
 
 On Windows:
 
@@ -21,7 +21,7 @@ On Windows:
   If the application should be installed on multiple users
   type instead::
 
-        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER=%SCRIBETOOLS%\Pandoc
+        msiexec /i C:\DOWNLOADS\pandoc-1.15-windows.msi ALLUSERS=1 APPLICATIONFOLDER=%SCRIBESTOOLS%\Pandoc
 
 On Ubuntu::
 

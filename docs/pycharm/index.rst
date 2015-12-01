@@ -30,15 +30,24 @@ There are two versions:
 
     If you are student you can very easily get `PyCharm for students`_.
     You just need to register with the email of your university.
-    It quite easy.
+    It's really easy and quite fast.
 
-* `download PyCharm`_ page and then download the appropriate version (e.g.
-  Windows community edition |PyCharmOpenWin|, Windows commercial edition
-  |PyCharmCommercialWin|).
+*   `download PyCharm`_ page and then download the appropriate version (e.g.
+    Windows community edition |PyCharmOpenWin|, Windows commercial edition
+    |PyCharmCommercialWin|).
 
-* install the version downloaded in a directory like
-  ``%SCRIBETOOLS%\PyCharmOpen`` or ``%SCRIBETOOLS%\PyCharmCommercial``.
-  This naming schema allows to have both editions installed at the same time.
+*   install the version downloaded in a directory like
+    ``%SCRIBESTOOLS%\PyCharmOpen`` or ``%SCRIBESTOOLS%\PyCharmCommercial``.
+    This naming schema allows to have both editions installed at the same time.
+
+*   by default your personal configuration of PyCharm goes in a directory
+    like ``.PyCharm40`` in your home directory, but if you want you can change
+    this by editing the file ``bin/idea.properties`` in the installation directory.
+    You have to adjust for instance the following two lines::
+
+        idea.config.path=Z:/.PyCharm/config
+        idea.system.path=Z:/.PyCharm/system
+
 
 Launching PyCharm
 -----------------

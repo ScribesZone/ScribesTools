@@ -22,6 +22,11 @@ installers (e.g. ``apt-get`` on debian or ubuntu). With pip just type::
     installation is included in the system path (see :ref:`windowsPath`).
     Some other options are discussed `here <http://docs.pylint.org/installation.html#note-for-windows-users>`__
 
+On Unbuntu you can install pylint as following::
+
+    sudo apt-get install pylint
+
+
 Lauching PyLint
 ---------------
 To try the installation type::

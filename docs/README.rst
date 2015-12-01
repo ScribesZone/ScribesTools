@@ -1,5 +1,5 @@
-ScribeTools
-===========
+ScribesTools
+============
 
 .. toctree::
     :maxdepth: 1

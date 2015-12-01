@@ -19,8 +19,8 @@ Installation
 
         apt-get install graphviz libgraphviz-dev pkg-config
 
-*   install the program in a directory like ``%SCRIBETOOLS%\Graphviz\``
-*   add ``%SCRIBETOOLS%\Graphviz\`` into the PATH environment variable.
+*   install the program in a directory like ``%SCRIBESTOOLS%\Graphviz\``
+*   add ``%SCRIBESTOOLS%\Graphviz\`` into the PATH environment variable.
 
 Launching Graphviz
 ------------------

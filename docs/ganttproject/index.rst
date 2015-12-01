@@ -49,10 +49,10 @@ Installation
 ------------
 
 *   Download the archive |GanttProjectZip|
-*   Copy the archive into ``%SCRIBETOOLS%`` and extract it here.
-*   Rename the directory to obtain ``%SCRIBETOOLS%\GanttProject``.
+*   Copy the archive into ``%SCRIBESTOOLS%`` and extract it here.
+*   Rename the directory to obtain ``%SCRIBESTOOLS%\GanttProject``.
 *   Copy the ``gandttproject.cmd`` into the directory.
-*   Add ``%SCRIBETOOLS%\GanttProject`` to the ``PATH`` variable
+*   Add ``%SCRIBESTOOLS%\GanttProject`` to the ``PATH`` variable
 
 Launching GanttProject
 ----------------------

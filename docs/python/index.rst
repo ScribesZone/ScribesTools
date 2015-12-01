@@ -32,17 +32,17 @@ Detailed information is available in the `BeginnersGuide`_ of python wiki.
 *   `Download Python 2.7.10`_. **WARNING: On windows you must select the 32
     bits version** |Python2710Windows32|.
 
-*   Install python in a directory like ``%SCRIBETOOLS%\Python27``. Keep the version
+*   Install python in a directory like ``%SCRIBESTOOLS%\Python27``. Keep the version
     number (at least 2.7) since it is common to have another directory
-    like ``%SCRIBETOOLS%\Python34`` for Python 3.4.
+    like ``%SCRIBESTOOLS%\Python34`` for Python 3.4.
 
-        msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=%SCRIBETOOLS%\Python27 ALLUSER=1 ADDLOCAL=ALL
+        msiexec /i  c:\DOWNLOADS\Win\python-2.7.10.msi TARGETDIR=%SCRIBESTOOLS%\Python27 ALLUSER=1 ADDLOCAL=ALL
 
 *   Change the two following directories to the PATH environment variable
     (if not already done by the installation program). ::
 
         # replace ';' separator by ':' on unix
-        # add   %SCRIBETOOLS%\Python2.7;%SCRIBETOOLS%\Python2.7\Scripts   to PATH
+        # add   %SCRIBESTOOLS%\Python2.7;%SCRIBESTOOLS%\Python2.7\Scripts   to PATH
 
 
 .. todo::
@@ -86,19 +86,19 @@ This can be done with one command (according to your platform)::
     pip install virtualenvwrapper       # otherwise
 
 Create a directory that will contains all virtual environments. For instance
-``%SCRIBETOOLS%\PyVEnvs27``::
+``%SCRIBESTOOLS%\PyVEnvs27``::
 
-    mkdir %SCRIBETOOLS%\PyVEnvs27
+    mkdir %SCRIBESTOOLS%\PyVEnvs27
 
 Set the ``WORKON_HOME`` environment variable to the directory just created and
 don't forget to open a new shell to see the effects of this change.::
 
-    # define WORKON_HOME variable as %SCRIBETOOLS%\PyVEnvs27
+    # define WORKON_HOME variable as %SCRIBESTOOLS%\PyVEnvs27
 
 Use a new shell to create a new virtual environment named `ScribeEnv`::
 
     mkvirtualenv ScribeEnv
-    # this creates a directory ``%SCRIBETOOLS%\PyVEnvs27\ScribeEnv``.
+    # this creates a directory ``%SCRIBESTOOLS%\PyVEnvs27\ScribeEnv``.
     # You should also see that the prompt of the shell is now prefixed with
     # (ScribeEnv) like in the following line:
     # (ScribeEnv) C:\Users\jmfavre>

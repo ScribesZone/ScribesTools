@@ -22,22 +22,22 @@ On Windows:
     *   Download the jdk from the `java download page`_.
     *   Create the following directory structure::
 
-            %SCRIBETOOLS%
+            %SCRIBESTOOLS%
                 Java
                     jre
                     jdk
 
-    *   Install the JDK in ``%SCRIBETOOLS%\Java\JDK`` and the JRE in
-        ``%SCRIBETOOLS%\Java\jdk``
+    *   Install the JDK in ``%SCRIBESTOOLS%\Java\JDK`` and the JRE in
+        ``%SCRIBESTOOLS%\Java\jdk``
 
 
     *   Add the following directory to the system PATH::
 
-            %SCRIBETOOLS%\Java\jdk\bin
+            %SCRIBESTOOLS%\Java\jdk\bin
 
     *   Set the ``JAVA_HOME`` environment variable to::
 
-            %SCRIBETOOLS%\Java\jdk
+            %SCRIBESTOOLS%\Java\jdk
 
 On Ubuntu::
 

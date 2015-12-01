@@ -35,7 +35,7 @@ MinGW    → trop compliqué
 nécessaire pour utiliser certaine libraries nécessistant de la compilation C
 télécharger http://sourceforge.net/projects/mingw/files/latest/download?source=files
 installer (il n’est pas nécessaire d’installer la version avec l’interface graphique)
-le mettre dans le path le repertoire MinGW/bin  par exemple %SCRIBETOOLS%\MinGW\bin
+le mettre dans le path le repertoire MinGW/bin  par exemple %SCRIBESTOOLS%\MinGW\bin
 
 
 
