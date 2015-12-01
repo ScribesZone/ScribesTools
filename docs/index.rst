@@ -3,7 +3,7 @@ ScribesTools
 
 Welcome to ScribesTools documentation. You will find here some indications
 on how to install and use some useful software development tools. If you are
-interested in quality aspect you may also be interested in ScribeQuality_.
+interested in quality aspect you may also be interested in ScribesQuality_.
 
 ..  ifconfig:: local
 
@@ -86,4 +86,4 @@ chapter.
 
 .. ............................................................................
 
-.. _ScribeQuality: http://ScribeQuality.readthedocs.org
+.. _ScribesQuality: http://ScribesQuality.readthedocs.org
