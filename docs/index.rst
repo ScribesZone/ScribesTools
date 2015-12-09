@@ -72,17 +72,7 @@ The pages below provide some hints about some platform customization:
             sandbox
 
 
-Installation
-------------
 
-Each tools can be installed following the "Installation" section in the
-tool chapter. If you received a disk you may be interested in the following
-chapter.
-
-..  toctree::
-    :maxdepth: 2
-
-    ../res/index
 
 .. ............................................................................
 

@@ -41,7 +41,7 @@ There are two versions:
     This naming schema allows to have both editions installed at the same time.
 
 *   by default your personal configuration of PyCharm goes in a directory
-    like ``.PyCharm40`` in your home directory, but if you want you can change
+    like ``.PyCharm`` in your home directory, but if you want you can change
     this by editing the file ``bin/idea.properties`` in the installation directory.
     You have to adjust for instance the following two lines::
 
@@ -83,10 +83,8 @@ To configure PyCharm_ use the menu ``File > Settings``::
 .. _PyDev: http://pydev.org/
 
 .. |PyCharmOpenWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-community-4.5.4.exe>`,
-    `web <http://download.jetbrains.com/python/pycharm-community-4.5.3.exe>`__)
+    (`web <http://download-cf.jetbrains.com/python/pycharm-community-5.0.1.exe>`__)
 
 .. |PyCharmCommercialWin| replace::
-    (:download:`local <../../res/pycharm/downloads/Win/pycharm-professional-4.5.4.exe>`,
-    `web <http://download.jetbrains.com/python/pycharm-professional-4.5.3.exe>`__)
+    (`web <http://download.jetbrains.com/python/pycharm-professional-5.0.1.exe>`__)
 

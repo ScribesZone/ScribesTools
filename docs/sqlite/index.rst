@@ -90,10 +90,8 @@ https://www.sqlite.org/cli.html
     https://www.sqlite.org/download.html
 
 .. |SQLiteWin32zip| replace::
-    (:download:`local <../../res/sqlite/downloads/Win/sqlite-shell-win32-x86-3081002.zip>`,
-    `web <https://www.sqlite.org/2015/sqlite-shell-win32-x86-3081002.zip>`__)
+    `web <https://www.sqlite.org/2015/sqlite-shell-win32-x86-3081002.zip>`__
 
 
 .. |SQLiteJDBCJar| replace::
-    (:download:`local <../../res/sqlite/downloads/sqlite-jdbc-3.8.10.1.jar>`,
-    `web <https://bitbucket.org/xerial/sqlite-jdbc/downloads/sqlite-jdbc-3.8.10.1.jar>`__)
+    `web <https://bitbucket.org/xerial/sqlite-jdbc/downloads/sqlite-jdbc-3.8.10.1.jar>`__

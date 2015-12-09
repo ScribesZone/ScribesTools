@@ -49,7 +49,7 @@ lines options.
     http://pandoc.org/installing.html
 
 .. |PandocWin| replace::
-    (:download:`local <../../res/pandoc/downloads/Win/pandoc-1.15-windows.msi>`, `web <https://github.com/jgm/pandoc/releases/download/1.15/pandoc-1.15-windows.msi>`__)
+    `web <https://github.com/jgm/pandoc/releases/download/1.15/pandoc-1.15-windows.msi>`__
 
 .. _`user guide`:
     http://pandoc.org/README.html

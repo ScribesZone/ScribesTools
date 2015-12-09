@@ -43,10 +43,10 @@ To install SchemaSpy_:
 
 * Download the SchemaSpy_ jar file |SchemaSpyJar|.
 * Create the directory ``%SCRIBESTOOLS%\SchemaSpy``.
-* Move the ``schemaSpy_5.0.0.jar`` file into
-``%SCRIBESTOOLS%\SchemaSpy\schemaSpy.jar``.
+* Move the ``schemaSpy_5.0.0.jar`` file into ``%SCRIBESTOOLS%\SchemaSpy\schemaSpy.jar``.
 * Add ``%SCRIBESTOOLS%\SchemaSpy`` to the system PATH.
 * Copy the files ``schemaspy.bat`` and ``schemaspy.sh`` into the directory
+
 
 Launching SchemaSpy
 -------------------
@@ -93,7 +93,6 @@ in the ``docs\SchemaSpy`` directory::
 .. _SchemaSpy: http://schemaspy.sourceforge.net
 
 .. |SchemaSpyJar| replace::
-    (:download:`local <../../res/schemaspy/downloads/schemaSpy_5.0.0.jar>`,
-    `web <http://sourceforge.net/projects/schemaspy/files/>`__)
+    `web <http://sourceforge.net/projects/schemaspy/files/>`__
 
 .. _`library example` :  http://schemaspy.sourceforge.net/sample/

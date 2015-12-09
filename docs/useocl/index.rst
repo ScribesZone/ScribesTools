@@ -16,7 +16,7 @@ Installation
 
 To install `USE`_ (OCL):
 
-*   download the use zip file (``use-4.1.1.zip`` |use.zip|).
+*   download the use zip file (``use-4.1.1.zip`` |useZip|).
 *   extract this zip file where you want to install it (e.g. %SCRIBESTOOLS%
     on windows).
 *   rename the newly created directory to ``%SCRIBESTOOLS%\UseOCL``.
@@ -35,7 +35,7 @@ To install `USE`_ (OCL):
 
     * go to "*Main menu > Language > Define your language... > Import ...*\ "
     * select the file ``USE_Notepad_plusplus_User_Defined_Language.xml``
-      |use-notepad.xml|.
+      |useNotepadXml|.
     * You may have to restart notepad++.
 
 Launching USE OCL
@@ -83,11 +83,11 @@ Documentation
 There is quite some documentation for USE OCL, but we recommend to read for
 instance the following elements in the following order:
 
-1.  Read first the quick tour |use-quick-tour|.
+1.  Read first the quick tour |useQuickTour|.
     A MUST READ. A simple class model with 3 classes, 3 associations and
     4 OCL invariants.
 
-2.  Watch the video |use-demo|.
+2.  Watch the video |useDemo|.
     The first part (until frame 128/208) deals with the static part and
     invariants. The second part deals with dynamics, operation simulation
     and pre/post conditions.
@@ -96,7 +96,7 @@ instance the following elements in the following order:
     .. image:: media/USEOCL-video.jpg
 
 
-3.  Use the reference documentation |use-documentation|.
+3.  Use the reference documentation |useDocumentation|.
     Use this document as a reference, for instance to check something about
     USE OCL language. Note that chapter 6 (page 82) contains the list of OCL
     operations supported by OCL USE.
@@ -123,35 +123,33 @@ Examples
 --------
 
 Various examples of use specifications are available in the distribution
-|use.zip| in particular in the directory ``examples``.
+|useZip| in particular in the directory ``examples``.
 
-The file ``README.examples`` |use-readme-examples| provides an interesting
+The file ``README.examples`` |useReadmeExamples| provides an interesting
 index that show which OCL features are used in which files.
 
 
 
 .. ...........................................................................
 
-..  |use-readme-examples| replace::
+..  |useReadmeExamples| replace::
     (:download:`local<docs/README.examples.txt>`)
 
-..  |use.zip| replace::
-    (:download:`local<../../res/useocl/downloads/use-4.1.1.zip>`,
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download>`__)
+..  |useZip| replace::
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download>`__
 
-..  |use-notepad.xml| replace::
-    (:download:`local<../../res/useocl/downloads/Win/USE_Notepad_plusplus_User_Defined_Language.xml>`,
-    `web <http://sourceforge.net/projects/useocl/files/Misc/>`__)
+..  |useNotepadXML| replace::
+    `web <http://sourceforge.net/projects/useocl/files/Misc/>`__
 
-..  |use-quick-tour| replace::
+..  |useQuickTour| replace::
     (:download:`local<docs/use-quick-tour.pdf>`,
     `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
-..  |use-documentation| replace::
+..  |useDocumentation| replace::
     (:download:`local<docs/use-documentation.pdf>`,
     `web <http://www.db.informatik.uni-bremen.de/projects/use/use-documentation.pdf>`__)
 
-..  |use-demo| replace::
+..  |useDemo| replace::
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
 

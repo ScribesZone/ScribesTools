@@ -204,18 +204,25 @@ To avoid typing always your password (see `Caching you Github password`_)::
 You may also configure (`Dealing with line endings`_)::
 
     git config --global core.autocrlf input    # if you use unix
+
 .. ............................................................................
 
 .. _Git: http://en.wikipedia.org/wiki/Git_%28software%29
+
 .. _GitHub: http://en.wikipedia.org/wiki/GitHub
+
 .. _BitBucket: http://en.wikipedia.org/wiki/BitBucket
+
 .. _`comparison of hosting services` : http://en.wikipedia.org/wiki/Comparison_of_source_code_software_hosting_facilities
+
 .. _`bitbucket vs. github`: http://www.infoworld.com/article/2611771/application-development/bitbucket-vs--github--which-project-host-has-the-most-.html
+
 .. _`download git`: http://git-scm.com/downloads
+
 .. _SVN: http://en.wikipedia.org/wiki/Apache_Subversion
+
 .. _`SourceTree home page`: https://www.atlassian.com/software/sourcetree
 
-.. _`
 .. _`Caching you Github password`:
     https://help.github.com/articles/caching-your-github-password-in-git/
 
@@ -223,9 +230,7 @@ You may also configure (`Dealing with line endings`_)::
     https://help.github.com/articles/dealing-with-line-endings/
 
 .. |GithubClientWindows| replace::
-    (:download:`local<../../res/github/downloads/Win/GitHubSetup.exe>`,
-    `web <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`__)
+    `web <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`__
 
 .. |GitWindows| replace::
-    (:download:`local<../../res/github/downloads/Win/Git-1.9.5-preview20150319.exe>`,
-    `web <https://git-scm.com/download/win>`__)
+    `web <https://git-scm.com/download/win>`__

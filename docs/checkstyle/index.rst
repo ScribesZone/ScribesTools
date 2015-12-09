@@ -69,11 +69,10 @@ A lot of documentation is available online |checkstyle-doc|.
 
 
 .. |checkstyle-jar| replace::
-    (:download:`local<../../res/checkstyle/downloads/checkstyle-6.8.1-all.jar>`,
-    `web <http://sourceforge.net/projects/checkstyle/files/checkstyle/6.8.1/checkstyle-6.8.1-all.jar/>`__)
+    `web <http://sourceforge.net/projects/checkstyle/files/checkstyle/6.8.1/checkstyle-6.8.1-all.jar/>`__
 
 .. |checkstyle-doc| replace::
-    (`web <http://checkstyle.sourceforge.net/index.html>`__)
+    `web <http://checkstyle.sourceforge.net/index.html>`__
 
 .. _`CheckStyle`:
     http://checkstyle.sourceforge.net/

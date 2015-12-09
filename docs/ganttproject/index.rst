@@ -125,8 +125,7 @@ This project is store in the ``HouseBuildingSample.gan``
     http://www.ganttproject.biz/download.php
 
 .. |GanttProjectZip| replace::
-    (:download:`local<../../res/ganttproject/downloads/ganttproject-2.7-r1891.zip>`,
-    `web <http://www.ganttproject.biz/download#zip>`__)
+    `web <http://www.ganttproject.biz/download#zip>`__
 
 .. _`installing from zip`: https://code.google.com/p/ganttproject/wiki/InstallingFromZIPArchive
 

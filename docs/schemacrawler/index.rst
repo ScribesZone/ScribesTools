@@ -100,8 +100,7 @@ command line interface, for scripting or for the API.
 .. ...........................................................................
 
 .. |SchemaCrawlerZip| replace::
-    (:download:`local<../../res/schemacrawler/downloads/schemacrawler-12.06.03-main.zip>`,
-    `web <http://sourceforge.net/projects/schemacrawler/files/SchemaCrawler%20-%20_MAIN%20DISRIBUTION_/12.06.03/schemacrawler-12.06.03-main.zip/download>`__)
+    `web <http://sourceforge.net/projects/schemacrawler/files/SchemaCrawler%20-%20_MAIN%20DISRIBUTION_/12.06.03/schemacrawler-12.06.03-main.zip/download>`__
 
 
 .. _SchemaCrawler: http://schemacrawler.sourceforge.net/

@@ -56,5 +56,4 @@ There is a lot of documentation_.
     http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz
 
 .. |GraphVizWin| replace::
-    (:download:`local<../../res/graphviz/downloads/Win/graphviz-2.38.msi>`,
-    `web <http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi>`__)
+    `web <http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi>`__
