@@ -13,18 +13,22 @@ would be possible in languages such as C++ or Java."
 Installation
 ------------
 
-This section shows how to install Python 2.7.10, how to use create
+This section shows how to install Python 2.7, how to use create
 virtual environments, how to install necessary libraries including windows
-specific libraries.
+specific libraries. If you want to use Jython/Python in the context
+of modelio (see :ref:`Modelio chapter`) you do not have anything to install
+as Jython 2.7 is embedded into this tool.
 
-Installing Python > 2.7.9
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing Python 2.7
+^^^^^^^^^^^^^^^^^^^^^
 
 Detailed information is available in the `BeginnersGuide`_ of python wiki.
+On most unix systems python is usually installed so try ``python -V`` on the
+command line. If the version is > 2.7.6 you can skip this step.
 
 .. note::
     There are two python ecosystems: python 2.X and 3.X.
-    There some (slight) `language differences`_ between Python 2 and
+    There some `language differences`_ between Python 2 and
     Python 3. Since not all libraries have been ported to 3.X Python 2
     is still the most common choice when a lot of libraries are required.
 
@@ -43,34 +47,6 @@ Detailed information is available in the `BeginnersGuide`_ of python wiki.
 
         # replace ';' separator by ':' on unix
         # add   %SCRIBESTOOLS%\Python2.7;%SCRIBESTOOLS%\Python2.7\Scripts   to PATH
-
-
-.. todo::
-
-    * installation procedure to be rewriten
-    * add information about /usr/local/bin vs. /usr/bin + pip2.7
-
-*   On Ubunu python is already installed but this is not a recent version
-    (version 2.6 for Ubuntu 10.4). This description below comes from an
-    article explaining how to `install python 2.7.9 on ubuntu`_.
-
-        # First, install some dependencies:
-        sudo apt-get install build-essential
-        sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-
-        # Then download using the following command:
-        cd ~/Downloads/
-        wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
-
-        # Extract and go to the dirctory:
-        tar -xvf Python-2.7.9.tgz
-        cd Python-2.7.9
-
-        # Now, install using the command you just tried:
-        ./configure
-        make
-        make test
-        sudo make install
 
 *   To test your installation, open a shell windows and type ``python``.
     The python interpreter should open and you should be able to type
@@ -178,10 +154,23 @@ To test your python installation try the following command::
 
     python -V
 
+
+.. _`Python Documentation` :
+
 Documentation
 -------------
 
-.. todo:: add references to the cheat sheets in docs/
+The best way to find information about python is just to ask question such
+as "python read file at once" on google. You may also want to have a
+look at |JythonInANutshell| and print a cheat sheet :
+
+    * |CheatSheetA|
+    * |CheatSheetB|
+    * |CheatSheetC|
+    * |FrenchCheatSheetD|
+    * |RegExCheatSheet|
+
+
 
 .. ...........................................................................
 
@@ -222,18 +211,35 @@ Documentation
     http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz
 
 .. |Python2710Windows32| replace::
-    (:download:`local <../../res/python/downloads/Win/python-2.7.10.msi>`,
-    `web <https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi>`__)
+    (`web <https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi>`__)
 
 .. |PyWin32| replace::
-    (:download:`local <../../res/python/downloads/Win/pywin32-219.win32-py2.7.exe>`,
-    `web <http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py2.7.exe>`__)
+    (`web <http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py2.7.exe>`__)
 
 .. |PyGraphViz| replace::
-    (:download:`local <../../res/python/downloads/Win/pygraphviz-1.3rc2-cp27-none-win32.whl>`,
-    `web <http://www.lfd.uci.edu/~gohlke/pythonlibs/3i673h27/pygraphviz-1.3rc2-cp27-none-win32.whl>`__)
+    (`web <http://www.lfd.uci.edu/~gohlke/pythonlibs/3i673h27/pygraphviz-1.3rc2-cp27-none-win32.whl>`__)
 
 .. |PyCrypto| replace::
-    (:download:`local <../../res/python/downloads/Win/pycrypto-2.6.win32-py2.7.exe>`,
-    `web <http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe>`__)
+    (`web <http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe>`__)
+
+..  |JythonInANutshell| replace::
+    :download:`J/Python in a nutshell<docs/JythonInANutshell-3.pdf>`
+
+..  |CheatSheetA| replace::
+    :download:`CheatSheetA<docs/python-cheat-sheet-a.pdf>`
+
+..  |CheatSheetB| replace::
+    :download:`CheatSheetB<docs/python-cheat-sheet-b.pdf>`
+
+..  |CheatSheetC| replace::
+    :download:`CheatSheetC<docs/python-cheat-sheet-c.png>`
+
+..  |FrenchCheatSheetD| replace::
+    :download:`FrenchCheatSheetD<docs/python-french-cheat-sheet-d.pdf>`
+
+..  |RegExCheatSheet| replace::
+    :download:`RegExCheatSheet<docs/python-regular-expression-cheat-sheet.pdf>`
+
+
+
 
