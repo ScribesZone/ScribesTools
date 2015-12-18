@@ -44,11 +44,18 @@ On Ubuntu::
     # Remove existing OpenJDK
     sudo apt-get purge openjdk*
     # Install Oracle Java 8
+    # if add-apt-repository is missing in the next command
+    #     sudo apt-get install software-properties-common
+    #     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:webupd8team/java
     sudo apt-get update
     sudo apt-get install oracle-java8-installer
     # Set Java Environment Variable
     sudo apt-get install oracle-java8-set-default
+
+If this does not work try instead to follow the instructions
+`how to install oracle java 9 in debian`_.
+
 
 Launching Java
 --------------
@@ -67,3 +74,5 @@ To test the JDK type the::
 
 .. _`java installation guide`:
 
+.. _`how to install oracle java 9 in debian`:
+    http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
