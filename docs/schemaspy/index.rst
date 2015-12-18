@@ -88,6 +88,10 @@ in the ``docs\SchemaSpy`` directory::
 
     schemaspy -t %SCRIBESTOOLS%/SchemaSpy/sqlite.properties -db db.sqlite3 -sso -o docs\SchemaSpy
 
+With oracle:
+
+    schemaspy -t orathin -host im2ag-oracle.e.ujf-grenoble.fr -port 1521 -db ufrima -s MYLOGIN -u mylogin -p ***** -o out
+
 .. ............................................................................
 
 .. _SchemaSpy: http://schemaspy.sourceforge.net
