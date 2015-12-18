@@ -59,8 +59,8 @@ Launching SchemaCrawler
 The simplest test to installation is to type the following::
 
     cd %SCRIBESTOOLS%\SchemaCrawler\_schemacrawler    #  to be adapted if necessary
-    sc.cmd --version                        # .sh on unix
-    sc.cmd --help
+    schemacrawler --version
+    schemacrawler --help
 
 This should display the version of SchemaCrawler_ and then the help of the
 command line.
@@ -72,6 +72,7 @@ example database server open a shell window and type the following commands::
     cd %SCRIBESTOOLS%\SchemaCrawler\examples     # directory to be adapted if necessary
     StartDatabase.cmd                           # .sh on unix
 
+
 At that level the test server should be running in this window (and the window
 color may have changed).
 
@@ -80,15 +81,17 @@ Open another shell and try::
     cd %SCRIBESTOOLS%\SchemaCrawler\_schemacrawler     # to be adapted
     sc.cmd -server=hsqldb -database=schemacrawler -password= -infolevel=detail -command=schema
 
+    schemacrawler -server=hsqldb -database=schemacrawler -password= -infolevel=detail -command=schema
+
 If you have a sqlite database you can also try::
 
-    sc.cmd -server sqlite -database <path to the sqlite file>\db.sqlite3 -infolevel=maximum -password=  -command schema
+    schemacrawler -server sqlite -database <path to the sqlite file>\db.sqlite3 -infolevel=maximum -password=  -command schema
 
 Documentation
 -------------
 The documentation of the command line interface is available via the command::
 
-    sc.cmd -help     # sc.sh on unix
+    schemacrawler -help
 
 The detail of the API is documented through `SchemaCrawler javadocs`_.
 
