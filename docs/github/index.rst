@@ -95,7 +95,7 @@ In this section you will learn how to:
 #. install the github client for your machine.
 #. install a true 'git' toolkit (only if you need it).
 
-Creating a github account
+Creating a GitHub account
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Extremely simple. Just go to https://github.com/join and fill the various
 fields. In step 2 select a free plan. Basically this is it.
@@ -105,7 +105,7 @@ fields. In step 2 select a free plan. Basically this is it.
 
     Joining GitHub - step 1
 
-Install the github client
+Install the GitHub client
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 At the time of writing this documentation, nice github clients exist only for
 Windows and for Mac. This step is anyway not obligatory. It install a nice
@@ -181,7 +181,10 @@ it following the instructions for your platform (e.g. for windows
 
 On Ubuntu you can install git as following (if it is not already installed)::
 
+    sudo add-apt-repository ppa:git-core/ppa -y     # if you want the last version
+    sudo apt-get update                             # if you want the last version
     sudo apt-get install git
+    git --version
 
 
 Configuration
