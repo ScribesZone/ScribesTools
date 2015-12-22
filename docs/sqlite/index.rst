@@ -66,32 +66,45 @@ following commands::
 
 Documentation
 -------------
+The documentation is available online (`SQLite documentation`_).
+
+* `SQLite dialect`_.
+* SQL features `omitted from SQLite`_
+
 To get some help about the command line type::
 
-    sqlite -help
+    sqlite3 -help
 
 If you want some brief help about the shell commands (including SQL) you can
 type in the shell::
 
     .help
 
-More generally, the documentation is available at
+More generally, the documentation of the shell is available at
 https://www.sqlite.org/cli.html
-
 
 
 
 .. .....................................................................
 
-.. _SQLite:
+..  _SQLite:
     https://www.sqlite.org/
 
-.. _`SQLite download page`:
+..  _`SQLite download page`:
     https://www.sqlite.org/download.html
 
-.. |SQLiteWin32zip| replace::
+..  _`SQLite documentation`:
+    https://www.sqlite.org/docs.html
+
+..  |SQLiteWin32zip| replace::
     `web <https://www.sqlite.org/2015/sqlite-shell-win32-x86-3081002.zip>`__
 
 
-.. |SQLiteJDBCJar| replace::
+..  |SQLiteJDBCJar| replace::
     `web <https://bitbucket.org/xerial/sqlite-jdbc/downloads/sqlite-jdbc-3.8.10.1.jar>`__
+
+..  _`SQLite dialect`:
+    https://www.sqlite.org/lang.html
+
+..  _`omitted from SQLite`:
+    https://www.sqlite.org/omitted.html
