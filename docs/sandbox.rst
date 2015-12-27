@@ -30,10 +30,11 @@ Examples from `this post`_ do not work:
         from plone import api
         ...
 
+
 another example
 
 ..  admonition:: Solution
-    :class: toogle
+    :class: toggle
 
     To save the world with only seconds to spare do the following:
 
