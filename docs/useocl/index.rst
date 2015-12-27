@@ -132,18 +132,14 @@ index that show which OCL features are used in which files.
 
 .. ...........................................................................
 
+.. _`source forge project`: http://sourceforge.net/projects/useocl/
+
+.. _`GPL v2 licence`: http://www.gnu.org/licenses/gpl-2.0.html
+
+.. _USE: http://sourceforge.net/projects/useocl/
+
 ..  |useReadmeExamples| replace::
     (:download:`local<docs/README.examples.txt>`)
-
-..  |useZip| replace::
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download>`__
-
-..  |useNotepadXML| replace::
-    `web <http://sourceforge.net/projects/useocl/files/Misc/>`__
-
-..  |useQuickTour| replace::
-    (:download:`local<docs/use-quick-tour.pdf>`,
-    `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
 ..  |useDocumentation| replace::
     (:download:`local<docs/use-documentation.pdf>`,
@@ -153,11 +149,12 @@ index that show which OCL features are used in which files.
     (:download:`local<docs/use-demonstration.swf>`,
     `web <http://sourceforge.net/projects/useocl/>`__)
 
+..  |useQuickTour| replace::
+    (:download:`local<docs/use-quick-tour.pdf>`,
+    `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
+..  |useZip| replace::
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download/>`__
 
-
-
-
-.. _USE: http://sourceforge.net/projects/useocl/
-.. _`source forge project`: http://sourceforge.net/projects/useocl/
-.. _`GPL v2 licence`: http://www.gnu.org/licenses/gpl-2.0.html
+..  |useNotepadXML| replace::
+    `web <http://sourceforge.net/projects/useocl/files/Misc/>`__
