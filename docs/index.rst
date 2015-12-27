@@ -42,6 +42,7 @@ Tools
     pycharm/index
     django/index
     sqlite/index
+    mysql/index
     graphviz/index
     sphinx/index
 
