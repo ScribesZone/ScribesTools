@@ -24,19 +24,9 @@ On Ubuntu you can install SQLite_ as following::
 
     sudo apt-get install sqlite3
 
-The following step is optional, but is useful if you intend to use sqlite3
-database from java. This is useful for instance if you plan to use
-:ref:`SchemaSpy chapter`.
-
-*   download ``sqlite-jdbc-3.8.10.1.jar`` |SQLiteJDBCJar|
-*   copy this jar file in the ``sqlite3`` directory created above
-    e.g. ``%SCRIBESTOOLS%\sqlite3``)
-*   rename this file into ``sqlite-jdbc.jar``
-
-
-
 Launching SQLite
------------------
+----------------
+
 You can test the installation and check the version of sqlite3 with the
 following command::
 
@@ -98,7 +88,6 @@ https://www.sqlite.org/cli.html
 
 ..  |SQLiteWin32zip| replace::
     `web <https://www.sqlite.org/2015/sqlite-shell-win32-x86-3081002.zip>`__
-
 
 ..  |SQLiteJDBCJar| replace::
     `web <https://bitbucket.org/xerial/sqlite-jdbc/downloads/sqlite-jdbc-3.8.10.1.jar>`__
