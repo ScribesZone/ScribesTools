@@ -207,11 +207,17 @@ Resources
     Resources_TaskAllocation
 
 
-XML Representation
-------------------
+Tools Interface
+---------------
 
-Gantt project are saved in ``.gan`` files which are indeed ``xml`` files.
+Gantt projects are saved in ``.gan`` files which are indeed ``xml`` files.
+This format can serve as an interoperability mean with other tools and constitutes
+therefore a potential interface for tools.
+
+
 The ``HouseBuildingSample.gan`` file |ganttHouseBuilding| corresponds to the House Building example.
+Developing a set of much simpler examples would be useful to serve as test cases and/or
+specification.
 
 ..  literalinclude:: docs/HouseBuildingSample.gan
     :language: xml
