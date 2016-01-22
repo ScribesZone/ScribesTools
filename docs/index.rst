@@ -34,6 +34,7 @@ Tools
     diigo/index
     assembla/index
     github/index
+    scribesgit/index
     readthedocs/index
     selenium/index
     travisci/index

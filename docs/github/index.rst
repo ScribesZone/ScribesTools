@@ -105,8 +105,8 @@ fields. In step 2 select a free plan. Basically this is it.
 
     Joining GitHub - step 1
 
-Install the GitHub client
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing the GitHub client
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 At the time of writing this documentation, nice github clients exist only for
 Windows and for Mac. This step is anyway not obligatory. It install a nice
 graphical user interface for using git. This interface is extremely cool,
@@ -125,8 +125,8 @@ Installation is really simple:
 
     .. image:: media/github4mac.jpg
 
-Install the BitBucket client
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing the BitBucket client
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The github client is really easy to use. However if you want to learn more
 about git and want to do some advanced things without the shell, the github
 client is not the best choice. In fact, it hides some commands behind some
@@ -156,8 +156,10 @@ While the GUI is very nice and enough for most situations, sometimes you
 will need to type git commands that are not available in the GUI. In this
 case using the git shell is the solution.
 
-Install the git toolkit
-^^^^^^^^^^^^^^^^^^^^^^^
+.. _`Installing the git toolkit section`:
+
+Installing the git toolkit
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 In some situations you will however have to install a git toolkit.
 
 .. figure:: media/gitDownload.jpg
