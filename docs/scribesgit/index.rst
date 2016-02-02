@@ -133,7 +133,8 @@ To create a local repository on your machine you have to "clone" your
 "group repository" (e.g. ``m2-aeis-G12``) from GitHub. This will create a
 local repository on your machine where you can work locally.
 
-**The values provided in this example MUST be replaced by actual values**.
+.. attention::
+    The values provided in this example MUST be replaced by actual values.
 
 ..  code-block:: bash
 
@@ -150,22 +151,26 @@ local repository on your machine where you can work locally.
     # If you get a message ‘Failed to connect to github.com port 443: Time out’
     # it is most probably that your machine is behind a firewall and that
     # you need to define http.proxy (see the Configuration section).
+    # If you get a message indicating that the repository this can either be due to:
+    # * an error in the url. Check it again.
+    # * that you don't have read access to this directory with the given login.
+    #   Check this by connecting to GitHub with this login.
 
-
-    # Enter this newly created directory
+    # Enter the newly created directory.
     cd m2r-aeis-G12
 
-Here there are two options:
+Two situations are possible here:
 
-* (1) **empty repository**. If you are the first of your group performing
+* (1) The **repository is empty**. If you are the first of your group performing
   this series of steps, your group repository will be empty and you
   will get an empty directory with only the '.git' hidden directory.
   That's ok. Just continue.
 
-* (2) **repository initalized**.  If (an)other(s) member(s) of the group already
+* (2) The **repository is initalized**.
+  If (an)other(s) member(s) of the group already
   followed these instructions, your group repository will already contains
   their work. This is fine. You will get a non empty directory with in
-  particular a '.git' hidden directory.
+  particular a ``.git`` hidden directory.
   That's ok. Just continue.
 
 Simply put, this directory contains the "local repository". This directory is
@@ -179,7 +184,8 @@ from the "root repository". The "root repository" is maintained by teachers.
 This directory contains work definitions, directory structures, file skeletons, 
 and so on.
 
-**The values provided in this example MUST be replaced by actual values**.
+.. attention::
+    The values provided in this example MUST be replaced by actual values.
 
 ..  code-block:: bash
 
@@ -198,6 +204,12 @@ and so on.
     # If an editor opens just enter a message like "get assignment skeletons"
     git pull -e root master
     # You should now have the assignment skeletons in the local repository.
+    # Note that if you get an error at this level this could be either because:
+    # * you've made an error in the url above. Use git remote -v to check it.
+    #   If there is an error use the following command
+    #      git remote set-url root <the-url>
+    # * you do not have read access to this repository. Please check this
+    #   going on GitHub and check if you see it with your login.
 
     # You can browse the content of the directory with "ls -la" on unix.
     # There is one directory per assignment.
