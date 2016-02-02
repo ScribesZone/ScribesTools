@@ -93,7 +93,7 @@ the :ref:`Installing the git toolkit section`.
 Configuring Git
 ---------------
 
-You have to configure git once on each machine you use. For instance you
+You have to configure git once on *each* machine you use. For instance you
 may want to configure your account at the university and/or your
 account on your personal machine. 
 
@@ -110,14 +110,21 @@ account on your personal machine.
 
     # Keep the password in memory for 2h
     git config --global credential.helper "cache --timeout=7200"
+    # On some machine this method do not work and you will get an error message
+    # or a warning after each pull/push. In this case just remove the
+    # configuration option above using the following command:
+    #    git config --global --unset credential.helper
 
     # OPTIONAL: Add a proxy if your machine is behind a firewall
     git config --global http.proxy http://www-cache.ujf-grenoble.fr:3128
 
-    # OPTIONAL: Configure the editor used to edit message. Depends on OS
+    # OPTIONAL: Configure the editor used to edit message. Depends on the OS
     git config --global core.editor "gedit -w -s"  # For ubuntu
 
     # To see current configuration you can use the "git config -l" command
+    # If you want to change something you can always edit the .gitconfig file
+    # using the following command (or any editor):
+    #   git config --global --edit
 
 Cloning the group repository
 ----------------------------
