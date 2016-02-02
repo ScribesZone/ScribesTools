@@ -88,3 +88,57 @@ To configure PyCharm_ use the menu ``File > Settings``::
 .. |PyCharmCommercialWin| replace::
     (`web <http://download.jetbrains.com/python/pycharm-professional-5.0.1.exe>`__)
 
+
+
+.. ...... notes .....
+        .Pycharm50/options/editor.xml
+        <application>
+          <component name="EditorSettings">
+            <option name="ARE_LINE_NUMBERS_SHOWN" value="true" />
+          </component>
+        </application>
+        .PyCharm50/options/filetypes.xml
+        <application>
+          <component name="FileTypeManager" version="16">
+            <ignoreFiles list="*$py.class;*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;vssver.scc;vssver2.scc;" />
+            <extensionMap>
+              <mapping ext="odp" type="Native" />
+              <mapping pattern=".nojekyll" type="PLAIN_TEXT" />
+              <mapping ext="csv" type="PLAIN_TEXT" />
+              <mapping ext="doctree" type="PLAIN_TEXT" />
+              <mapping ext="rel" type="PLAIN_TEXT" />
+              <mapping ext="inv" type="PLAIN_TEXT" />
+              <mapping ext="rstt" type="ReST" />
+              <mapping ext="gan" type="XML" />
+            </extensionMap>
+          </component>
+        </application>
+        git.xml
+        <application>
+          <component name="Git.Application.Settings">
+            <option name="myPathToGit" value="/usr/bin/git" />    <-----------
+            <option name="SSH_EXECUTABLE" value="IDEA_SSH" />
+          </component>
+        </application>
+        github.xml
+        <application>
+          <component name="GithubSettings">
+            <option name="LOGIN" value="escribis" />
+            <option name="AUTH_TYPE" value="BASIC" />
+          </component>
+        </application>
+        ide.general.xml
+        <application>
+          <component name="Registry">
+            <entry key="ide.firstStartup" value="false" />
+            <entry key="ide.editor.tabs.open.at.the.end" value="true" />
+          </component>
+        </application>
+        jdk.table.xml        ProjectJdkTable    ---- interpreters and virtual env
+        <homePath value="/usr/share/PyVEnvs27/ScribesEnv/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file:///usr/share/PyVEnvs27/ScribesEnv/lib/python2.7" />
+            <root type="simple" url="file:///usr/share/PyVEnvs27/ScribesEnv/lib/python2.7/lib-dynload" />
+        runner.layout.xml   <  ---database stuff
