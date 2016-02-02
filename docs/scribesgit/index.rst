@@ -219,21 +219,20 @@ Browsing Work Definitions
 
 Let us call "WorkDefinition" the definition of the tasks to perform
 to complete  assignments. Work definitions are implemented in terms of
-["issues"] https://guides.github.com/features/issues/)  in the 
-"root repository".
+`GitHub issues`_ in the "root repository" as shown in the example below:
 
-The best to understand how it works is to have a look at the 
-[m2r-aeis-root issues](https://github.com/m2r/m2r-aeis-root/issues).
+..  image:: media/WorkDefinitionExample.png
+    :align: center
 
 If you have questions about work definitions, do not hesitate to post a
-a question (an issue with a label "question").
+a question. Just take care of choosing a title as clear as possible.
 
 
 Changing CONTRIBUTORS.md
 ------------------------
 
-Your first work is likely to be defined by an issue entitled
-``[WD] Define Repository Contributors``.
+Your first work is likely to be defined by an "WorkDefinition" (an issue)
+entitled ``[WD] Define Repository Contributors``.
 
 The first action is to fill the ``CONTRIBUTORS.md`` file in the repository
 and to put the information about the group using the format such as below.
@@ -250,7 +249,7 @@ Add a line for each partner in a group.
     group|firstname|lastname|github_account|email
     -----|---------|--------|--------------|-----
     G12|Noe|ZARWIN|noezarwin|noezarwin@gmail.com
-    G12|Babako|ELIE SCHMIDT|eliebjoe|babakojoe@ujf-grenoble.fr
+    G12|Babako|SCHMIDT|babako12|babako.schmidt@e.ujf-grenoble.fr
 
 ..  code-block:: bash
 
@@ -264,10 +263,15 @@ Add a line for each partner in a group.
 
     # Push (e.g. publish) the state of the local repository to github
     git push origin master
+    # If you get an error here indicating that there is no such repository
+    # this could be because you don't have write access to this repository.
+    # Go to GitHub using the login used in the url and check if you can edit
+    # files. If not post an issue in the root repository and writing rights
+    # will be associated to your account.
 
 The changes should now appear on GitHub "group repository".
 Log in to GitHub and go to ``https://github.com/m2r/m2r-aeis-G12``
-if you want to check by yourself.
+to check.
 
 Making and pushing changes
 --------------------------
@@ -389,7 +393,10 @@ If you have some answer to some posted issues, please provide it directly online
 .. ................................................................................
 
 
-.. _`merge conflicts` :
-        https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+..  _`merge conflicts` :
+    https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
 
-.. _`resolving merge conflicts`: `merge conflicts`_
+..  _`resolving merge conflicts`: `merge conflicts`_
+
+..  _`GitHub issues` :
+    https://guides.github.com/features/issues/
