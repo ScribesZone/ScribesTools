@@ -48,7 +48,7 @@ path to use binary). This launch the USE OCL Command Line Interface (CLI).
     with ``Windows RegCreateKeyEx(...) returned error code 5.``.
     In this case in administrator mode one should create the key
     ``HKEY_LOCAL_MACHINE\Software\JavaSoft\Prefs`` with ``regedit``.
-     This is just a warning and you can use USE OCL safely interactively.
+    This is just a warning and you can use USE OCL safely interactively.
     This might although cause problems if you use USE OCL via
     some scripts as the command will always return an error code.
 
@@ -133,8 +133,13 @@ Using PyCharm IDE
 
 USE specifications are just plain text files. A regular file editor
 and a shell are just enough to work with USE.
+
 You may however want to use syntax highlighting with PyCharm
 (see :ref:`PyCharm chapter` for installation instructions).
+Read also :ref:`Launching PyCharm section`. When you launch PyCharm select
+the "project directory", the top directory that contains
+all your files including the ``.git`` subdirectory if you use git.
+
 PyCharm has to be configured and this imply to follow *various* steps.
 A PyCharm plugin has to be installed and a few configurations files
 have to be copied. At the end you will get the following result.
