@@ -110,12 +110,12 @@ account on your personal machine.
 
     # Keep the password in memory for 2h
     git config --global credential.helper "cache --timeout=7200"
-    # On some machine this method do not work and you will get an error message
+    # On some machine this method does not work and you will get an error message
     # or a warning after each pull/push. In this case just remove the
     # configuration option above using the following command:
     #    git config --global --unset credential.helper
 
-    # OPTIONAL: Add a proxy if your machine is behind a firewall
+    # OPTIONAL: Add a proxy ONLY if your machine is behind a firewall
     git config --global http.proxy http://www-cache.ujf-grenoble.fr:3128
 
     # OPTIONAL: Configure the editor used to edit message. Depends on the OS
@@ -130,7 +130,7 @@ Cloning the group repository
 ----------------------------
 
 To create a local repository on your machine you have to "clone" your
-"group repository" (e.g. ``m2-aeis-G12``) from GitHub. This will create a
+"group repository" (e.g. ``m2r-aeis-G12``) from GitHub. This will create a
 local repository on your machine where you can work locally.
 
 .. attention::
@@ -138,22 +138,24 @@ local repository on your machine where you can work locally.
 
 ..  code-block:: bash
 
-    #---- Clone the "group reposity" and into a "local repository" ------------
+    #---- Clone the "group repository" and into a "local repository" ------------
     # Go to your home directory
-    cd # On unix
+    cd  # On unix
 
     # The "group repository" is at URL like (check this when connected to GitHub)
-    # https://<github_account>@github.com/<school>/<school>-<class>-<group>.git
+    # https://<github_account>@github.com/<grade>/<grade>-<class>-<group>.git
     # The GitHub account is specified explicitly (noezarwin below).
     # The following command will ask for the corresponding password.
     # Clone it in the current directory.
     git clone https://noezarwin@github.com/m2r/m2r-aeis-G12.git
     # If you get a message ‘Failed to connect to github.com port 443: Time out’
     # it is most probably that your machine is behind a firewall and that
-    # you need to define http.proxy (see the Configuration section).
-    # If you get a message indicating that the repository this can either be due to:
-    # * an error in the url. Check it again.
-    # * that you don't have read access to this directory with the given login.
+    # you need to define http.proxy (see the Configuration section above).
+    # If you get a message indicating that the repository does not exist
+    # this can either be due to:
+    # * an error in the url. Check it again and don't miss .git at the end.
+    # * a proper read access on the repository might be missing
+    #   the given login.
     #   Check this by connecting to GitHub with this login.
 
     # Enter the newly created directory.
@@ -162,15 +164,15 @@ local repository on your machine where you can work locally.
 Two situations are possible here:
 
 * (1) The **repository is empty**. If you are the first of your group performing
-  this series of steps, your group repository will be empty and you
-  will get an empty directory with only the '.git' hidden directory.
+  this series of steps, your group repository could be empty.
+  There will be at least the '.git' hidden directory.
   That's ok. Just continue.
 
 * (2) The **repository is initalized**.
   If (an)other(s) member(s) of the group already
   followed these instructions, your group repository will already contains
-  their work. This is fine. You will get a non empty directory with in
-  particular a ``.git`` hidden directory.
+  their work. This is fine. You will get a non-empty directory. There is
+  in particular a ``.git`` hidden directory.
   That's ok. Just continue.
 
 Simply put, this directory contains the "local repository". This directory is
@@ -202,7 +204,7 @@ and so on.
 
     # "Pull" the assignment skeletons from the "root directory".
     # If an editor opens just enter a message like "get assignment skeletons"
-    git pull -e root master
+    git pull root master
     # You should now have the assignment skeletons in the local repository.
     # Note that if you get an error at this level this could be either because:
     # * you've made an error in the url above. Use git remote -v to check it.
@@ -304,7 +306,7 @@ and pushing these changes on GitHub to the "group repository".
     # You must do this at the end of a working session if you
     # plan to continue on another machine (at home for instance)
     # or if you want other group members to "see" the changes.
-    git push -e origin master
+    git push origin master
 
 
 Pulling changes from the group repo
@@ -321,7 +323,7 @@ In this case you have to "pull" these changes as following.
     # "origin" refers to the "group repository" on GitHub.
     # The "pull" command download the latest changes from the "group repository"
     # then it try to merge these changes with those made locally.
-    git pull -e origin master
+    git pull origin master
 
 Pulling changes may cause some merge conflicts. 
 See `resolving merge conflicts`_ in this case.
@@ -342,7 +344,7 @@ pull these changes in the same way you pull changes from your
     # "root" refers to the "root repository" on GitHub.
     # This "remote" repository has been declared in the "Getting assignment skeletons"
     # section.
-    git pull -e root master
+    git pull root master
 
 Pulling changes may cause some merge conflicts. 
 See `resolving merge conflicts`_ in this case.
