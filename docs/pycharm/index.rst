@@ -45,15 +45,54 @@ There are two versions:
     this by editing the file ``bin/idea.properties`` in the installation directory.
     You have to adjust for instance the following two lines::
 
-        idea.config.path=Z:/.PyCharm/config
-        idea.system.path=Z:/.PyCharm/system
+        idea.config.path=Z:/.PyCharm50/config
+        idea.system.path=Z:/.PyCharm50/system
 
+.. _`Launching PyCharm section`:
 
 Launching PyCharm
 -----------------
-The installers most likely created a shortcut. Click on it to launch PyCharm.
+The installer most likely created a shortcut. Click on it to launch PyCharm.
 Alternatively you can also find the executable in the bin directory of the
-installation.
+installation or in a standard bin directory (e.g. ``/usr/bin/pycharm``).
+
+Launching PyCharm the first time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+When launching pycharm for the first time, you will have no ``.PyCharm50``
+in your home directory. This directory contains the global configuration
+describing your global preference, your environment, the licencing information,
+and so on. PyCharm will therefore ask a few questions.
+
+If you use the commercial version of PyCharm, you have to provide information
+for:
+
+* your pycharm/jetbrain account (created before) if you work at home for instance,
+
+* or a pycharm server licence if you work at university for instance. If you
+  are in the context of the UGA enter
+  ``http://im2ag-licence.e-imag.ujf-grenoble.fr:1111`` for the licence server.
+
+
+Opening/Creating PyCharm projects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Just like eclipse or netbeans, PyCharm is NOT a text **file** editor. So one do not
+open a file when launching PyCharm, but on the contrary create a **project**
+at a given place; and this project (or other projects) will always be opened and
+used in next sessions. A PyCharm project is simply a directory with a ``.idea``
+subdirectory. This ``.idea`` subdirectoy is created on the first time and then
+managed by PyCharm.
+
+*When launching PyCharm you have to select your "project" directory*,
+that is the directory that contains all files you want to work on.
+Usually this is the directory that also contains versioning information, so
+it is most likely that this project directory will contain both ``.idea`` and
+``.git`` subdirectories (if you are using Git).
+
+.. note::
+
+    The normal way to proceed with PyCharm is to open only projects and
+    you should therefore have only one ``.idea`` directory at the top level
+    of your "project directory".
 
 Documentation
 -------------
