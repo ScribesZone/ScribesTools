@@ -78,11 +78,11 @@ Installing modelio commercial
 
     * *floating licence* (with organizations).
         If you are running modelio for the first time in the context of an
-        organization (e.g. at `UFRIMAG`_), Modelio_ may ask you
+        organization (e.g. at `UGA`_), Modelio_ may ask you
         to enter the reference of a *licence server* following this procedure
         |modelioLicenceClient|. You will have to enter the information of
-        the licence server (e.g. at the `UFRIMAG`_ the host name is
-        ``im2ag-ad.e-im2ag.ujf-grenoble.fr`` and the port is ``6200``
+        the licence server (e.g. at the `UGA`_ the host name is
+        ``152.77.82.15`` and the port is ``6200``
 
 
 * Register to modelio community |modelioRegister|. This is free.
@@ -510,7 +510,7 @@ are mostly:
 
 .. _`python plugins`: http://PyModelio.readthedocs.org
 
-.. _`UFRIMAG`: http://ufrima.imag.fr/
+.. _`UGA`: http://ufrima.imag.fr/
 
 .. _Jython: http://www.jython.org/
 
