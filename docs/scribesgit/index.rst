@@ -233,14 +233,14 @@ a question. Just take care of choosing a title as clear as possible.
 Changing CONTRIBUTORS.md
 ------------------------
 
-Your first work is likely to be defined by an "WorkDefinition" (an issue)
-entitled ``[WD] Define Repository Contributors``.
+One of your first work is likely to be defined by an "WorkDefinition"
+(an issue) most likely entitled ``[WD] Define Repository Contributors``.
 
-The first action is to fill the ``CONTRIBUTORS.md`` file in the repository
+You have to fill the ``CONTRIBUTORS.md`` file in the repository
 and to put the information about the group using the format such as below.
-Add a line for each partner in a group.
+Add a line for each member. The list must be **sorted by lastnames**.
 
-.. attention::
+..  attention::
     The values provided in this example MUST be replaced by actual values.
 
 ..  code-block:: bash
@@ -249,12 +249,42 @@ Add a line for each partner in a group.
     # Use your favorite editor to edit CONTRIBUTORS.md.
     # Enter the data about all group members in the following format.
 
+The fields are the following:
+
+:n:
+    The indice of the member in the list. Members must be list
+    in alphabetical order on the lastname, then firstname.
+:group:
+    The group number (e.g. ``G12``).
+:trigram:
+    Three uppercase letters:
+
+    * the first letter of the firstname
+    * the first letter of the lastname
+    * the **last** letter of the lastname
+
+    See the quality rule
+    `Trigramme <http://scribesquality.readthedocs.org/en/latest/packages/Nomenclature.html#trigramme>`_
+    for details about composite names.
+:firstname:
+    The firstname of the member (e.g. ``Babako``).
+:lastname:
+    The lastname of member using uppercases (e.g. ``SCHMIDT``).
+:github_account:
+    The login used by the member to connect to GitHub.
+:email:
+    A valid email address.
+
+..  attention::
+    The lines must be **sorted by lastnames** (ascending order).
+    This is fundamental for defining the ``n`` indice.
+
 ::
 
-    group|firstname|lastname|github_account|email
-    -----|---------|--------|--------------|-----
-    G12|Noe|ZARWIN|noezarwin|noezarwin@gmail.com
-    G12|Babako|SCHMIDT|babako12|babako.schmidt@e.ujf-grenoble.fr
+    n|group|trigram|firstname|lastname|github_account|email
+    -|-----|-------|---------|--------|--------------|-----
+    1|G12|BST|Babako|SCHMIDT|babako12|babako.schmidt@e.ujf-grenoble.fr
+    2|G12|NZN|Noe|ZARWIN|noezarwin|noezarwin@gmail.com
 
 ..  code-block:: bash
 
@@ -275,7 +305,7 @@ Add a line for each partner in a group.
     # will be associated to your account.
 
 The changes should now appear on GitHub "group repository".
-Log in to GitHub and go to ``https://github.com/m2r/m2r-aeis-G12``
+Log in to GitHub and go to your group repository (e.g. ``https://github.com/m2gi/m2gi-idm-G12``)
 to check.
 
 Making and pushing changes
