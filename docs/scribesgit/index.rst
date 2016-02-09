@@ -227,7 +227,8 @@ to complete  assignments. Work definitions are implemented in terms of
     :align: center
 
 If you have questions about work definitions, do not hesitate to post a
-a question. Just take care of choosing a title as clear as possible.
+a question. Just take care of choosing a title as clear as possible for
+your question.
 
 
 Changing CONTRIBUTORS.md
@@ -236,7 +237,7 @@ Changing CONTRIBUTORS.md
 One of your first work is likely to be defined by an "WorkDefinition"
 (an issue) most likely entitled ``[WD] Define Repository Contributors``.
 
-You have to fill the ``CONTRIBUTORS.md`` file in the repository
+You have to fill the ``CONTRIBUTORS.rest`` file in the repository
 and to put the information about the group using the format such as below.
 Add a line for each member. The list must be **sorted by lastnames**.
 
@@ -279,12 +280,19 @@ The fields are the following:
     The lines must be **sorted by lastnames** (ascending order).
     This is fundamental for defining the ``n`` indice.
 
+    The lastname must be all in uppercases.
+
+    Change the width of columns if you need more space for your name, email, etc.
+    A strict alignement is necessary for the .rst processor to parse this table correctly.
+
 ::
 
-    n|group|trigram|firstname|lastname|github_account|email
-    -|-----|-------|---------|--------|--------------|-----
-    1|G12|BST|Babako|SCHMIDT|babako12|babako.schmidt@e.ujf-grenoble.fr
-    2|G12|NZN|Noe|ZARWIN|noezarwin|noezarwin@gmail.com
+    === ===== ======= ====================== ======================= ===================== =====================================
+    n   Group Trigram       Firstname              Lastname              GithubAccount                    Email
+    === ===== ======= ====================== ======================= ===================== =====================================
+    1   G12   BST     Babako                 SCHMIDT                 babako12              babako.schmidt@e.ujf-grenoble.fr
+    2   G12   NZN     Noe                    ZARWIN                  noezarwin             noezarwin@gmail.com
+    === ===== ======= ====================== ======================= ===================== =====================================
 
 ..  code-block:: bash
 
