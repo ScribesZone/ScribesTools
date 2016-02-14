@@ -70,7 +70,7 @@ for:
 
 * or a pycharm server licence if you work at university for instance. If you
   are in the context of the UGA enter
-  ``http://im2ag-licence.e-imag.ujf-grenoble.fr:1111`` for the licence server.
+  ``http://im2ag-licence.e-im2ag.ujf-grenoble.fr:1111`` for the licence server.
 
 
 Opening/Creating PyCharm projects
