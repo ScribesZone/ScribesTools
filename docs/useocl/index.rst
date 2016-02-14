@@ -127,6 +127,123 @@ We recommend the following order:
         use -nogui
 
 
+Syntax
+------
+The syntax of OCL and USE/SOIL languages is summarized in |umlOclCheatSheet|.
+Only particular points are exemplified below.
+
+Enumerations
+""""""""""""
+
+In USE enumerations can be defined as following::
+
+    enum Season {winter, autumn, spring, summer}
+
+In USE or SOIL enumerations can be used as following::
+
+    Season::winter
+
+Associations
+""""""""""""
+
+Here is an example of (regular) *association*:
+
+..  image:: media/USEOCLAssociationUSE.png
+    :align: center
+
+In USE::
+
+    association Owns between
+        Person [1] role owner
+        Car[*] role ownedCars
+    end
+
+An example of link:
+
+..  image:: media/USEOCLAssociationSOIL.png
+    :align: center
+
+In SOIL::
+
+    ! insert(tian,c232) into Owns
+
+
+Qualified Associations
+""""""""""""""""""""""
+
+Let us consider this following qualified association.
+
+..  image:: media/USEOCLQualifiedAssociationUSE.png
+    :align: center
+
+Note the ``qualifier`` construct in the USE association definition::
+
+    association APourDirigeant between
+        Association1901[*] role associationsDirigees  qualifier(titre:String)
+        Person [0..1] role dirigeant
+    end
+
+The example below represents a valid object model.
+
+..  image:: media/USEOCLQualifiedAssociationSOIL.png
+    :align: center
+
+
+Note the ``insert(<role>{<value>...}`` SOIL construct
+to create new link and ``.<role>[<value>]`` to traverse links::
+
+    ! insert(petanque38{'president'},antonio) into APourDirigeant
+    ! insert(petanque38{'secretaire'},antonio) into APourDirigeant
+    ! insert(petanque38{'tresorier'},djamila) into APourDirigeant
+    ? petanque38.dirigeant['president']
+    ? petanque38.dirigeant
+
+Creating diagrams
+-----------------
+
+USE Graphical User Interface (GUI) can be used to create class diagrams
+as well as object diagrams (among other kind of diagrams).
+
+In order to do so launch use *without* the ``-nogui`` option. If you
+want to get both a class diagram and a object diagram specify both
+a ``.use`` and ``.soil`` file on the command line. Something like::
+
+    use -nr CyberGarage.use scenarios/CyberGarage/scenario.use
+
+To create a diagram then use the menus:
+
+* ``View > Create View > Class Diagram`` and
+* ``View > Create View > Object Diagram``
+
+Many useful options are then available in the contextual menu of each diagram
+(right click).
+
+..  figure:: media/USEOCL-ClassDiagram.png
+    :align: center
+
+Many options are available. You are likely to use:
+
+* ``Auto-Layout`` to get a first layout automatically.
+* ``Save-Layout`` to save the layout after some manual arrangement. This save
+  the diagram layout in the form of a ``.clt``  (Class LayouT) file or
+  ``.olt`` (Object Layout) file depending on the diagram.
+* ``Show muliplicities``, ``Show role names``, etc.
+
+If you intend to create various diagrams for the same model (to create
+different views) you are likely to use ``Hide`` options.
+
+..  note:: Naming objects
+
+    If you have trouble in getting what you want as object identifier
+    in the object diagram (you might get for instance ``Vehicule1 : Vehicule``)
+    this is mostly due because no name have been assigned to yours objects.
+    In order to do so you have to use the following syntax::
+
+        v803 := new Vehicule('v803')
+
+    Note that the first occurence of ``v803`` is a variable name (not display
+    in the diagram), while the second occurence is the object identifier displayed
+    in the diagram. If none is given, use will define one automatically.
 
 Using PyCharm IDE
 -----------------
@@ -171,12 +288,14 @@ don't waste your time. Use a regular editor. Otherwise your might consider
 following the procedure below.
 
 USE and SOIL highlighting
-"""""""""""""""""""""""""""
+"""""""""""""""""""""""""
 PyCharm support syntax highlighing for many languages but not USE OCL.
 The file contains the definition of the language (keywords, comments, etc.).
-PyCharm should be stoped. PyCharm, download |UseOCLxml|, and copy this file to
-``.PyCharm50/config/filetypes`` (create
-the directory ``filetypes`` if it does not exist already).
+
+1.  PyCharm should be stopped.
+2.  Download |UseOCLxml|.
+3.  Copy this file to ``.PyCharm50/config/filetypes``
+    (create the directory ``filetypes`` if it does not exist already).
 
 .. note::
 
