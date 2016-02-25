@@ -51,9 +51,7 @@ extensions = [
     'scribeextension',
 #    'sphinxcontrib.images',
 # %JFE+]
-
     'sphinx.ext.autodoc',
-    'sphinxcontrib.slide',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
