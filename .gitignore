@@ -1,10 +1,5 @@
-docs/*/_build/
-docs/_build/
-docs/*/install/
-docs/*/archives/
-res/*/downloads/
-res/*/pipdownloads/
-res*.zip
+.build/
+*/archives/
 
 # Python / Jython
 

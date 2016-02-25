@@ -19,7 +19,7 @@ import os
 
 import os.path
 CONF_DIR = os.path.dirname(os.path.realpath(__file__))
-PROJECT_DIR = os.path.join(CONF_DIR,'..','..')
+PROJECT_DIR = CONF_DIR
 TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
 # SCRIBES_INFRA_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'ScribesInfra'))
 # SPHINX_ZONE_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'SphinxZone'))
