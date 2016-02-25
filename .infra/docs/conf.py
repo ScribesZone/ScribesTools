@@ -21,18 +21,18 @@ import os.path
 CONF_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = os.path.join(CONF_DIR,'..','..')
 TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
-SCRIBES_INFRA_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'ScribesInfra'))
-SPHINX_ZONE_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'SphinxZone'))
-if not os.path.isdir(SCRIBES_INFRA_DIR):
-    print 'FATAL ERROR: directory %s does not exist' % SCRIBES_INFRA_DIR
-    print '             Install ScribesInfra with git clone https//github.com/ScribesZone/ScribesInfa'
-    raise EnvironmentError('ScribesInfra not found. See message above.')
-sys.path.insert(0, '.')
-sys.path.insert(0, CONF_DIR)
-sys.path.insert(0, SCRIBES_INFRA_DIR)
-sys.path.insert(0, os.path.join(SCRIBES_INFRA_DIR,'libs'))
-sys.path.insert(0, SPHINX_ZONE_DIR)
-sys.path.insert(0, os.path.join(SPHINX_ZONE_DIR,'libs'))
+# SCRIBES_INFRA_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'ScribesInfra'))
+# SPHINX_ZONE_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'SphinxZone'))
+# if not os.path.isdir(SCRIBES_INFRA_DIR):
+#     print 'FATAL ERROR: directory %s does not exist' % SCRIBES_INFRA_DIR
+#     print '             Install ScribesInfra with git clone https//github.com/ScribesZone/ScribesInfa'
+#     raise EnvironmentError('ScribesInfra not found. See message above.')
+# sys.path.insert(0, '.')
+# sys.path.insert(0, CONF_DIR)
+# sys.path.insert(0, SCRIBES_INFRA_DIR)
+# sys.path.insert(0, os.path.join(SCRIBES_INFRA_DIR,'libs'))
+# sys.path.insert(0, SPHINX_ZONE_DIR)
+# sys.path.insert(0, os.path.join(SPHINX_ZONE_DIR,'libs'))
 
 
 sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '..'))
