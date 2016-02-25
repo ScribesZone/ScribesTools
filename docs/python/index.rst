@@ -24,7 +24,7 @@ Installing Python 2.7
 
 Detailed information is available in the `BeginnersGuide`_ of python wiki.
 On most unix systems python is usually installed so try ``python -V`` on the
-command line. If the version is > 2.7.6 you can skip this step.
+command line. If the version is >= 2.7.6 you can skip this step.
 
 .. note::
     There are two python ecosystems: python 2.X and 3.X.
@@ -89,9 +89,24 @@ virtual environment::
 From now on, you will have to activate the ScribeEnv virtual environment
 each time you open a new shell and want to use/install python software.
 
-Windows specific libs
-^^^^^^^^^^^^^^^^^^^^^
-This section is devoted to Windows specific python packages.
+Libraries
+^^^^^^^^^
+
+Some python libraries depends on the OS (those who are using C libraries for
+instance). Select the section corresponding on your OS:
+
+* installing `Python libraries on windows`_.
+* installing `Python libraries on unix`_.
+
+.. _`Python libraries on windows`:
+
+Libraries on windows
+''''''''''''''''''''
+
+This section is devoted to installing python libraries on windows.
+
+Native libraries
+""""""""""""""""
 
 .. Note::
     Some python libraries need to be compiled with a C compiler.
@@ -101,7 +116,7 @@ This section is devoted to Windows specific python packages.
     `Unofficial Windows Binaries for Python Extension Packages`_.
 
 pywin32
-"""""""
+~~~~~~~
 
 pywin32_ is a set of python extensions for Windows. This library is required
 in particular by Scrapy_.
@@ -113,7 +128,8 @@ in particular by Scrapy_.
         easy_install C:\DOWNLOADS\pywin32-219.win32-py2.7.exe
 
 pygraphviz
-""""""""""
+~~~~~~~~~~
+
 pygraphviz_ is a python API to use the GraphViz_ graph package.
 
 * download ``pygraphviz‑1.3rc2‑cp27‑none‑win32.whl`` |PyGraphViz|. This
@@ -124,27 +140,71 @@ pygraphviz_ is a python API to use the GraphViz_ graph package.
         pip install c:\DOWNLOADS\pygraphviz-1.3rc2-cp27-none-win32.whl
 
 pycrypto
-""""""""
+~~~~~~~~
 
 PyCrypto is a Python cryptography package used by other packages.
 
-* download ``pygraphviz‑1.3rc2‑cp27‑none‑win32.whl`` |PyCrypto|. This
-  version works with ``graphviz 2.38.msi``.
-* **do not click on the executable** but type instead the following command
+* download ``pygraphviz‑1.3rc2‑cp27‑none‑win32.whl`` |PyCrypto|.
+* Type instead the following command
   (make sure that ``(ScribeEnv)`` is in the prompt)::
 
         easy_install.exe c:\DOWNLOADS\pycrypto-2.6.win32-py2.7.exe
 
-Libraries
-^^^^^^^^^
-To install python libraries type the following command (make sure that
-``(ScribeEnv)`` is in the prompt)::
+pillow
+~~~~~~
 
-    pip install XXXX\requirements-common.txt
+Pillow, a replacement for PIL, the Python Image Library.
 
-On platforms other than windows type::
+* download ``Pillow-3.1.1-cp27-none-win32.whl`` |Pillow|.
+* Type instead the following command
+  (make sure that ``(ScribeEnv)`` is in the prompt)::
 
-    pip install XXXX\requirements-unix.txt
+        easy_install.exe c:\DOWNLOADS\Pillow-3.1.1-cp27-none-win32.whl
+
+Python libraries
+""""""""""""""""
+
+To install regular python libraries (those that are based on python only)
+type the following command (make sure that ``(ScribeEnv)`` is in the prompt)::
+
+        pip install XXXX\requirements-windows.txt
+
+..  todo:: Provide requirements-windows.txt
+
+
+
+.. _`Python libraries on unix`:
+
+Libraries on Unix
+'''''''''''''''''
+
+This section is devoted to installing python libraries on unix.
+
+Native libraries
+""""""""""""""""
+On **Ubuntu 14.04** the following native libraries have to be installed for python
+libraries to work properly.
+
+..  tip::
+    For other unix systems try first to install the
+    python libraries and check on Google what to do
+    if you got error messages.
+
+::
+
+    sudo apt-get install autoconf g++ python2.7-dev python-dev
+    sudo apt-get build-dep python-imaging                                                    # for Pillow package
+    sudo apt-get install libjpeg8 libjpeg62-dev libfreetype6 libfreetype6-dev                # for Pillow package
+    sudo apt-get install libffi-dev libssl-dev libxml2-dev libxslt1-dev
+
+Python libraries
+""""""""""""""""
+
+To install python libraries on unix change the path in the following command
+by the path to your virtualenv directory (e.g. ``/usr/share/PyVEnvs27/ScribesEnv``)
+and type the command::
+
+    sudo /<path-to-yout-virtual-env>/bin/pip install requirements-unix.txt
 
 
 Launching Python
@@ -222,6 +282,9 @@ look at |JythonInANutshell| and print a cheat sheet :
 .. |PyCrypto| replace::
     (`web <http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe>`__)
 
+.. |Pillow| replace::
+    (`web <http://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow>`__)
+
 ..  |JythonInANutshell| replace::
     :download:`J/Python in a nutshell<docs/JythonInANutshell-3.pdf>`
 
@@ -240,6 +303,7 @@ look at |JythonInANutshell| and print a cheat sheet :
 ..  |RegExCheatSheet| replace::
     :download:`RegExCheatSheet<docs/python-regular-expression-cheat-sheet.pdf>`
 
-
+..  |RequirementsUbuntu| replace::
+    :download:`requirements-ubuntu.txt<../../../ScribesStore/tools/python/requirements-ubuntu.txt>`
 
 
