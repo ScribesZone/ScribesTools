@@ -1,0 +1,1 @@
+execfile('.infra/docs/conf.py')
