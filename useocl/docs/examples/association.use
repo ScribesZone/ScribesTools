@@ -1,0 +1,9 @@
+model AssociationExample
+
+class Car end
+class Person end
+
+association Owns between
+    Person [1] role owner
+    Car[*] role ownedCars
+end

@@ -1,3 +1,0 @@
-! tian := new Person('tian')
-! c232 := new Car('c232')
-! insert(tian,c232) into Owns

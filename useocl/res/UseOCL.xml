@@ -1,0 +1,22 @@
+<filetype binary="false" description="UseOCL" name="UseOCL">
+  <highlighting>
+    <options>
+      <option name="LINE_COMMENT" value="--" />
+      <option name="COMMENT_START" value="/*" />
+      <option name="COMMENT_END" value="*/" />
+      <option name="HEX_PREFIX" value="" />
+      <option name="NUM_POSTFIXES" value="" />
+      <option name="HAS_BRACES" value="true" />
+      <option name="HAS_PARENS" value="true" />
+    </options>
+    <keywords keywords="abstract;aggregation;association;associationclass;attributes;begin;between;class;composition;constraints;context;derived;do;else;end;endif;enum;for;if;in;init;inv;let;model;operations;ordered;post;pre;psm;qualifier;redefines;result;role;statemachines;states;subsets;then;transitions" ignore_case="false" />
+    <keywords2 keywords="Bag;Boolean;Collection;Integer;OrderedSet;Real;Sequence;Set;String;TupleType" />
+    <keywords3 keywords="Tuple;allInstances;and;any;append;asBag;asOrderedSet;asSequence;asSet;at;characters;closure;collecNested;collect;concat;count;div;equalsIgnoreCase;excludes;excludesAll;excluding;exists;false;first;flatten;floor;forAll;forall;implies;includes;includesAll;including;indexOf;insertAt;intersection;isEmpty;isUnique;iterate;last;max;min;mod;not;notEmpty;oclAsType;oclIsInState;oclIsKindOf;oclIsNew;oclIsTypeOf;one;or;prepend;product;reject;reverse;round;select;selectByKind;selectByType;self;size;sortedBy;subOrderedSet;subSequence;substring;sum;symmetricDifference;toBoolean;toInteger;toLowerCase;toReal;toString;toUpperCase;true;union;xor" />
+    <keywords4 keywords=":=;ReadInteger;ReadLine;Write;WriteLine;between;create;declare;delete;destroy;from;insert;into;new" />
+  </highlighting>
+  <extensionMap>
+    <mapping ext="soil" />
+    <mapping ext="con" />
+    <mapping ext="use" />
+  </extensionMap>
+</filetype>

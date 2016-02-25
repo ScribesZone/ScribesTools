@@ -1,0 +1,213 @@
+
+
+
+
+
+
+..  Django
+    manage.py sqlclear demo_scrapy | manage.py dbshell
+    manage.py syncdb
+
+..  Installation de django.
+    Documentation additionnelle si nécessaire: https://docs.djangoproject.com/en/1.6/intro/install/
+    https://docs.djangoproject.com/en/1.6/topics/install/
+    (1) installer django via la commande “pip install Django==1.6.6”
+    (2) tester en lancant l’interpreteur “python”. taper “import django ; print django.get_version()”. Ce programme doit afficher “1.6.6”
+    (4) pour tester le serveur
+    (4.a) aller dans un repertoire temporaire;
+    (4.b) django-admin.py startproject testdjango  (si cela ne marche pas sous windows taper le chemin absolu par exemple C:\Python27\Scripts\django-admin.py). Cette commande doit créer un repertoire testdjango. En cas de problème se reporter à https://docs.djangoproject.com/en/1.6/faq/troubleshooting/#troubleshooting-django-admin-py
+    (4.c) aller dans le répertoire créé     cd testdjango
+    (4.d) créer la base de données:  manage.py syncdb. Créer un compte administrateur.
+    (4.e) lancer le serveur:  manage.py runserveur. Affiche “Validating models… Quit the server with CTRL-BREAK”
+    (4.f) dans un navigateur ouvrir l’URL http://localhost:8000/admin/ . Apres avoir une fenêtre de connection (entrer le login et mot de passe définis auparavant), une page affiche “Administration - Groups, Users  - etc.”
+
+
+..  Installation de packages pour django
+    Pour info une liste de packages est disponible https://www.djangopackages.com/
+
+
+
+
+#generator
+django-softmachine ?
+
+MinGW    → trop compliqué
+nécessaire pour utiliser certaine libraries nécessistant de la compilation C
+télécharger http://sourceforge.net/projects/mingw/files/latest/download?source=files
+installer (il n’est pas nécessaire d’installer la version avec l’interface graphique)
+le mettre dans le path le repertoire MinGW/bin  par exemple %SCRIBESTOOLS%\MinGW\bin
+
+
+
+Django Core Models (->1.8)
+https://docs.djangoproject.com/en/1.6/topics/db/models/
+help_text
+verbose_name
+primary_key
+unique
+meaning through?
+   through_fields
+   symmetrical
+Meta.ordering
+get_absolute_url()
+Meta.related_name pb with inherit
+parent_link = ‘super’
+
+Django Meta Options (->1.8)
+https://docs.djangoproject.com/en/1.6/ref/models/options/#
+order_with_respect_to
+ordering
+permission
+unique_together
+verbose_name
+verbose_name_plural
+Django Query (->1.8)
+https://docs.djangoproject.com/en/1.6/topics/db/queries/
+o = Class.objects.create(a=..., b=...,r=...)
+o.save()
+
+o.a
+o.r
+o.r.add(o2,o3,o4)
+Class.objects.all()
+qs.filter(...) : qs
+qs.exclude(...) :qs
+qs.annotate(...) : qs
+
+qs.update(...)
+qs.delete(...)
+qs.get(...) : o
+qs.aggregate(...) : v
+qs.exists(...) : b
+
+   att__op=
+        [i]exact,[i]contains,[i]startswith,[i]endwith,search,regex,iregex
+in
+isnull
+gt,gte,lt,lte,range
+    att__att=
+year,month,day,week_day,hour,minute,second
+    Aggregation classe: Avg, Count, Max, Min, Sum,  StDev; Variance
+
+Django Actions (->1.8)
+https://docs.djangoproject.com/en/1.6/ref/contrib/admin/actions/
+
+
+Django - Grappelli (->1.7)
+http://grappelliproject.com/
+installed from http://django-grappelli.readthedocs.org/en/latest/quickstart.html#installation
+see the settings.py and urls.py to see where to put settings.
+create a directory static and add a variable STATIC_ROOT = os.path.join(BASE_DIR, "static")
+launch a command like   manage.py collectstatic   (see the documentation)
+
+Django extensions (->1.8?)
+http://django-extensions.readthedocs.org/
+autocompletion for FK
+shell_plus
+runscript
+dumpscript
+sqlcreate
+some field types (uuid)
+
+
+Django - Polymorphic (->1.8)
+installation : see https://django-polymorphic.readthedocs.org/en/latest/quickstart.html
+installed, work fine
+
+Django import export
+https://www.djangopackages.com/packages/p/django-import-export/
+install tablib which produces syntax errors, could be ignored according to forums
+# template to change for compatibility with grappelli
+
+Django tree beard (?)
+https://tabo.pe/projects/django-treebeard/docs/tip/
+Django_mptt_admin (?)
+installed
+Django_markdown (?)
+installed, tested, some minor bugs,
+documentation is really poor
+allow to have editor for markdown fields
+other features? not clear. flatpages?
+
+
+
+
+
+Django - EnumField (?)
+installed, not tested
+https://github.com/5monkeys/django-enumfield
+
+
+Django rbac
+http://www.nomadblue.com/blog/django/django-rbac/
+
+Add Custom View Method For Django-Admin Model
+
+http://stackoverflow.com/questions/3681258/nested-inlines-in-the-django-admin
+
+How do I add a link from the Django admin page of one object to the admin page of a related object?
+https://lincolnloop.com/static/slides/2010-djangocon/customizing-the-admin.html#slide1
+https://pypi.python.org/pypi/django-polymorphic-tree
+https://djangosnippets.org/snippets/2793/
+
+
+
+
+
+
+Admin: Saving user
+https://docs.djangoproject.com/en/1.6/ref/contrib/admin/#modeladmin-methods
+ModelAdmin.save_model
+Admin: Show only objects of a given user
+https://docs.djangoproject.com/en/1.6/ref/contrib/admin/#django.contrib.admin.ModelAdmin.get_queryset
+
+
+Edit button
+http://stackoverflow.com/questions/6680631/django-admin-separate-read-only-view-and-change-view
+Multiple admin view. A UTILISER
+http://stackoverflow.com/questions/2223375/multiple-modeladmins-views-for-same-model-in-django-admin?lq=1
+
+Customizing admin pages
+http://davidmburke.com/2010/05/24/django-hack-adding-extra-data-to-admin-interface/
+http://stackoverflow.com/questions/3728617/adding-model-wide-help-text-to-a-django-models-admin-form
+http://code.djangoproject.com/wiki/NewformsHOWTO#Q:HowcanIpassextracontextvariablesintomyaddandchangeviews
+
+
+
+Views
+https://docs.djangoproject.com/en/dev/topics/class-based-views/generic-display/
+https://github.com/frankwiles/django-admin-views
+https://github.com/jsocol/django-adminplus
+https://docs.djangoproject.com/en/dev/topics/class-based-views/
+
+Dynamic models
+http://stackoverflow.com/questions/7933596/django-dynamic-model-fields/7934577#7934577
+
+Meta API _meta, Introspection
+http://timheap.me/b/using-extra-meta-options-django/
+
+Django Debug Toolbar (1.8)
+
+Django
+
+Django Reversion
+
+AUTH_USER_MODEL = 'myapp.MyUser'   https://docs.djangoproject.com/en/1.6/topics/auth/customizing/
+http://stackoverflow.com/questions/1336382/how-can-i-modify-django-to-create-view-permission
+http://stackoverflow.com/questions/8265328/readonly-models-in-django-admin-interface
+Django model mixin to force Django to validate (i.e. call `full_clean`) before `save`
+https://gist.github.com/glarrain/5448253
+
+
+
+
+Django UML
+http://stackoverflow.com/questions/6776592/django-model-graphic-representation-erd
+
+uml-to-django:    https://code.google.com/p/uml-to-django/
+django-to-uml @ django-extensions (graph_models)
+    http://django-extensions.readthedocs.org/en/latest/graph_models.html
+    http://jaredforsyth.com/blog/2010/apr/29/django-uml/
+dia2django @ django-extensions (create_app)
+    http://django-extensions.readthedocs.org/en/latest/create_app.html
+

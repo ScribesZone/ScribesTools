@@ -1,0 +1,18 @@
+model TestQualifiedAssociation
+
+class Association1901
+end
+
+class Person
+end
+
+association APourDirigeant between
+    Association1901[*] role associationsDirigees  qualifier(titre:String)
+    Person [0..1] role dirigeant
+end
+
+
+--association APourLaureat between
+--    Association1901[*] role associationsHonnorantes  qualifier(annee:Integer)
+--    Person [1] role laureat
+--end

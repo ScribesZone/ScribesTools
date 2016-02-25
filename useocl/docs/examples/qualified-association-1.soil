@@ -1,0 +1,8 @@
+    ! petanque38 := new Association1901('petanque38')
+    ! antonio := new Person('antonio')
+    ! djamila := new Person('djamila')
+    ! insert(petanque38{'president'},antonio) into APourDirigeant
+    ! insert(petanque38{'secretaire'},antonio) into APourDirigeant
+    ! insert(petanque38{'tresorier'},djamila) into APourDirigeant
+    ? petanque38.dirigeant['president']
+    ? petanque38.dirigeant
