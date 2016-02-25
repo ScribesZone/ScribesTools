@@ -464,11 +464,9 @@ slide_ enable you to embed your slides on slideshare and other sites.
 ..  _slide: https://bitbucket.org/birkenfeld/sphinx-contrib/src/d27c59cbb3cb986baaba2c312499c2852ccd3f9c/slide
 
 
-..  slide:: http://www.slideshare.net/TakeshiKomiya/blockdiag-a-simple-diagram-generator
 
 hieroglyph
 ^^^^^^^^^^
-
 
 hieroglyph_ slides
 

@@ -21,6 +21,8 @@ import os.path
 CONF_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = CONF_DIR
 TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
+INFRADOCS_DIR = os.path.realpath(os.path.join(CONF_DIR, '.infra', 'docs'))
+
 # SCRIBES_INFRA_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'ScribesInfra'))
 # SPHINX_ZONE_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'SphinxZone'))
 # if not os.path.isdir(SCRIBES_INFRA_DIR):
@@ -34,10 +36,7 @@ TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
 # sys.path.insert(0, SPHINX_ZONE_DIR)
 # sys.path.insert(0, os.path.join(SPHINX_ZONE_DIR,'libs'))
 
-sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '.'))
-sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '..'))
-sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '..', 'libs'))
-sys.path.insert(0, os.path.abspath(os.path.join(CONF_DIR, 'extensions')))
+sys.path.insert(0, os.path.abspath(os.path.join(INFRADOCS_DIR, 'extensions')))
 
 
 
@@ -61,7 +60,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [CONF_DIR + os.sep + '_templates']
+templates_path = [os.path.join(INFRADOCS_DIR, 'templates')]
 
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
@@ -163,7 +162,7 @@ else:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = [os.path.join(CONF_DIR, '_static')]
+templates_path = [os.path.join(INFRADOCS_DIR, 'static')]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
