@@ -13,7 +13,7 @@ interested in quality aspect you may also be interested in ScribesQuality_.
 
     .. todolist::
 
-..  ifconfig:: web
+
 
 
 Tools
