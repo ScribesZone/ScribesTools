@@ -34,7 +34,7 @@ TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
 # sys.path.insert(0, SPHINX_ZONE_DIR)
 # sys.path.insert(0, os.path.join(SPHINX_ZONE_DIR,'libs'))
 
-
+sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '.'))
 sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '..'))
 sys.path.insert(0, os.path.join(os.path.abspath(CONF_DIR), '..', 'libs'))
 sys.path.insert(0, os.path.abspath(os.path.join(CONF_DIR, 'extensions')))
