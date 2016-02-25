@@ -187,7 +187,7 @@ libraries to work properly.
 
 ..  tip::
     For other unix systems try first to install the
-    python libraries and check on Google what to do
+    python libraries (see next section) and check on Google what to do
     if you got error messages.
 
 ::
@@ -200,11 +200,11 @@ libraries to work properly.
 Python libraries
 """"""""""""""""
 
-To install python libraries on unix change the path in the following command
-by the path to your virtualenv directory (e.g. ``/usr/share/PyVEnvs27/ScribesEnv``)
-and type the command::
+To install python libraries first download |RequirementsUbuntu|.
+Then change the path in the following command by the path to your virtualenv directory
+(e.g. ``/usr/share/PyVEnvs27/ScribesEnv``) and type::
 
-    sudo /<path-to-yout-virtual-env>/bin/pip install requirements-unix.txt
+    sudo /<path-to-yout-virtual-env>/bin/pip install requirements-ubuntu.txt
 
 
 Launching Python
@@ -304,6 +304,6 @@ look at |JythonInANutshell| and print a cheat sheet :
     :download:`RegExCheatSheet<docs/python-regular-expression-cheat-sheet.pdf>`
 
 ..  |RequirementsUbuntu| replace::
-    :download:`requirements-ubuntu.txt<../../ScribesStore/tools/python/requirements-ubuntu.txt>`
+    :download:`requirements-ubuntu.txt<downloads/requirements-ubuntu.txt>`
 
 
