@@ -12,7 +12,7 @@ attributes
     length : Integer /* Integer, Real, Boolean, String */
     growthTime : Season
     -- Tuple, Bag, Set, OrderedSet, Sequence
-    goodies : OrderedSet(Bag(Sequence(Set(Tuple(x:Integer,y:Real,z:String)))))
+    goodies : OrderedSet(Bag(Sequence(Set(TupleType(x:Integer,y:Real,z:String)))))
     -- Attribute initialisation
     remainingDays : Integer
         init: 0
