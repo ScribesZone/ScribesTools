@@ -35,12 +35,13 @@ Documentation
 -------------
 
 An extensive documentation is available on the Sphinx_ and rst_ web sites. To
-learn rst_ different kind of resources are probably better:
+learn rst_ different kinds of resources are probably better:
 
 *   **Examples**.
     The best way to learn rst_ is probably to look at the source of
     existing rst texts. For instance on ReadTheDocs_ the documentation
-    usually include a link ``View Code``.
+    usually include a link ``View Code`` on the top-left corner of each
+    page.
 
 *   **Cheat Sheets**
     Here is a list of cheat sheets ordered approximatively by size.
@@ -50,12 +51,20 @@ learn rst_ different kind of resources are probably better:
         * `CheatSheet #3`_
         * `CheatSheet #4`_
 
+*   **Nice pages**.
+    Some interesting pages from Sphinx_ documentation:
+
+        * `reStructuredText Primer`_: a extended introduction
+        * `Sphinx Markup Constructs`_: a rather easy-to-use reference
+
 If you have already some knowledge about markdown you may be interested by
 `Markdown vs. rst`_ comparison.
 
 .. todo:: add references to the cheat sheets in docs/
 
+..  _`reStructuredText Primer` : http://www.sphinx-doc.org/en/stable/rest.html
 
+..  _`Sphinx Markup Constructs` : http://www.sphinx-doc.org/en/stable/markup/index.html
 
 Extensions
 ----------
