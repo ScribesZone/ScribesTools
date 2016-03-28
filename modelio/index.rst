@@ -219,8 +219,8 @@ in ``.py`` files to ease development and use regular text
 editors or python environments.
 
 
-Using the script console interactively
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using the console
+^^^^^^^^^^^^^^^^^
 
 In this section shows how to use the script console of
 Modelio. This is a really excellent feature of Modelio as this
@@ -343,7 +343,7 @@ the following ``.catalog`` file will register the ``helloworld.py`` macro.
         </script>
     </catalog>
 
-There is one <script/> element per macros. Just create the file ``macros\helloworld.py`` as following:
+There is one ``<script />`` element per macro. Just create the file ``macros\helloworld.py`` as following:
 
 .. code-block:: python
 
@@ -369,14 +369,97 @@ Learning Jython is just learning Python as this is actually the same language.
 There are plenty of resources available on the web. Just google "python" with
 a few terms and you have good chance to get the answer to your question.
 
-To start look at the :ref:`Documentation<Python Documentation>` section of the
+To start look at the :ref:`Documentation <Python Documentation>` section of the
 :ref:`Python chapter`. You will find some useful cheat sheets. Have also a look
 at the slides "J/Python in a Nutshell".
 
-Using Modelio API
-^^^^^^^^^^^^^^^^^
+In fact for creating simple macros for Modelio, Jython/Python should not
+represent an issue. One just have to know how to write:
 
-TODO
+* conditional statements: ``if cond:`` ``else:``
+* loops ``for e in expr:``
+* functions ``def f(x):``
+
+The challenge is in fact to deal with the `Modelio API`_ and in particular
+with `Modelio metamodel`_.
+
+Modelio metamodel
+-----------------
+
+The `Modelio API`_ is based on `Modelio metamodel`_.
+This metamodel integrates in a single metamodel 3 languages:
+
+* UML_ the Unified Modeling language, an international standard.
+* BPMN_ the Business Process Modeling Notation, an international standard.
+* "Analyst" a modelio proprietary language for requirements engineering.
+
+The metamodel is made of about  `300 metaclasses`_
+spread in about 30 packages.
+
+`Modelio metamodel`_ is proprietary. Although is neither compatible with the standard
+`UML metamodel`_ nor the standard `BPMN metamodel`_ but it support most of the
+features of these languages (in an integrated way).
+
+.. note::
+
+    The metamodel links depend on the version. Adapt the URLs according
+    to the version of the UML/Modelio metamodel you use.
+
+The are three ways to explore Modelio metamodel:
+
+* browsing the "metamodel documentation".
+* browsing the "API javadoc".
+* using the "CoExplorer".
+
+Metamodel documentation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The metamodel is described in the `modelio metamodel documentation`_.
+Each metaclass is described in an web page containing a class diagram
+centered around the metaclass. See for instance the page for the
+`"class" metaclass`_.
+
+..  figure:: media/ModelioMetamodelDocumentationClass.png
+    :align: center
+
+    Documentation of the "class" metaclass
+
+Note that the images are clickable. The best way to find a metaclass in this documentation is probably to use
+the `metamodel index`_ (and using the "search" feature of the browser).
+
+API javadoc
+^^^^^^^^^^^
+
+Using the `modelio API javadoc`_ is another alternative. There are more than
+500 classes and 67 packages in this API,but this is because the API provides
+many other services. The metamodel is just about "model mangagement".
+In other words, all metaclasses are in the javadoc but there are more classes.
+
+Have a look to the `"class" metaclass javadoc`_ and compare it the corresponding
+`"UML" documentation <"class" metaclass>`_. As you can see the content is the
+same although the javadoc page just reflects that the API is implementated
+in java. Naming conventions allows to go from the API to the metamodel seamlessly.
+
+.. figure:: media/ModelioJavadocAPIClass.png
+    :align: center
+
+    Javadoc of the "class" metaclass
+
+CoExplorer
+^^^^^^^^^^
+
+Another alternative, most probably the most convenient one, is to use the
+CoExplorer plugin. This plugin should be installed in order to be used. Select the elements
+to be explored in modelio and then press the "CoExplorer" button in the top
+right toolbar.
+
+
+.. figure:: media/ModelioCoExplorer.png
+    :align: center
+
+    A session with the CoExplorer plugin.
+
+TODO: to be documented
 
 Collaborative Modeling with SVN
 -------------------------------
@@ -387,7 +470,8 @@ work on the same model at the same time.
 .. warning::
     ``TeamworkManager`` feature is available only in some commercial versions
     of modelio.  The ``ultimate edition`` provides this feature.
-    It is not easy to configure behind a firewall.
+    It is not easy to configure behind a firewall. This section is reserved
+    to advanced users only.
 
 
 The documentation to create and use ``SVN`` fragments with ``TeamworkManager``
@@ -490,13 +574,36 @@ are mostly:
 .. _`Workspace View`:
     http://forge.modelio.org/projects/modelio3-usermanual-english-340/wiki/Modeler-_modeler_interface_workspace_view
 
+
+
 .. _Modelio: https://www.modelio.org/
+
+.. _`modelio metamodel documentation`: `Modelio metamodel`_
+.. _`Modelio metamodel`: https://www.modelio.org/documentation/metamodel-3.4/0.html
+
+.. _`300 metaclasses`:
+.. _`metamodel index`: https://www.modelio.org/documentation/metamodel-3.4/modelindex.html
+
+.. _`Modelio API` : http://forge.modelio.org/projects/modelio3-moduledevelopersmanuals-api/wiki
+
+.. _`"class" metaclass` : https://www.modelio.org/documentation/metamodel-3.4/170.html
 
 .. _`download center`: https://www.modelio.org/downloads/download-modelio.html
 
+.. _`modelio API javadoc`: https://www.modelio.org/documentation/javadoc-3.4/index.html
+
+.. _`"class" metaclass javadoc`:
+    https://www.modelio.org/documentation/javadoc-3.4/org/modelio/metamodel/uml/statik/Class.html
+
 .. _UML: http://en.wikipedia.org/wiki/Unified_Modeling_Language
 
+.. _`UML metamodel`: http://www.omg.org/spec/UML/2.5/
+
+
+
 .. _BPMN: http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
+
+.. _`BPMN metamodel`: http://www.omg.org/spec/BPMN/Current
 
 .. _SysML: http://en.wikipedia.org/wiki/Systems_Modeling_Language
 
