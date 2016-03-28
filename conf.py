@@ -77,7 +77,7 @@ project = u'ScribesTools'
 copyright = u'2015, (CC)(SA)(BY)escribis'
 
 
-release = '0.5.0'
+release = '0.6.1'
 version = '.'.join(release.split('.')[:-1])
 
 exclude_patterns = ['.build', 'README.rst']
