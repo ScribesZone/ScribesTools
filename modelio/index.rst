@@ -436,7 +436,7 @@ many other services. The metamodel is just about "model mangagement".
 In other words, all metaclasses are in the javadoc but there are more classes.
 
 Have a look to the `"class" metaclass javadoc`_ and compare it the corresponding
-`"UML" documentation <"class" metaclass>`_. As you can see the content is the
+"UML" documentation. As you can see the content is the
 same although the javadoc page just reflects that the API is implementated
 in java. Naming conventions allows to go from the API to the metamodel seamlessly.
 
@@ -586,6 +586,7 @@ are mostly:
 
 .. _`Modelio API` : http://forge.modelio.org/projects/modelio3-moduledevelopersmanuals-api/wiki
 
+.. _
 .. _`"class" metaclass` : https://www.modelio.org/documentation/metamodel-3.4/170.html
 
 .. _`download center`: https://www.modelio.org/downloads/download-modelio.html
