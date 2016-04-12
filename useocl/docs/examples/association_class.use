@@ -1,0 +1,17 @@
+model jungle_association_class
+
+    class Monkey
+    end
+
+    class Snake
+    end
+
+    associationclass Hate between
+        Monkey [*] role monkeys
+        Snake [*] role snakes
+    attributes
+        reason : String
+        intensity : Integer
+    operations
+        increase()
+    end

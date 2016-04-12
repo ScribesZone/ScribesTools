@@ -1,0 +1,16 @@
+model jungle_class
+
+    class Yellow
+    end
+
+    abstract class Something
+    end
+
+    abstract class Fruit < Something
+    end
+
+    class Banana < Fruit, Yellow
+    end
+
+    class Orange < Fruit
+    end

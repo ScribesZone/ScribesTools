@@ -67,7 +67,6 @@ just type::
 
     The Graphical User Interface.
 
-
 Documentation
 -------------
 
@@ -135,27 +134,99 @@ Only particular points are exemplified below.
 Enumerations
 """"""""""""
 
-In USE enumerations can be defined as following::
+USE::
 
     enum Season {winter, autumn, spring, summer}
 
-In USE or SOIL enumerations can be used as following::
+SOIL/USE::
 
     Season::winter
+
+Classes
+"""""""
+Classes can be defined as following::
+
+    class Yellow
+    end
+
+    abstract class Something
+    end
+
+    abstract class Fruit < Something
+    end
+
+    class Banana < Fruit, Yellow
+    end
+
+UML:
+
+..  image:: media/USEOCLClasses.png
+    :align: center
+
+Attributes
+""""""""""
+
+::
+
+    class Banana
+    attributes
+        length : Integer /* Integer, Real, Boolean, String */
+        growthTime : Season
+        -- Tuple, Bag, Set, OrderedSet, Sequence
+        goodies : OrderedSet(Bag(Sequence(Set(Tuple(x:Integer,y:Real,z:String)))))
+
+        remainingDays : Integer
+            init: 42                           -- attribute initialization
+            derived: self.length * self.size   -- attribute derivation
+
+    end
+
+Restriction form the standard
+* No invariants directly declared on attributes
+* No cardinality supported for attributes. For instance ``smoker : Boolean[0..1]`` is not supported.
+
+Operations
+""""""""""
+::
+
+    class Banana
+    operations
+
+        sleep()                        -- operation signature
+
+        wakeUp(n : Integer):String     -- operation specification
+            pre notTooMuch: n > 10 and n < self.length     -- precondition
+            post resultOK: result > 'anaconda'             -- pôstcondition
+
+        helloJungle() : String         -- operation implementation (SOIL)
+            begin
+                declare x : Banana ;
+                WriteLine('hello') ;
+                x := new Banana ;
+                self.length := self.length + self.remainingDays*20+3 ;
+                result := 'jungle' ;
+                destroy x ;
+            end
+            pre freshEnough: self.remainingDays > 10
+
+        smash() : Integer               -- operation/query (OCL)
+            = self.length + Set{4,2}->size*42
+    end
 
 Associations
 """"""""""""
 
-Here is an example of (regular) *association*:
+UML:
 
 ..  image:: media/USEOCLAssociationUSE.png
     :align: center
 
-In USE::
+USE::
 
     association Owns between
         Person [1] role owner
         Car[*] role ownedCars
+                                -- more roles for n-ary association
     end
 
 An example of link:
@@ -163,10 +234,36 @@ An example of link:
 ..  image:: media/USEOCLAssociationSOIL.png
     :align: center
 
-In SOIL::
+SOIL::
 
     ! insert(tian,c232) into Owns
 
+Association Classes
+"""""""""""""""""""
+
+UML:
+
+..  image:: media/USEOCLAssociationClassUSE.png
+    :align: center
+
+USE::
+
+    associationclass Hate between
+        Monkey [*] role monkeys
+        Snake [*] role snakes
+    attributes
+        reason : String
+        intensity : Integer
+    operations
+        increase()
+    end
+
+
+SOIL::
+
+   ! c := new Hate between (chita,kaa)
+   ! c.reason := "kaa is really mean"
+   ! c.intensity = 1000
 
 Qualified Associations
 """"""""""""""""""""""
