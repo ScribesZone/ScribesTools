@@ -12,7 +12,7 @@ Installation
 
 Installing `USE`_ is rather easy:
 
-*   download the use zip file (``use-4.1.1.zip`` |useZip|).
+*   download the use zip file (|useZip|).
 *   extract this zip file where you want to install it (e.g. %SCRIBESTOOLS%
     on windows).
 *   rename the newly created directory to ``%SCRIBESTOOLS%\UseOCL``.
@@ -422,7 +422,7 @@ index that show which OCL features are used in which files.
     `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
 ..  |useZip| replace::
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.1.0/use-4.1.1.zip/download/>`__
+    `web <http://sourceforge.net/projects/useocl/files/USE/4.2.0/use-4.2.0.zip/download/>`__
 
 ..  |useNotepadXML| replace::
     `web <http://sourceforge.net/projects/useocl/files/Misc/>`__
