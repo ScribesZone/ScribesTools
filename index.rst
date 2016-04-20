@@ -62,7 +62,12 @@ The pages below provide some hints about some platform customization:
     windows/index
     ubuntu/index
 
+Misc
+----
 
+..  toctree::
+
+    lejeudupromoteur
 
 
 

@@ -297,7 +297,7 @@ experiment with transformations, etc.
     Correct the program by adding ``:`` after ``for a in attributes`` and
     press ``Ctrl-Enter``.
 
-A a little "html generator" has been developed in a few lines of code.
+A little "html generator" has been developed in a few lines of code.
 If you select some
 classes in modelio browser (on the left pane) and run the program you will
 see the list of classes with their attributes in html. Obviously if you want
@@ -449,9 +449,9 @@ CoExplorer
 ^^^^^^^^^^
 
 Another alternative, most probably the most convenient one, is to use the
-CoExplorer plugin. This plugin should be installed in order to be used. Select the elements
-to be explored in modelio and then press the "CoExplorer" button in the top
-right toolbar.
+CoExplorer plugin. This plugin (actually a jython macro) should be installed in order
+to be used. Once installed select the elements to be explored in modelio and
+then press the ``CoExplorer`` button in the top right toolbar.
 
 
 .. figure:: media/ModelioCoExplorer.png
@@ -459,7 +459,11 @@ right toolbar.
 
     A session with the CoExplorer plugin.
 
-TODO: to be documented
+The CoExplorer allows to explore at the same time a model and the metamodel.
+
+.. admonition:: TODO
+
+    to be documented
 
 Collaborative Modeling with SVN
 -------------------------------
