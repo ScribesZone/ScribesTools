@@ -23,11 +23,11 @@ All information about the course ``aeis`` is available on github.com. Each group
 can see three repositories::
 
 ============= ======================================= =============
- Repository   Description
+ Repository   Description                                 Access
 ============= ======================================= =============
-m2r-aeis-info Information and slides about the course   Read Only
-m2r-aeis-root Assignement skeletons (code, etc.)        Read Only
-m2r-aeis-G12  Group repository                          Read/Write
+m2r-aeis-info Information and slides about the course Read Only
+m2r-aeis-root Assignement skeletons (code, etc.)      Read Only
+m2r-aeis-G12  Group repository                        Read/Write
 ============= ======================================= =============
 
 All repositories lives on GitHub. For instance babako and noe have at
