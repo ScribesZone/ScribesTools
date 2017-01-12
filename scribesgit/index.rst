@@ -5,7 +5,7 @@ The purpose of this page is to explain how to use Git and GitHub for course
 assignments.
 
 General information about GitHub/Git can be found on in the :ref:`GitHub chapter`.
-This page is really about using this general purpose tool for in the
+This page is really about using this general purpose tool for in the particular
 context of courses.
 
 Overview
@@ -19,8 +19,19 @@ with a typical scenario implying the a group ``G12`` in which two students worki
 Obviously **these values has to be replaced by actual values in the commands
 presented later**.
 
-Babako and Noe have at their disposal a "group repository", the ``m2r-aeis-G12``. 
-This repository lives on GitHub at ``https://github.com/m2r/m2r-aeis-G12``.
+All information about the course ``aeis`` is available on github.com. Each group
+can see three repositories::
+
+============= ======================================= =============
+ Repository   Description
+============= ======================================= =============
+m2r-aeis-info Information and slides about the course   Read Only
+m2r-aeis-root Assignement skeletons (code, etc.)        Read Only
+m2r-aeis-G12  Group repository                          Read/Write
+============= ======================================= =============
+
+All repositories lives on GitHub. For instance babako and noe have at
+their disposal a "group repository", at ``https://github.com/m2r/m2r-aeis-G12``.
 This repository is private so only Noe, Babako and teachers can 
 see it when logged in on GitHub.
 
@@ -216,30 +227,41 @@ and so on.
     # You can browse the content of the directory with "ls -la" on unix.
     # There is one directory per assignment.
 
-Browsing Work Definitions
+..  ........
+    Browsing Work Definitions
+    -------------------------
+    Let us call "WorkDefinition" the definition of the tasks to perform
+    to complete  assignments. Work definitions are implemented in terms of
+    `GitHub issues`_ in the "root repository" as shown in the example below:
+
+    ..  image:: media/WorkDefinitionExample.png
+        :align: center
+
+    If you have questions about work definitions, do not hesitate to post a
+    a question. Just take care of choosing a title as clear as possible for
+    your question.
+
+
+Changing CONTRIBUTORS.rst
 -------------------------
 
-Let us call "WorkDefinition" the definition of the tasks to perform
-to complete  assignments. Work definitions are implemented in terms of
-`GitHub issues`_ in the "root repository" as shown in the example below:
+..  One of your first work is likely to be defined by an "WorkDefinition"
+    (an issue) most likely entitled ``[WD] Define Repository Contributors``.
 
-..  image:: media/WorkDefinitionExample.png
-    :align: center
+You have to fill the ``CONTRIBUTORS.rst`` file in the repository
+and to put the information about your group using the format such as below.
 
-If you have questions about work definitions, do not hesitate to post a
-a question. Just take care of choosing a title as clear as possible for
-your question.
+::
 
+    === ===== ======= ====================== ======================= ===================== =====================================
+     n  group trigram       firstname              lastname              githubAccount                    email
+    === ===== ======= ====================== ======================= ===================== =====================================
+    1   G12   BST     Babako                 SCHMIDT                 babako12              babako.schmidt@e.ujf-grenoble.fr
+    2   G12   NZN     Noe                    ZARWIN                  noezarwin             noezarwin@gmail.com
+    === ===== ======= ====================== ======================= ===================== =====================================
 
-Changing CONTRIBUTORS.md
-------------------------
-
-One of your first work is likely to be defined by an "WorkDefinition"
-(an issue) most likely entitled ``[WD] Define Repository Contributors``.
-
-You have to fill the ``CONTRIBUTORS.rest`` file in the repository
-and to put the information about the group using the format such as below.
-Add a line for each member. The list must be **sorted by lastnames**.
+There should be one line for each member. The list must be **sorted by lastnames**.
+Spaces and blank lines are important in the RST format.
 
 ..  attention::
     The values provided in this example MUST be replaced by actual values.
@@ -252,7 +274,7 @@ Add a line for each member. The list must be **sorted by lastnames**.
 
 The fields are the following:
 
-:n:
+:N:
     The indice of the member in the list. Members must be list
     in alphabetical order on the lastname, then firstname.
 :group:
@@ -270,8 +292,8 @@ The fields are the following:
 :firstname:
     The firstname of the member (e.g. ``Babako``).
 :lastname:
-    The lastname of member using uppercases (e.g. ``SCHMIDT``).
-:github_account:
+    The lastname of member using UPPERCASES$ (e.g. ``SCHMIDT``).
+:githubAccount:
     The login used by the member to connect to GitHub.
 :email:
     A valid email address.
@@ -285,14 +307,7 @@ The fields are the following:
     Change the width of columns if you need more space for your name, email, etc.
     A strict alignement is necessary for the .rst processor to parse this table correctly.
 
-::
 
-    === ===== ======= ====================== ======================= ===================== =====================================
-    n   Group Trigram       Firstname              Lastname              GithubAccount                    Email
-    === ===== ======= ====================== ======================= ===================== =====================================
-    1   G12   BST     Babako                 SCHMIDT                 babako12              babako.schmidt@e.ujf-grenoble.fr
-    2   G12   NZN     Noe                    ZARWIN                  noezarwin             noezarwin@gmail.com
-    === ===== ======= ====================== ======================= ===================== =====================================
 
 ..  code-block:: bash
 
