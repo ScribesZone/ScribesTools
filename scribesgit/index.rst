@@ -20,7 +20,7 @@ Obviously **these values has to be replaced by actual values in the commands
 presented later**.
 
 All information about the course ``aeis`` is available on github.com. Each group
-can see three repositories::
+can see three repositories:
 
 ============= ======================================= =============
  Repository   Description                                 Access
