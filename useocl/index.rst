@@ -320,11 +320,17 @@ Many useful options are then available in the contextual menu of each diagram
 
 Many options are available. You are likely to use:
 
-* ``Auto-Layout`` to get a first layout automatically.
-* ``Save-Layout`` to save the layout after some manual arrangement. This save
-  the diagram layout in the form of a ``.clt``  (Class LayouT) file or
-  ``.olt`` (Object Layout) file depending on the diagram.
-* ``Show muliplicities``, ``Show role names``, etc.
+*   ``Auto-Layout`` to get a first layout automatically.
+    Don't apply this option on an existing layout ...
+
+*   ``Save-Layout`` to save the layout after some manual arrangement.
+    This save the diagram layout in the form of a ``.clt``  (Class LayouT) file or
+    ``.olt`` (Object Layout) file depending on the diagram.
+    Quiting use without saving the current layount will create the file '...-default.clt'.
+    It is a bad practice to use this file, especially when various diagrams are to
+    be build. Save the layout in proper files with proper names.
+
+*   ``Show muliplicities``, ``Show role names``, etc.
 
 If you intend to create various diagrams for the same model (to create
 different views) you are likely to use ``Hide`` options.
@@ -492,7 +498,7 @@ index that show which OCL features are used in which files.
     https://www.jetbrains.com/pycharm/help/new-file-type.html
 
 ..  |umlOclCheatSheet| replace::
-    (:download:`local<docs/UMLOCL-CheatSheet-14.pdf>`)
+    (:download:`local<docs/UMLOCL-CheatSheet-18.pdf>`)
 
 ..  |useReadmeExamples| replace::
     (:download:`local<docs/README.examples.txt>`)
