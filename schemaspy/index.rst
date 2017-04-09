@@ -15,7 +15,7 @@ SchemaSpy_ reads a relational database and
 * generates a XML file corresponding to the database schema
 * detects a few kind of defaults in the database design
 
-.. figure:: media/SchemaSpyDefaults.jpg
+.. figure:: media/SchemaSpyDefaults.png
     :align: center
 
     Examples of defaults detected by SchemaSpy_
