@@ -4,8 +4,8 @@ Git(Hub)
 ========
 
 Git_ is one of the most trendy Distributed Versioning Control System (DVCS)
-especially in the context of open source projects. GitHub_ and BitBucket_
-are very popular hosting services on the cloud.
+especially in the context of open source projects. GitHub_, BitBucket_ and
+GitLab_ are very popular hosting services on the cloud.
 
 .. figure:: media/github-splash.jpg
     :align: Center
@@ -16,10 +16,10 @@ Overview
 --------
 
 It is important to clearly distinguish right from the beginning Git_ and
-GitHub_.
-Git_ is a general tool for versioning like SVN_. GitHub is a hosting service
-based on Git and also a particular tool (the GitHub client) that can be
-installed on your machine.
+GitHub_/GitLab_.
+Git_ is a general tool for versioning like SVN_. GitHub_, GitLab_ and
+BitBucket_ are hosting services. They also provide tools (e.g. the GitHub
+client) that can be installed locally on your machine.
 
 Git
 ^^^
@@ -53,13 +53,14 @@ the web in a collaborative mode.
 
 The next section is about git on the cloud.
 
-GitHub or/and BitBucket
+GitHub/GitLab/BitBucket
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 If you need to collaborate with others to develop an open source project,
-GitHub_ or BitBucket_ are obvious solutions to consider, at least if you plan
-to use Git_. They both provide hosting public git repositories for free.
-GitHub and BitBucket have web-based interfaces to explore repositories.
+GitHub_, GitLab_ or BitBucket_ are obvious solutions to consider, at least
+if you plan to use Git_. They both provide hosting public git repositories
+for free. GitHuh/GitLab/BitBucket have web-based interfaces to explore
+repositories.
 
 .. figure:: media/github-project.jpg
     :align: Center
@@ -75,10 +76,8 @@ We highly recommend to use GitHub, unless if you need private repository.
 If you want you can have a look at the article `bitbucket vs. github`_ or
 to have a look at a more general `comparison of hosting services`_.
 
-Here we will use GitHub since:
-
-* this is the most popular service,
-* it provides an excellent *git client* which is amazingly easy to use.
+Here we will use GitHub since this is the most popular service.
+Git also provides an excellent *git client* which is amazingly easy to use.
 
 If you need to have a private repository, and want to have that for free,
 then you have to use BitBucket for that repository. By contrast to Github
@@ -108,11 +107,11 @@ fields. In step 2 select a free plan. Basically this is it.
 Installing the GitHub client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 At the time of writing this documentation, nice github clients exist only for
-Windows and for Mac. This step is anyway not obligatory. It install a nice
-graphical user interface for using git. This interface is extremely cool,
-but if you really want to use only shell commands and have already a git
-toolkit installed then you can skip this. If you are on linux you can go to
-the next section.
+Windows and for Mac. **This step is anyway not obligatory**. It installs
+a nice graphical user interface for using git. This interface is really
+cool, but if you really want to use only shell commands and have already
+a git toolkit installed then you can skip this. If you are on linux you can
+go to the next section.
 
 Installation is really simple:
 
@@ -215,6 +214,8 @@ You may also configure (`Dealing with line endings`_)::
 .. _Git: http://en.wikipedia.org/wiki/Git_%28software%29
 
 .. _GitHub: http://en.wikipedia.org/wiki/GitHub
+
+.. _GitLab: https://about.gitlab.com/
 
 .. _BitBucket: http://en.wikipedia.org/wiki/BitBucket
 
