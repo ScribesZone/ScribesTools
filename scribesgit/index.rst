@@ -5,29 +5,30 @@ The purpose of this page is to explain how to use Git and GitHub for course
 assignments.
 
 General information about GitHub/Git can be found on in the :ref:`GitHub chapter`.
-This page is really about using this general purpose tool for in the particular
-context of courses.
+This page is really about using this general purpose tool for in the
+particular context of courses.
 
 Overview
 --------
 Let us consider as an example the ``aeis`` course of the ``m2r`` school.
-with a typical scenario implying the a group ``G12`` in which two students working in pair:
+with a typical scenario implying the a group ``G12`` in which two students
+working in pair:
 
 * ``Noe`` and
 * ``Babako``.
 
-Obviously **these values has to be replaced by actual values in the commands
-presented later**.
+Obviously **these values has to be replaced by actual values in the
+commands presented later**.
 
-All information about the course ``aeis`` is available on github.com. Each group
-can see three repositories:
+All information about the course ``aeis`` is available on github.com.
+Each group can see three repositories:
 
 ============= ======================================= =============
  Repository   Description                                 Access
 ============= ======================================= =============
 m2r-aeis-info Information and slides about the course Read Only
 m2r-aeis-root Assignement skeletons (code, etc.)      Read Only
-m2r-aeis-G12  Group repository                        Read/Write
+m2r-aeis-G12  Group repository  (one for each group)  Read/Write
 ============= ======================================= =============
 
 All repositories lives on GitHub. For instance babako and noe have at
