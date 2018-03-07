@@ -4,9 +4,9 @@ ScribesGit
 The purpose of this page is to explain how to use Git and GitHub for course
 assignments.
 
-General information about GitHub/Git can be found on in the :ref:`GitHub chapter`.
-This page is really about using this general purpose tool for in the
-particular context of courses.
+General information about GitHub/Git can be found on the :ref:`GitHub chapter`.
+This page is really about using git/github for in the particular context
+of courses and in a simplified way.
 
 Overview
 --------
