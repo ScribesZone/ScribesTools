@@ -212,15 +212,171 @@ You may also configure (`Dealing with line endings`_)::
 Resources
 ---------
 
-*   `Git Visual Guide`_: a very nice guide displaying as the commit graph
-    changes the effect of a commands. A must read.
+*   `Git Visual Guide`_: a very nice guide displaying the commit graph
+    resulting from the effect of a commands. Detailed and technical
+    but a must read. The best in this kind of resources.
 
-*   `Git Interactive Cheatsheet`_ : a interactive map showing 5 layers (
+    .. figure:: media/git_visual_guide.png
+        :align: Center
+
+*   `Git Interactive Cheatsheet`_: a interactive map showing 5 layers (
     stash / workspace / index / local repo/remote repo) and commands
     acting at each level.
 
-*   `Interactive git console`_: a nice interactive console that display
-    commit graphs after each command is issued.
+    .. figure:: media/git_interactive_cheatsheet.png
+        :align: Center
+
+*   `Interactive git console`_: a nice interactive tutorial-like resource
+    in the form a console that display commit graphs after each command
+    is issued. Nice, but it misses some kind of guidance.
+
+    .. figure:: media/interactive_git_console.png
+        :align: Center
+
+*   `Illustrated git`_: some nice illustrations. Not too much but the
+    only guide starting right the blob level to the repository level.
+
+    .. figure:: media/bloblevel.png
+        :align: Center
+
+*   `Atlassian git tutorial`_: most probably the best git tutorial
+    out there. A bit wordy, but it presents both concept and technical
+    details with (almost) each commands involved. A quite nice comparison
+    of workflows.
+
+    .. figure:: media/atlassian_tutorial.png
+        :align: Center
+
+Workflows
+---------
+
+Private workflow
+^^^^^^^^^^^^^^^^
+* one local repo
+* used for versioning a directory
+
+Example::
+
+    cd MyDir
+    git init
+    <changes>
+    git add <files>
+    git commit -m "<message>"
+    <changes>
+    git add <file>
+    git commit -m "<message>"
+    ...
+
+
+Public workflow
+^^^^^^^^^^^^^^^
+
+* one local repo
+* one remote repo
+* used to share a project, to make the code public
+
+Example::
+
+    <github:creat repo>
+    git clone <url>
+    cd <dir>
+
+    <changes>
+    git add <files>
+    git commit -m "<message>"
+    <changes>
+    git add <file>
+    git commit -m "<message>"
+    git push origin master
+    ...
+    git push origin master
+
+
+
+Shared-master workflow
+^^^^^^^^^^^^^^^^^^^^^^
+
+Example::
+
+    <github:creat repo>
+    git clone <url>
+    cd <dir>
+
+    <changes>
+    git add <files>
+    git commit -m "<message>"
+    ...
+    git pull origin master              # to synch with remote master
+    git push origin master              # to push all commit
+    ...
+    <changes again>
+    ...
+
+Feature branches workflow
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Creation of a new branch (f_color) from the master branch::
+
+    # Create a new feature branch from master
+    git checkout master             # enter the master branch
+    git pull origin master          # get last master version
+    git branch f_color              # create a new branch f_color
+    git checkout f_color            # enter the new branch f_color
+
+Regular modifications on f_color::
+
+    ...
+    <changes>                       # regular modifications on f_color
+    git add <files>
+    git commit -m "<message>"
+
+Synch with remote repo from time to time::
+
+    ...
+    git push origin f_color         # f_color becomes a remote branch
+    ...
+    git pull origin master          # synchonize optionaly with master
+    git push origin f_color         # push f_color again
+    ...
+
+At some point the branch f_color is good enough: create a pull request::
+
+    <github:new pull request>       # button on github
+    <github:discuss>                # discuss with others on github
+    ...
+    git commit -m "<message>"       # some improvement are required
+    ...
+    git pull origin master          # synch optionaly with master
+    git push origin f_color         # push again to remote repo
+    <github:discuss>                # discuss again with others
+
+At some point the branch f_color is ready. Integration will take place
+on github with the graphical interface.
+
+After the integration it is best to remove the remote branch with the
+"remote branch" button. Then the branch can be removed locally::
+
+    git branch master
+    git pull origin master
+    git branch -d feature
+
+
+Git flow
+^^^^^^^^
+
+Integration workflow
+^^^^^^^^^^^^^^^^^^^^
+
+Benevolent dictator workflow
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Resources
+^^^^^^^^^
+
+`Comparing workflows`_, from the `Atlassian git tutorial`_ is one of the
+best resource for understanding (some) workflows. It is a bit wordy, but
+still worths reading. Some part at the command level (not always detailed
+though).
 
 .. ............................................................................
 
@@ -257,8 +413,17 @@ Resources
 ..  _`Interactive git console`:
     https://onlywei.github.io/explain-git-with-d3/
 
-.. |GithubClientWindows| replace::
+..  _`Illustrated git`:
+    https://illustrated-git.readthedocs.io/en/latest/#
+
+..  _`Atlassian git tutorial`:
+    https://www.atlassian.com/git/tutorials/setting-up-a-repository
+
+..  _`Comparing workflows`:
+    https://www.atlassian.com/git/tutorials/comparing-workflows
+
+..  |GithubClientWindows| replace::
     `web <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`__
 
-.. |GitWindows| replace::
+..  |GitWindows| replace::
     `web <https://git-scm.com/download/win>`__
