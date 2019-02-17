@@ -250,6 +250,11 @@ Resources
 Workflows
 ---------
 
+Overview of workflows:
+
+.. figure:: media/data_centric_cheatsheet.png
+    :align: Center
+
 Private workflow
 ^^^^^^^^^^^^^^^^
 * one local repo
@@ -403,6 +408,9 @@ though).
 
 .. _`Dealing with line endings`:
     https://help.github.com/articles/dealing-with-line-endings/
+
+.. ..  _`data centric cheatsheet`:
+
 
 ..  _`Git Visual Guide`:
     http://marklodato.github.io/visual-git-guide
