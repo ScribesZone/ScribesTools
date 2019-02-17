@@ -209,6 +209,19 @@ You may also configure (`Dealing with line endings`_)::
 
     git config --global core.autocrlf input    # if you use unix
 
+Resources
+---------
+
+*   `Git Visual Guide`_: a very nice guide displaying as the commit graph
+    changes the effect of a commands. A must read.
+
+*   `Git Interactive Cheatsheet`_ : a interactive map showing 5 layers (
+    stash / workspace / index / local repo/remote repo) and commands
+    acting at each level.
+
+*   `Interactive git console`_: a nice interactive console that display
+    commit graphs after each command is issued.
+
 .. ............................................................................
 
 .. _Git: http://en.wikipedia.org/wiki/Git_%28software%29
@@ -234,6 +247,15 @@ You may also configure (`Dealing with line endings`_)::
 
 .. _`Dealing with line endings`:
     https://help.github.com/articles/dealing-with-line-endings/
+
+..  _`Git Visual Guide`:
+    http://marklodato.github.io/visual-git-guide
+
+..  _`Git Interactive Cheatsheet`:
+    http://ndpsoftware.com/git-cheatsheet.html#loc=index
+
+..  _`Interactive git console`:
+    https://onlywei.github.io/explain-git-with-d3/
 
 .. |GithubClientWindows| replace::
     `web <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`__
