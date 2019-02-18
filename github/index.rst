@@ -212,12 +212,40 @@ You may also configure (`Dealing with line endings`_)::
 Resources
 ---------
 
+Cheat sheets
+^^^^^^^^^^^^
+
+*   :download:`Git Cheat Sheet <docs/dist-GitCheatSheet-21.pdf>`:
+    describes git at all levels of abstraction: trees, commits, branches,
+    repositories, workflows.
+
+    .. figure:: media/data_centric_cheatsheet.png
+        :align: Center
+
+*   `Commands GitHub Cheat Sheet`_: a cheat sheet listing classical
+    git commands.
+
+    .. figure:: media/github_cheat_sheet.png
+        :align: Center
+
+Visual resources
+^^^^^^^^^^^^^^^^
+
+*   `Illustrated git`_: some nice illustrations. Not too much but the
+    only guide starting right the blob level to the repository level.
+
+    .. figure:: media/bloblevel.png
+        :align: Center
+
 *   `Git Visual Guide`_: a very nice guide displaying the commit graph
     resulting from the effect of a commands. Detailed and technical
     but a must read. The best in this kind of resources.
 
     .. figure:: media/git_visual_guide.png
         :align: Center
+
+Interactive resources
+^^^^^^^^^^^^^^^^^^^^^
 
 *   `Git Interactive Cheatsheet`_: a interactive map showing 5 layers (
     stash / workspace / index / local repo/remote repo) and commands
@@ -233,11 +261,9 @@ Resources
     .. figure:: media/interactive_git_console.png
         :align: Center
 
-*   `Illustrated git`_: some nice illustrations. Not too much but the
-    only guide starting right the blob level to the repository level.
 
-    .. figure:: media/bloblevel.png
-        :align: Center
+Tutorials
+^^^^^^^^^
 
 *   `Atlassian git tutorial`_: most probably the best git tutorial
     out there. A bit wordy, but it presents both concept and technical
@@ -247,13 +273,36 @@ Resources
     .. figure:: media/atlassian_tutorial.png
         :align: Center
 
+
+
 Workflows
 ---------
 
-Overview of workflows:
 
-.. figure:: media/data_centric_cheatsheet.png
-    :align: Center
+Resources
+^^^^^^^^^
+
+*   `Comparing workflows`_, from the `Atlassian git tutorial`_ is one of the
+    best resource for understanding (some) workflows. It is a bit wordy, but
+    still worths reading. Some part at the command level (not always detailed
+    though).
+
+    .. figure:: media/atlassian_comparing_workflow.png
+        :align: Center
+
+*   :download:`Visualizing git workflows <docs/GestionDeProduits-GitWorkflows-6.pdf/>`
+    a set of slides comparing workflows.
+
+    .. figure:: media/slides_git_workflow.png
+        :align: Center
+
+*   :download:`Workflow Cheat Sheet <docs/dist-GitCheatSheet-21.pdf>`:
+    one page dedicated to the comparison of workflows.
+
+    .. figure:: media/data_centric_cheatsheet.png
+        :align: Center
+
+
 
 Private workflow
 ^^^^^^^^^^^^^^^^
@@ -375,13 +424,6 @@ Integration workflow
 Benevolent dictator workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Resources
-^^^^^^^^^
-
-`Comparing workflows`_, from the `Atlassian git tutorial`_ is one of the
-best resource for understanding (some) workflows. It is a bit wordy, but
-still worths reading. Some part at the command level (not always detailed
-though).
 
 .. ............................................................................
 
@@ -409,8 +451,8 @@ though).
 .. _`Dealing with line endings`:
     https://help.github.com/articles/dealing-with-line-endings/
 
-.. ..  _`data centric cheatsheet`:
-
+..  _`Commands GitHub Cheat Sheet`:
+    https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
 ..  _`Git Visual Guide`:
     http://marklodato.github.io/visual-git-guide
@@ -419,7 +461,7 @@ though).
     http://ndpsoftware.com/git-cheatsheet.html#loc=index
 
 ..  _`Interactive git console`:
-    https://onlywei.github.io/explain-git-with-d3/
+    https://onlywei.github.io/explain-git-with-d3/#fetchrebase
 
 ..  _`Illustrated git`:
     https://illustrated-git.readthedocs.io/en/latest/#
