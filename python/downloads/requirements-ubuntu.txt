@@ -207,7 +207,7 @@ SQLAlchemy==1.0.12
 SQLAlchemy-Utils==0.31.4
 sqlparse==0.1.11
 stevedore==1.5.0
-tablib==0.10.0
+tablib==0.11.5
 tk.phpautodoc==1.2.1
 tvdb-api==1.10
 Twisted==15.2.1
