@@ -10,17 +10,25 @@ Object Constraint Language (OCL)."
 Installation
 ------------
 
-Installing `USE`_ is rather easy:
+Installing `USE`_ is rather easy (assuming that java is already installed.
 
 *   download the use zip file (|useZip|).
-*   extract this zip file where you want to install it (e.g. %SCRIBESTOOLS%
-    on windows).
-*   rename the newly created directory to ``%SCRIBESTOOLS%\UseOCL``.
-*   for convenience add the ``bin`` directory to your system PATH.
-    For instance the PATH could look like::
+*   extract the zip file where you want to install it.
+    WARNING: On windows it is recommended to use a directory
+    without spaces (avoid ``Program Files``, use ``C:\`` instead).
+*   rename the newly created directory to ``UseOCL``. Ultimately the
+    directory should look like
+    ``/home/djamel/UseOCL`` or ``C:\UseOCL`` for instance.
+*   for convenience (not compulsary) add the ``bin`` directory to your
+    system PATH. For instance the PATH could look like::
 
-        %SCRIBESTOOLS%\UseOCL\bin; ...   # Windows. ; is the separator
-        /home/pablo/UseOCL/bin: ...     # Unix.    : is the separator
+        C:\UseOCL\bin; ...               # Windows. ; is the separator
+        /home/djamel/UseOCL/bin: ...     # Unix.    : is the separator
+
+    Alternatively instead of changing the path you can type the full path
+    to the use binary. On unix use can be launched with a commande like::
+
+        /home/djamel/UseOCL/bin/use ...arguments...
 
 Launching USE OCL
 -----------------
@@ -525,7 +533,7 @@ index that show which OCL features are used in which files.
     `web <http://www.db.informatik.uni-bremen.de/projects/USE/qt.html>`__)
 
 ..  |useZip| replace::
-    `web <http://sourceforge.net/projects/useocl/files/USE/4.2.0/use-4.2.0.zip/download/>`__
+    `use 5.1.x <https://sourceforge.net/projects/useocl/files/USE/5.1.x/>`__
 
 ..  |useNotepadXML| replace::
     `web <http://sourceforge.net/projects/useocl/files/Misc/>`__
