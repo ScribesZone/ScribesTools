@@ -131,7 +131,7 @@ PyGithub==1.26.0
 Pygments==2.1.1
 pylint==1.4.3
 PyMySQL==0.6.6
-pyOpenSSL==0.15.1
+pyOpenSSL==17.5.0
 pyparsing==2.0.3
 PyPDF2==1.24
 pyreadline==2.0
