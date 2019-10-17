@@ -143,7 +143,7 @@ python-nvd3==0.13.7
 python-openid==2.2.5
 python-slugify==0.0.9
 pytz==2015.7
-PyYAML==3.11
+PyYAML==5.1
 qubic.sphinx.graphvizinclude==0.1
 queuelib==1.2.2
 releases==1.0.0
