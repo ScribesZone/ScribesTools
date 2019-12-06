@@ -43,7 +43,7 @@ Installing CheckStyle_ as a standalone tool is easy:
 *   Copy the files ``checkstyle.cmd`` and ``checkstyle.sh`` into the directory.
 *   Add the ``%SCRIBESTOOLS%\CheckStyle`` directory to the path.
 
-.. todo::
+.. todo
     update installation section
 
 Launching CheckStyle

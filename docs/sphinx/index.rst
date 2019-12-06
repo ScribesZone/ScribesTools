@@ -60,7 +60,7 @@ learn rst_ different kinds of resources are probably better:
 If you have already some knowledge about markdown you may be interested by
 `Markdown vs. rst`_ comparison.
 
-.. todo:: add references to the cheat sheets in docs/
+.. todo add references to the cheat sheets in docs/
 
 ..  _`reStructuredText Primer` : http://www.sphinx-doc.org/en/stable/rest.html
 

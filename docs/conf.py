@@ -21,7 +21,9 @@ import os.path
 CONF_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = CONF_DIR
 TOP_PROJECTS_DIR = os.path.realpath(os.path.join(PROJECT_DIR,'..'))
-INFRADOCS_DIR = os.path.realpath(os.path.join(CONF_DIR, '.infra', 'docs'))
+
+# Removed due to read the docs compilation problem
+# INFRADOCS_DIR = os.path.realpath(os.path.join(CONF_DIR, '.infra', 'docs'))
 
 # SCRIBES_INFRA_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'ScribesInfra'))
 # SPHINX_ZONE_DIR = os.path.realpath(os.path.join(TOP_PROJECTS_DIR,'SphinxZone'))
@@ -36,7 +38,8 @@ INFRADOCS_DIR = os.path.realpath(os.path.join(CONF_DIR, '.infra', 'docs'))
 # sys.path.insert(0, SPHINX_ZONE_DIR)
 # sys.path.insert(0, os.path.join(SPHINX_ZONE_DIR,'libs'))
 
-sys.path.insert(0, os.path.abspath(os.path.join(INFRADOCS_DIR, 'extensions')))
+# Removed due to read the docs compilation problem
+# sys.path.insert(0, os.path.abspath(os.path.join(INFRADOCS_DIR, 'extensions')))
 
 
 
@@ -47,20 +50,21 @@ sys.path.insert(0, os.path.abspath(os.path.join(INFRADOCS_DIR, 'extensions')))
 #}
 
 extensions = [
-    'scribeextension',
+#    'scribeextension',
 #    'sphinxcontrib.images',
 # %JFE+]
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
+#    'sphinx.ext.autodoc',
+#    'sphinx.ext.doctest',
+#    'sphinx.ext.intersphinx',
+#    'sphinx.ext.todo',
+#    'sphinx.ext.coverage',
+#    'sphinx.ext.ifconfig',
+#    'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [os.path.join(INFRADOCS_DIR, 'templates')]
+# Removed due to read the docs compilation problem
+# templates_path = [os.path.join(INFRADOCS_DIR, 'templates')]
 
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
@@ -162,7 +166,9 @@ else:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-templates_path = [os.path.join(INFRADOCS_DIR, 'static')]
+
+# Removed due to read the docs compilation problem
+# templates_path = [os.path.join(INFRADOCS_DIR, 'static')]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

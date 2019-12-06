@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    = -c . -q -w .build/buildErrors.txt
-SPHINXBUILD   = /usr/share/PyVEnvs27/ScribesEnv/bin/sphinx-build
+SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = .build
 

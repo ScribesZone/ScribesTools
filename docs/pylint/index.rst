@@ -9,7 +9,7 @@ to coding standards. PyLint_ is written in Python and runs on all platforms.
 Installation
 ------------
 
-..  todo:: change section to reference general python chapter
+..  todo  change section to reference general python chapter
 
 Installation instructions |pylint-install| depends on the platform used but
 basically PyLint_ is installed via python ``pip`` or platform specific package

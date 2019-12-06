@@ -169,7 +169,7 @@ type the following command (make sure that ``(ScribeEnv)`` is in the prompt)::
 
         pip install XXXX\requirements-windows.txt
 
-..  todo:: Provide requirements-windows.txt
+..  todo  Provide requirements-windows.txt
 
 
 

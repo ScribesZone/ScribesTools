@@ -22,12 +22,11 @@ Installation
 No installation is required as this service is on the cloud.
 However you must create an `ReadTheDocs account`_.
 
-.. todo::  figure:: media/ReadTheDocsAccount.jpg
+.. todo   figure:: media/ReadTheDocsAccount.jpg
 
 Then you need to connect this account with your GitHub account. Once this is
 done you can import the projects that have sphinx documentation.
 
-.. todo:: to be completed
 
 Usage
 -----
@@ -44,7 +43,6 @@ rendering both on computer screens but also on tablet or smart phones.
 
     `sphinx rtd theme`_
 
-.. todo:: to continue
 
 Documentation
 -------------

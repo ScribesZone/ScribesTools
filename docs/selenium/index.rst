@@ -3,7 +3,6 @@
 Selenium
 ========
 
-..  todo:: write the selenium page
 
 
 Installation

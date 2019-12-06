@@ -5,14 +5,6 @@ Welcome to ScribesTools documentation. You will find here some indications
 on how to install and use some useful software development tools. If you are
 interested in quality aspect you may also be interested in ScribesQuality_.
 
-..  ifconfig:: local
-
-    .. note::
-        You are looking at the local documentation. You will therefore be able
-        to use 'local' download links.
-
-    .. todolist::
-
 
 
 

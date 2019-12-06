@@ -46,7 +46,7 @@ In the open source community Django_ is reknown for the quality of its
 documentation_. After reading `Django at Glance`_ the best way to start is
 to read the `Django Tutorial`_.
 
-.. todo:: add references to the cheat sheets in docs/
+.. todo  add references to the cheat sheets in docs/
 
 .. .............................................................................
 
