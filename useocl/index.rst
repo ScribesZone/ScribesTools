@@ -5,7 +5,8 @@ UseOCL
 
 "`USE`_ (OCL) is a system for the specification and validation of Information
 Systems based on a subset of the Unified Modeling Language (UML) and the
-Object Constraint Language (OCL)."
+Object Constraint Language (OCL). `USE`_ is developed and maintained by the
+University of Bremen.
 
 Installation
 ------------
@@ -307,46 +308,56 @@ Creating diagrams
 -----------------
 
 USE Graphical User Interface (GUI) can be used to create class diagrams
-as well as object diagrams (among other kind of diagrams).
+as well as object diagrams (among other kinds of diagrams).
 
-In order to do so launch use *without* the ``-nogui`` option. If you
-want to get both a class diagram and a object diagram specify both
-a ``.use`` and ``.soil`` file on the command line. Something like::
+If you want to get both a class diagram and a object diagram specify
+both files, for instance a ``.cl1`` and ``.ob1`` files according to the
+`ModelScript`_ framework.
+Something like::
 
-    use -nr CyberGarage.use scenarios/CyberGarage/scenario.use
+    use -nr concepts/classes/classes.cl1 concepts/objects/o1/o1.ob1
+
+If you just want a class diagram only then just specify the first parameter.
 
 To create a diagram then use the menus:
 
 * ``View > Create View > Class Diagram`` and
 * ``View > Create View > Object Diagram``
 
-Many useful options are then available in the contextual menu of each diagram
-(right click).
+Many useful options are then available in the contextual menu of each
+diagram (right click).
 
 ..  figure:: media/USEOCL-ClassDiagram.png
     :align: center
 
 Many options are available. You are likely to use:
 
+*   ``Show muliplicities``, ``Show role names``, etc.
+
 *   ``Auto-Layout`` to get a first layout automatically.
-    Don't apply this option on an existing layout ...
+    Don't apply this option on an existing layout otherwise it will be
+    lost!
 
 *   ``Save-Layout`` to save the layout after some manual arrangement.
     This save the diagram layout in the form of a ``.clt``  (Class LayouT) file or
     ``.olt`` (Object Layout) file depending on the diagram.
-    Quiting use without saving the current layount will create the file '...-default.clt'.
-    It is a bad practice to use this file, especially when various diagrams are to
-    be build. Save the layout in proper files with proper names.
 
-*   ``Show muliplicities``, ``Show role names``, etc.
+    **WARNING**: Quiting USE without saving the current layout will create
+    the file '...-default.clt' at the same level of the class file.
+    It is a bad practice to use this file, especially when various diagrams
+    are to be build. ALWAYS save the layout explicitely in proper files
+    with proper names. This will save you time.
 
 If you intend to create various diagrams for the same model (to create
 different views) you are likely to use ``Hide`` options.
 
-..  note:: Naming objects
+..  note:: About objects names
+
+    (note: The following issue only occurs when the ``new`` syntax is used
+    in object model. Using the ``create`` syntax is safe).
 
     If you have trouble in getting what you want as object identifier
-    in the object diagram (you might get for instance ``Vehicule1 : Vehicule``)
+    in the object diagram (you might get for instance ``Vehicule3 : Vehicule``)
     this is mostly due because no name have been assigned to yours objects.
     In order to do so you have to use the following syntax::
 
@@ -504,6 +515,9 @@ index that show which OCL features are used in which files.
 
 .. _`new file types`:
     https://www.jetbrains.com/pycharm/help/new-file-type.html
+
+.. _`ModelScript`:
+    https://modelscript.readthedocs.io
 
 ..  |umlOclCheatSheet| replace::
     (:download:`local<docs/UMLOCL-CheatSheet-18.pdf>`)
