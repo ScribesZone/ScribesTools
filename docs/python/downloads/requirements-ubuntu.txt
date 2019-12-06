@@ -210,7 +210,7 @@ stevedore==1.5.0
 tablib==0.10.0
 tk.phpautodoc==1.2.1
 tvdb-api==1.10
-Twisted==15.2.1
+Twisted==19.7.0
 unicodecsv==0.14.1
 Unidecode==0.4.18
 uritemplate==0.6
