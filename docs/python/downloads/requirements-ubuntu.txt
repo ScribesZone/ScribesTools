@@ -17,7 +17,7 @@ click==3.3
 colorama==0.3.3
 cookiecutter==1.0.0
 coverage==3.7.1
-cryptography==1.2.2
+cryptography==3.2
 cssselect==0.9.1
 dashboardmods==1.0
 diff-match-patch==20121119
