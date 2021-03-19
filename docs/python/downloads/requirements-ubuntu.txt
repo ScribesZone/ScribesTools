@@ -117,7 +117,7 @@ pbr==1.2.0
 pdfminer==20140328
 pep8==1.6.2
 pep8-naming==0.3.2
-Pillow==3.1.1
+Pillow==8.1.1
 ply==3.8
 py==1.4.30
 pyasn1==0.1.9
