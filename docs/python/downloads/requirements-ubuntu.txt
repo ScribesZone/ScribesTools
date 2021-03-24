@@ -150,7 +150,7 @@ releases==1.0.0
 reportlab==3.2.0
 requests==2.9.1
 requests-oauthlib==0.5.0
-rsa==3.3
+rsa==4.1
 rusty==0.3.1
 sadisplay==0.4.2
 schema2rst==0.9.0
