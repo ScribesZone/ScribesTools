@@ -102,7 +102,7 @@ javasphinx==0.9.12
 Jinja2==2.8
 kombu==3.0.26
 logilab-common==0.63.2
-lxml==3.4.4
+lxml==4.6.3
 Markdown==2.6.2
 MarkupSafe==0.23
 mock==1.0.1
