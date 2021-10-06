@@ -154,7 +154,7 @@ rsa==3.3
 rusty==0.3.1
 sadisplay==0.4.2
 schema2rst==0.9.0
-Scrapy==1.0.0
+Scrapy==1.8.1
 selenium==2.46.0
 seqdiag==0.9.5
 simplejson==3.7.3
