@@ -10,7 +10,7 @@ beautifulsoup4==4.3.2
 billiard==3.3.0.20
 binaryornot==0.3.0
 blockdiag==1.5.3
-celery==3.1.18
+celery==5.2.2
 cffi==1.5.2
 chardet==2.3.0
 click==3.3
