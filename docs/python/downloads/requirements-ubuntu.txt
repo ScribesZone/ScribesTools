@@ -133,7 +133,7 @@ pylint==1.4.3
 PyMySQL==0.6.6
 pyOpenSSL==0.15.1
 pyparsing==2.0.3
-PyPDF2==1.24
+PyPDF2==1.27.5
 pyreadline==2.0
 pytest==2.7.2
 pytest-django==2.8.0
