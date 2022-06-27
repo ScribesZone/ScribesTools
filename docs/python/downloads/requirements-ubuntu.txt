@@ -147,7 +147,7 @@ PyYAML==3.11
 qubic.sphinx.graphvizinclude==0.1
 queuelib==1.2.2
 releases==1.0.0
-reportlab==3.2.0
+reportlab==3.5.55
 requests==2.9.1
 requests-oauthlib==0.5.0
 rsa==3.3
